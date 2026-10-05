@@ -1,0 +1,15 @@
+Using Python /usr/bin/python3
+Traceback (most recent call last):
+  File "/home/pi/op25-tracker/op25/op25/gr-op25_repeater/apps/./rx.py", line 1211, in <module>
+    rx = rx_main()
+         ^^^^^^^^^
+  File "/home/pi/op25-tracker/op25/op25/gr-op25_repeater/apps/./rx.py", line 1115, in __init__
+    self.tb = p25_rx_block(self.options)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/pi/op25-tracker/op25/op25/gr-op25_repeater/apps/./rx.py", line 241, in __init__
+    self.open_file(options.input)
+    ^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/gnuradio/gr/hier_block2.py", line 88, in __getattr__
+    return getattr(self._impl, name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'gnuradio.gr.gr_python.top_block_pb' object has no attribute 'open_file'

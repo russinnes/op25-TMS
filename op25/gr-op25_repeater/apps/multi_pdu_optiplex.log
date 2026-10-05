@@ -1,0 +1,433 @@
+CPU Features: SSE2+ SSE4.1+ AVX+ FMA+
+Using avx for xtrxdsp_iq16_sc32
+Using avx for xtrxdsp_iq8_ic16
+Using avx for xtrxdsp_iq16_ic16i
+Using avx for xtrxdsp_iq8_ic8i
+Using avx for xtrxdsp_sc32i_iq16
+Using avx for xtrxdsp_iq8_sc32
+Using avx for xtrxdsp_iq8_sc32i
+Using avx for xtrxdsp_iq16_sc32i
+Using avx for xtrxdsp_sc32_iq16
+Using avx for xtrxdsp_ic16i_iq16
+Starting OP25 (pid = 6244)
+Enabled trunking module: tk_p25.py
+device: {'name': 'rtl_a', 'args': 'rtl=0', 'rate': 2568000, 'frequency': 772781250, 'offset': 0, 'ppm': 59.0, 'gain_mode': False, 'gains': 'LNA:25', 'tunable': False, 'usable_bw_pct': 1.0}
+WARNING: requested sample rate 2568000 for device rtl_a may not
+be optimal.  You may want to use one of the following rates
+[250000, 1000000, 1024000, 1800000, 1920000, 2000000, 2048000, 2400000, 2560000]
+Device name: "rtl_a", osmosdr args: "rtl=0"
+gr-osmosdr 0.2.0.0 (0.2.0) gnuradio 3.10.12.0
+built-in source types: file fcd rtl rtl_tcp uhd miri hackrf bladerf rfspace airspy airspyhf soapy redpitaya freesrp xtrx 
+Using device #0 Realtek RTL2838UHIDIR SN: 30
+Found Rafael Micro R820T tuner
+[R82XX] PLL not locked!
+gr-osmosdr driver gain_mode: False
+Exact sample rate is: 2568000.183678 Hz
+[R82XX] PLL not locked!
+channel (dev rtl_a): {'name': 'COCH2_ch237', 'device': 'rtl_a', 'frequency': 772043750, 'demod_type': 'cqpsk', 'filter_type': 'rrc', 'excess_bw': 0.2, 'if_rate': 24000, 'symbol_rate': 4800, 'enable_analog': 'off', 'destination': '0.0.0.0:0', 'gain_mu': 0.04, 'costas_alpha': 0.02}
+demodulator: xlator if_rate=24000, input_rate=2568000, decim=107, if taps=[515,49], resampled_rate=24000, sps=5
+10/04/26 18:26:28.492471 [0] op25_audio::op25_audio: destination: 0.0.0.0:0 [schema: , host: , port: ]
+Receiver 'COCH2_ch237' configured with unknown trunking_sysname 'undefined'
+channel (dev rtl_a): {'name': 'COCH2_ch262', 'device': 'rtl_a', 'frequency': 772356250, 'demod_type': 'cqpsk', 'filter_type': 'rrc', 'excess_bw': 0.2, 'if_rate': 24000, 'symbol_rate': 4800, 'enable_analog': 'off', 'destination': '0.0.0.0:0', 'gain_mu': 0.04, 'costas_alpha': 0.02}
+demodulator: xlator if_rate=24000, input_rate=2568000, decim=107, if taps=[515,49], resampled_rate=24000, sps=5
+10/04/26 18:26:28.508630 [1] op25_audio::op25_audio: destination: 0.0.0.0:0 [schema: , host: , port: ]
+Receiver 'COCH2_ch262' configured with unknown trunking_sysname 'undefined'
+channel (dev rtl_a): {'name': 'COCH2_ch300', 'device': 'rtl_a', 'frequency': 772831250, 'demod_type': 'cqpsk', 'filter_type': 'rrc', 'excess_bw': 0.2, 'if_rate': 24000, 'symbol_rate': 4800, 'enable_analog': 'off', 'destination': '0.0.0.0:0', 'gain_mu': 0.04, 'costas_alpha': 0.02}
+demodulator: xlator if_rate=24000, input_rate=2568000, decim=107, if taps=[515,49], resampled_rate=24000, sps=5
+10/04/26 18:26:28.519868 [2] op25_audio::op25_audio: destination: 0.0.0.0:0 [schema: , host: , port: ]
+Receiver 'COCH2_ch300' configured with unknown trunking_sysname 'undefined'
+channel (dev rtl_a): {'name': 'COCH2_ch355', 'device': 'rtl_a', 'frequency': 773518750, 'demod_type': 'cqpsk', 'filter_type': 'rrc', 'excess_bw': 0.2, 'if_rate': 24000, 'symbol_rate': 4800, 'enable_analog': 'off', 'destination': '0.0.0.0:0', 'gain_mu': 0.04, 'costas_alpha': 0.02}
+demodulator: xlator if_rate=24000, input_rate=2568000, decim=107, if taps=[515,49], resampled_rate=24000, sps=5
+10/04/26 18:26:28.530717 [3] op25_audio::op25_audio: destination: 0.0.0.0:0 [schema: , host: , port: ]
+Receiver 'COCH2_ch355' configured with unknown trunking_sysname 'undefined'
+python version detected: 3.13.5 (main, Aug 10 2026, 12:06:59) [GCC 14.2.0]
+Allocating 15 zero-copy buffers
+10/04/26 18:29:54.481519 [2] process_blocks trellis1/2 fail blk=1 (kept)
+10/04/26 18:29:54.481628 [2] PDU process_blocks rc=0 nblk=2 fr_len=702
+10/04/26 18:29:54.481648 [2] PDU LONG/FAIL hex:  [230e0043cc6480000000f915]  [000000000000000000000000]
+10/04/26 18:29:54.481947 [2] ACK/RX rid=4443236 sap=14 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 18:29:54.481964 [2] NAC 0x368 PDU hex: fmt=0x03 sap=14 blks=0 nblk=2 :  [230e0043cc6480000000f915]  [000000000000000000000000]
+10/04/26 18:32:19.665648 [1] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 18:32:19.665719 [1] ACK/RX rid=4443181 sap=15 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 18:32:19.665734 [1] NAC 0x368 PDU hex: fmt=0x03 sap=15 blks=0 nblk=1 :  [230f0043cc2d80000000ab22]
+10/04/26 18:33:27.175168 [0] process_blocks trellis1/2 fail blk=0 (kept)
+10/04/26 18:33:27.175276 [0] process_blocks trellis1/2 fail blk=1 (kept)
+10/04/26 18:33:27.175333 [0] process_blocks trellis1/2 fail blk=2 (kept)
+10/04/26 18:33:27.175352 [0] process_blocks trellis1/2 fail blk=3 (kept)
+10/04/26 18:33:27.175367 [0] process_blocks trellis1/2 fail blk=4 (kept)
+10/04/26 18:33:27.175382 [0] process_blocks trellis1/2 fail blk=5 (kept)
+10/04/26 18:33:27.175397 [0] PDU header CRC fail nblk=6
+10/04/26 18:33:27.175412 [0] PDU process_blocks rc=0 nblk=6 fr_len=1474
+10/04/26 18:33:27.175427 [0] PDU LONG/FAIL hex:  [000000000000000000000000]  [000000000000000000000000]  [400000000000000000000000]  [000000000000000000000000]  [c00000000000000000000000]  [000000000000000000000000]
+10/04/26 18:33:27.176220 [0] PDU header CRC fail nblk=6 maybe_rid=0 (unverified, CRC failed) : 00 00 00 00 00 00 00 00 00 00 00 00
+10/04/26 18:35:42.691157 [2] process_blocks trellis1/2 fail blk=0 (kept)
+10/04/26 18:35:42.691264 [2] process_blocks trellis1/2 fail blk=1 (kept)
+10/04/26 18:35:42.691311 [2] process_blocks trellis1/2 fail blk=2 (kept)
+10/04/26 18:35:42.691334 [2] PDU header CRC fail nblk=3
+  D34 cost=11 FAIL (threshold=8)
+  D34 cost=12 FAIL (threshold=8)
+10/04/26 18:35:42.691672 [2] PDU process_blocks rc=0 nblk=3 fr_len=750
+10/04/26 18:35:42.691685 [2] PDU LONG/FAIL hex:  [230f003ed18d800000000000]  [000000000000000000000000]  [000000000000000000000000]
+10/04/26 18:35:42.691949 [2] PDU header CRC fail nblk=3 maybe_rid=4116877 (unverified, CRC failed) : 23 0f 00 3e d1 8d 80 00 00 00 00 00
+10/04/26 18:35:43.109506 [2] process_blocks trellis1/2 fail blk=0 (kept)
+10/04/26 18:35:43.109599 [2] PDU header CRC fail nblk=1
+10/04/26 18:35:43.109624 [2] PDU process_blocks rc=0 nblk=1 fr_len=298
+10/04/26 18:35:43.109641 [2] PDU header CRC fail nblk=1 maybe_rid=11885312 (unverified, CRC failed) : 2b 0b af b5 5b 00 00 00 00 00 00 00
+10/04/26 18:38:33.782573 [1] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 18:38:33.782659 [1] ACK/RX rid=590133 sap=14 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 18:38:33.782683 [1] NAC 0x368 PDU hex: fmt=0x03 sap=14 blks=0 nblk=1 :  [230e000901358000000098a7]
+10/04/26 18:39:15.168879 [1] process_blocks trellis1/2 fail blk=0 (kept)
+10/04/26 18:39:15.168995 [1] process_blocks trellis1/2 fail blk=1 (kept)
+10/04/26 18:39:15.169032 [1] process_blocks trellis1/2 fail blk=2 (kept)
+10/04/26 18:39:15.169050 [1] process_blocks trellis1/2 fail blk=3 (kept)
+10/04/26 18:39:15.169068 [1] process_blocks trellis1/2 fail blk=4 (kept)
+10/04/26 18:39:15.169083 [1] process_blocks trellis1/2 fail blk=5 (kept)
+10/04/26 18:39:15.169097 [1] PDU header CRC fail nblk=6
+  D34 cost=10 FAIL (threshold=8)
+  D34 cost=12 FAIL (threshold=8)
+  D34 cost=12 FAIL (threshold=8)
+  D34 cost=11 FAIL (threshold=8)
+  D34 cost=11 FAIL (threshold=8)
+10/04/26 18:39:15.169830 [1] PDU process_blocks rc=0 nblk=6 fr_len=1460
+10/04/26 18:39:15.169850 [1] PDU LONG/FAIL hex:  [28a800000000000000000000]  [000000000000000000000000]  [a40000000000000000000000]  [000000000000000000000000]  [350000000000000000000000]  [000000000000000000000000]
+10/04/26 18:39:15.170785 [1] PDU header CRC fail nblk=6 maybe_rid=0 (unverified, CRC failed) : 28 a8 00 00 00 00 00 00 00 00 00 00
+10/04/26 18:39:51.905463 [2] process_blocks trellis1/2 fail blk=1 (kept)
+10/04/26 18:39:51.905573 [2] process_blocks trellis1/2 fail blk=2 (kept)
+10/04/26 18:39:51.905598 [2] process_blocks trellis1/2 fail blk=3 (kept)
+10/04/26 18:39:51.905614 [2] process_blocks trellis1/2 fail blk=4 (kept)
+10/04/26 18:39:51.905629 [2] process_blocks trellis1/2 fail blk=5 (kept)
+10/04/26 18:39:51.905643 [2] process_blocks trellis1/2 fail blk=6 (kept)
+10/04/26 18:39:51.905656 [2] process_blocks trellis1/2 fail blk=7 (kept)
+10/04/26 18:39:51.905694 [2] process_blocks trellis1/2 fail blk=8 (kept)
+10/04/26 18:39:51.905710 [2] process_blocks trellis1/2 fail blk=9 (kept)
+10/04/26 18:39:51.905720 [2] process_blocks trellis1/2 fail blk=10 (kept)
+10/04/26 18:39:51.905730 [2] process_blocks trellis1/2 fail blk=11 (kept)
+10/04/26 18:39:51.905739 [2] process_blocks trellis1/2 fail blk=12 (kept)
+10/04/26 18:39:51.905748 [2] process_blocks trellis1/2 fail blk=13 (kept)
+10/04/26 18:39:51.905759 [2] PDU process_blocks rc=0 nblk=14 fr_len=3096
+10/04/26 18:39:51.905769 [2] PDU LONG/FAIL hex:  [23090043cc53800000002384]  [000000000000000000000000]  [c00000000000000000000000]  [700000000000000000000000]  [240000000000000000000000]  [a00000000000000000000000]  [400000000000000000000000]  [c40000000000000000000000]  [000000000000000000000000]  [c00000000000000000000000]  [800000000000000000000000]  [000000000000000000000000]  [000000000000000000000000]  [000000000000000000000000]
+10/04/26 18:39:51.906969 [2] ACK/RX rid=4443219 sap=9 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 18:39:51.906982 [2] NAC 0x368 PDU hex: fmt=0x03 sap=9 blks=0 nblk=14 :  [23090043cc53800000002384]  [000000000000000000000000]  [c00000000000000000000000]  [700000000000000000000000]  [240000000000000000000000]  [a00000000000000000000000]  [400000000000000000000000]  [c40000000000000000000000]  [000000000000000000000000]  [c00000000000000000000000]  [800000000000000000000000]  [000000000000000000000000]  [000000000000000000000000]  [000000000000000000000000]
+10/04/26 18:40:10.555306 [2] process_blocks trellis1/2 fail blk=0 (kept)
+10/04/26 18:40:10.555405 [2] process_blocks trellis1/2 fail blk=1 (kept)
+10/04/26 18:40:10.555429 [2] process_blocks trellis1/2 fail blk=2 (kept)
+10/04/26 18:40:10.555448 [2] process_blocks trellis1/2 fail blk=3 (kept)
+10/04/26 18:40:10.555465 [2] process_blocks trellis1/2 fail blk=4 (kept)
+10/04/26 18:40:10.555478 [2] PDU header CRC fail nblk=5
+  D34 cost=11 FAIL (threshold=8)
+  D34 cost=11 FAIL (threshold=8)
+  D34 cost=13 FAIL (threshold=8)
+  D34 cost=11 FAIL (threshold=8)
+10/04/26 18:40:10.556093 [2] PDU process_blocks rc=0 nblk=5 fr_len=1124
+10/04/26 18:40:10.556114 [2] PDU LONG/FAIL hex:  [230800000000000000000000]  [000000000000000000000000]  [800000000000000000000000]  [03533909c000000000000000]  [000000000000000000000000]
+10/04/26 18:40:10.556780 [2] PDU header CRC fail nblk=5 maybe_rid=0 (unverified, CRC failed) : 23 08 00 00 00 00 00 00 00 00 00 00
+10/04/26 18:40:27.337200 [3] process_blocks trellis1/2 fail blk=0 (kept)
+10/04/26 18:40:27.337306 [3] process_blocks trellis1/2 fail blk=1 (kept)
+10/04/26 18:40:27.337330 [3] process_blocks trellis1/2 fail blk=2 (kept)
+10/04/26 18:40:27.337345 [3] process_blocks trellis1/2 fail blk=3 (kept)
+10/04/26 18:40:27.337362 [3] process_blocks trellis1/2 fail blk=4 (kept)
+10/04/26 18:40:27.337377 [3] process_blocks trellis1/2 fail blk=5 (kept)
+10/04/26 18:40:27.337390 [3] process_blocks trellis1/2 fail blk=6 (kept)
+10/04/26 18:40:27.337403 [3] process_blocks trellis1/2 fail blk=7 (kept)
+10/04/26 18:40:27.337420 [3] process_blocks trellis1/2 fail blk=8 (kept)
+10/04/26 18:40:27.337433 [3] process_blocks trellis1/2 fail blk=9 (kept)
+10/04/26 18:40:27.337447 [3] process_blocks trellis1/2 fail blk=10 (kept)
+10/04/26 18:40:27.337461 [3] process_blocks trellis1/2 fail blk=11 (kept)
+10/04/26 18:40:27.337475 [3] process_blocks trellis1/2 fail blk=12 (kept)
+10/04/26 18:40:27.337489 [3] process_blocks trellis1/2 fail blk=13 (kept)
+10/04/26 18:40:27.337503 [3] PDU header CRC fail nblk=14
+  D34 cost=12 FAIL (threshold=8)
+  D34 cost=11 FAIL (threshold=8)
+  D34 cost=12 FAIL (threshold=8)
+  D34 cost=12 FAIL (threshold=8)
+  D34 cost=14 FAIL (threshold=8)
+  D34 cost=14 FAIL (threshold=8)
+  D34 cost=11 FAIL (threshold=8)
+  D34 cost=13 FAIL (threshold=8)
+  D34 cost=11 FAIL (threshold=8)
+  D34 cost=12 FAIL (threshold=8)
+  D34 cost=13 FAIL (threshold=8)
+  D34 cost=12 FAIL (threshold=8)
+  D34 cost=13 FAIL (threshold=8)
+10/04/26 18:40:27.339059 [3] PDU process_blocks rc=0 nblk=14 fr_len=3078
+10/04/26 18:40:27.339098 [3] PDU LONG/FAIL hex:  [25afafec0000000000000000]  [800000000000000000000000]  [000000000000000000000000]  [000000000000000000000000]  [540000000000000000000000]  [240000000000000000000000]  [000000000000000000000000]  [800000000000000000000000]  [800000000000000000000000]  [7a5000000000000000000000]  [400000000000000000000000]  [c00000000000000000000000]  [000000000000000000000000]  [400000000000000000000000]
+10/04/26 18:40:27.340370 [3] PDU header CRC fail nblk=14 maybe_rid=15466496 (unverified, CRC failed) : 25 af af ec 00 00 00 00 00 00 00 00
+10/04/26 18:41:38.467617 [0] process_blocks trellis1/2 fail blk=0 (kept)
+10/04/26 18:41:38.467714 [0] process_blocks trellis1/2 fail blk=1 (kept)
+10/04/26 18:41:38.467738 [0] process_blocks trellis1/2 fail blk=2 (kept)
+10/04/26 18:41:38.467756 [0] process_blocks trellis1/2 fail blk=3 (kept)
+10/04/26 18:41:38.467772 [0] process_blocks trellis1/2 fail blk=4 (kept)
+10/04/26 18:41:38.467790 [0] process_blocks trellis1/2 fail blk=5 (kept)
+10/04/26 18:41:38.467804 [0] process_blocks trellis1/2 fail blk=6 (kept)
+10/04/26 18:41:38.467818 [0] process_blocks trellis1/2 fail blk=7 (kept)
+10/04/26 18:41:38.467833 [0] process_blocks trellis1/2 fail blk=8 (kept)
+10/04/26 18:41:38.467848 [0] process_blocks trellis1/2 fail blk=9 (kept)
+10/04/26 18:41:38.467861 [0] process_blocks trellis1/2 fail blk=10 (kept)
+10/04/26 18:41:38.467877 [0] process_blocks trellis1/2 fail blk=11 (kept)
+10/04/26 18:41:38.467890 [0] PDU header CRC fail nblk=12
+10/04/26 18:41:38.467906 [0] PDU process_blocks rc=0 nblk=12 fr_len=2586
+10/04/26 18:41:38.467922 [0] PDU LONG/FAIL hex:  [200000000000000000000000]  [130000000000000000000000]  [000000000000000000000000]  [90c000000000000000000000]  [b00000000000000000000000]  [400000000000000000000000]  [400000000000000000000000]  [c00000000000000000000000]  [000000000000000000000000]  [340000000000000000000000]  [400000000000000000000000]  [f0d000000000000000000000]
+10/04/26 18:41:38.469465 [0] PDU header CRC fail nblk=12 maybe_rid=0 (unverified, CRC failed) : 20 00 00 00 00 00 00 00 00 00 00 00
+10/04/26 18:41:40.672947 [2] process_blocks trellis1/2 fail blk=0 (kept)
+10/04/26 18:41:40.673018 [2] process_blocks trellis1/2 fail blk=1 (kept)
+10/04/26 18:41:40.673043 [2] process_blocks trellis1/2 fail blk=2 (kept)
+10/04/26 18:41:40.673053 [2] process_blocks trellis1/2 fail blk=3 (kept)
+10/04/26 18:41:40.673062 [2] process_blocks trellis1/2 fail blk=4 (kept)
+10/04/26 18:41:40.673073 [2] process_blocks trellis1/2 fail blk=5 (kept)
+10/04/26 18:41:40.673083 [2] process_blocks trellis1/2 fail blk=6 (kept)
+10/04/26 18:41:40.673091 [2] PDU header CRC fail nblk=7
+10/04/26 18:41:40.673101 [2] PDU process_blocks rc=0 nblk=7 fr_len=1534
+10/04/26 18:41:40.673111 [2] PDU LONG/FAIL hex:  [200000000000000000000000]  [000000000000000000000000]  [e00000000000000000000000]  [000000000000000000000000]  [c00000000000000000000000]  [940000000000000000000000]  [456c70000000000000000000]
+10/04/26 18:41:40.673759 [2] PDU header CRC fail nblk=7 maybe_rid=0 (unverified, CRC failed) : 20 00 00 00 00 00 00 00 00 00 00 00
+10/04/26 18:47:19.992473 [0] process_blocks trellis1/2 fail blk=1 (kept)
+10/04/26 18:47:19.992567 [0] process_blocks trellis1/2 fail blk=2 (kept)
+10/04/26 18:47:19.992589 [0] process_blocks trellis1/2 fail blk=3 (kept)
+10/04/26 18:47:19.992605 [0] process_blocks trellis1/2 fail blk=4 (kept)
+10/04/26 18:47:19.992623 [0] process_blocks trellis1/2 fail blk=5 (kept)
+10/04/26 18:47:19.992639 [0] process_blocks trellis1/2 fail blk=6 (kept)
+10/04/26 18:47:19.992653 [0] process_blocks trellis1/2 fail blk=7 (kept)
+10/04/26 18:47:19.992668 [0] process_blocks trellis1/2 fail blk=8 (kept)
+10/04/26 18:47:19.992682 [0] process_blocks trellis1/2 fail blk=9 (kept)
+10/04/26 18:47:19.992696 [0] process_blocks trellis1/2 fail blk=10 (kept)
+10/04/26 18:47:19.992710 [0] process_blocks trellis1/2 fail blk=11 (kept)
+10/04/26 18:47:19.992724 [0] process_blocks trellis1/2 fail blk=12 (kept)
+10/04/26 18:47:19.992737 [0] process_blocks trellis1/2 fail blk=13 (kept)
+10/04/26 18:47:19.992818 [0] PDU process_blocks rc=0 nblk=14 fr_len=3080
+10/04/26 18:47:19.992847 [0] PDU LONG/FAIL hex:  [23080043cc2d800000001a89]  [000000000000000000000000]  [000000000000000000000000]  [000000000000000000000000]  [afd000000000000000000000]  [ff7a00000000000000000000]  [200000000000000000000000]  [000000000000000000000000]  [050000000000000000000000]  [e40000000000000000000000]  [000000000000000000000000]  [000000000000000000000000]  [500000000000000000000000]  [c00000000000000000000000]
+10/04/26 18:47:19.994135 [0] ACK/RX rid=4443181 sap=8 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 18:47:19.994151 [0] NAC 0x368 PDU hex: fmt=0x03 sap=8 blks=0 nblk=14 :  [23080043cc2d800000001a89]  [000000000000000000000000]  [000000000000000000000000]  [000000000000000000000000]  [afd000000000000000000000]  [ff7a00000000000000000000]  [200000000000000000000000]  [000000000000000000000000]  [050000000000000000000000]  [e40000000000000000000000]  [000000000000000000000000]  [000000000000000000000000]  [500000000000000000000000]  [c00000000000000000000000]
+10/04/26 18:47:45.218445 [1] process_blocks trellis1/2 fail blk=1 (kept)
+10/04/26 18:47:45.218622 [1] process_blocks trellis1/2 fail blk=2 (kept)
+10/04/26 18:47:45.218646 [1] process_blocks trellis1/2 fail blk=3 (kept)
+10/04/26 18:47:45.218663 [1] process_blocks trellis1/2 fail blk=4 (kept)
+10/04/26 18:47:45.218682 [1] process_blocks trellis1/2 fail blk=5 (kept)
+10/04/26 18:47:45.218697 [1] process_blocks trellis1/2 fail blk=6 (kept)
+10/04/26 18:47:45.218711 [1] process_blocks trellis1/2 fail blk=7 (kept)
+10/04/26 18:47:45.218726 [1] process_blocks trellis1/2 fail blk=8 (kept)
+10/04/26 18:47:45.218748 [1] PDU process_blocks rc=0 nblk=9 fr_len=1950
+10/04/26 18:47:45.218764 [1] PDU LONG/FAIL hex:  [23090043cc46800000000489]  [000000000000000000000000]  [c00000000000000000000000]  [000000000000000000000000]  [d00000000000000000000000]  [000000000000000000000000]  [000000000000000000000000]  [000000000000000000000000]  [457000000000000000000000]
+10/04/26 18:47:45.220124 [1] ACK/RX rid=4443206 sap=9 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 18:47:45.220150 [1] NAC 0x368 PDU hex: fmt=0x03 sap=9 blks=0 nblk=9 :  [23090043cc46800000000489]  [000000000000000000000000]  [c00000000000000000000000]  [000000000000000000000000]  [d00000000000000000000000]  [000000000000000000000000]  [000000000000000000000000]  [000000000000000000000000]  [457000000000000000000000]
+10/04/26 18:48:13.496762 [2] process_blocks trellis1/2 fail blk=0 (kept)
+10/04/26 18:48:13.496854 [2] process_blocks trellis1/2 fail blk=1 (kept)
+10/04/26 18:48:13.496877 [2] process_blocks trellis1/2 fail blk=2 (kept)
+10/04/26 18:48:13.496892 [2] process_blocks trellis1/2 fail blk=3 (kept)
+10/04/26 18:48:13.496910 [2] process_blocks trellis1/2 fail blk=4 (kept)
+10/04/26 18:48:13.496921 [2] process_blocks trellis1/2 fail blk=5 (kept)
+10/04/26 18:48:13.496930 [2] process_blocks trellis1/2 fail blk=6 (kept)
+10/04/26 18:48:13.496938 [2] process_blocks trellis1/2 fail blk=7 (kept)
+10/04/26 18:48:13.496951 [2] process_blocks trellis1/2 fail blk=8 (kept)
+10/04/26 18:48:13.496965 [2] process_blocks trellis1/2 fail blk=9 (kept)
+10/04/26 18:48:13.496980 [2] process_blocks trellis1/2 fail blk=10 (kept)
+10/04/26 18:48:13.496997 [2] process_blocks trellis1/2 fail blk=11 (kept)
+10/04/26 18:48:13.497010 [2] process_blocks trellis1/2 fail blk=12 (kept)
+10/04/26 18:48:13.497027 [2] process_blocks trellis1/2 fail blk=13 (kept)
+10/04/26 18:48:13.497041 [2] PDU header CRC fail nblk=14
+  D34 cost=11 FAIL (threshold=8)
+  D34 cost=13 FAIL (threshold=8)
+  D34 cost=10 FAIL (threshold=8)
+  D34 cost=10 FAIL (threshold=8)
+  D34 cost=12 FAIL (threshold=8)
+  D34 cost=13 FAIL (threshold=8)
+  D34 cost=12 FAIL (threshold=8)
+  D34 cost=12 FAIL (threshold=8)
+  D34 cost=13 FAIL (threshold=8)
+  D34 cost=14 FAIL (threshold=8)
+  D34 cost=12 FAIL (threshold=8)
+  D34 cost=12 FAIL (threshold=8)
+  D34 cost=12 FAIL (threshold=8)
+10/04/26 18:48:13.498361 [2] PDU process_blocks rc=0 nblk=14 fr_len=3110
+10/04/26 18:48:13.498403 [2] PDU LONG/FAIL hex:  [3b2000000000000000000000]  [c00000000000000000000000]  [000000000000000000000000]  [c00000000000000000000000]  [1bbf00000000000000000000]  [c00000000000000000000000]  [500000000000000000000000]  [d80000000000000000000000]  [000000000000000000000000]  [000000000000000000000000]  [e00000000000000000000000]  [b00000000000000000000000]  [000000000000000000000000]  [000000000000000000000000]
+10/04/26 18:48:13.499195 [2] PDU header CRC fail nblk=14 maybe_rid=0 (unverified, CRC failed) : 3b 20 00 00 00 00 00 00 00 00 00 00
+10/04/26 18:48:15.069382 [3] process_blocks trellis1/2 fail blk=1 (kept)
+10/04/26 18:48:15.069470 [3] process_blocks trellis1/2 fail blk=2 (kept)
+10/04/26 18:48:15.069493 [3] PDU process_blocks rc=0 nblk=3 fr_len=732
+10/04/26 18:48:15.069505 [3] PDU LONG/FAIL hex:  [230a0043cc468000000029cd]  [000000000000000000000000]  [000000000000000000000000]
+10/04/26 18:48:15.069776 [3] ACK/RX rid=4443206 sap=10 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 18:48:15.069803 [3] NAC 0x368 PDU hex: fmt=0x03 sap=10 blks=0 nblk=3 :  [230a0043cc468000000029cd]  [000000000000000000000000]  [000000000000000000000000]
+10/04/26 18:51:04.769681 [1] process_blocks trellis1/2 fail blk=0 (kept)
+10/04/26 18:51:04.769794 [1] process_blocks trellis1/2 fail blk=1 (kept)
+10/04/26 18:51:04.769822 [1] process_blocks trellis1/2 fail blk=2 (kept)
+10/04/26 18:51:04.769841 [1] process_blocks trellis1/2 fail blk=3 (kept)
+10/04/26 18:51:04.769856 [1] PDU header CRC fail nblk=4
+  D34 cost=11 FAIL (threshold=8)
+  D34 cost=12 FAIL (threshold=8)
+  D34 cost=12 FAIL (threshold=8)
+10/04/26 18:51:04.770326 [1] PDU process_blocks rc=0 nblk=4 fr_len=980
+10/04/26 18:51:04.770345 [1] PDU LONG/FAIL hex:  [20a2a80fab90000000000000]  [000000000000000000000000]  [9b0000000000000000000000]  [c00000000000000000000000]
+10/04/26 18:51:04.770873 [1] PDU header CRC fail nblk=4 maybe_rid=1026960 (unverified, CRC failed) : 20 a2 a8 0f ab 90 00 00 00 00 00 00
+10/04/26 18:51:24.368606 [1] process_blocks trellis1/2 fail blk=0 (kept)
+10/04/26 18:51:24.368717 [1] PDU header CRC fail nblk=1
+10/04/26 18:51:24.368744 [1] PDU process_blocks rc=0 nblk=1 fr_len=352
+10/04/26 18:51:24.368760 [1] PDU header CRC fail nblk=1 maybe_rid=13461504 (unverified, CRC failed) : 00 a9 26 cd 68 00 00 00 00 00 00 00
+10/04/26 18:52:32.133530 [1] process_blocks trellis1/2 fail blk=0 (kept)
+10/04/26 18:52:32.133638 [1] process_blocks trellis1/2 fail blk=1 (kept)
+10/04/26 18:52:32.133665 [1] process_blocks trellis1/2 fail blk=2 (kept)
+10/04/26 18:52:32.133680 [1] process_blocks trellis1/2 fail blk=3 (kept)
+10/04/26 18:52:32.133697 [1] process_blocks trellis1/2 fail blk=4 (kept)
+10/04/26 18:52:32.133711 [1] process_blocks trellis1/2 fail blk=5 (kept)
+10/04/26 18:52:32.133725 [1] process_blocks trellis1/2 fail blk=6 (kept)
+10/04/26 18:52:32.133739 [1] process_blocks trellis1/2 fail blk=7 (kept)
+10/04/26 18:52:32.133754 [1] process_blocks trellis1/2 fail blk=8 (kept)
+10/04/26 18:52:32.133770 [1] process_blocks trellis1/2 fail blk=9 (kept)
+10/04/26 18:52:32.133784 [1] PDU header CRC fail nblk=10
+  D34 cost=12 FAIL (threshold=8)
+  D34 cost=13 FAIL (threshold=8)
+  D34 cost=13 FAIL (threshold=8)
+  D34 cost=12 FAIL (threshold=8)
+  D34 cost=10 FAIL (threshold=8)
+  D34 cost=11 FAIL (threshold=8)
+  D34 cost=14 FAIL (threshold=8)
+  D34 cost=12 FAIL (threshold=8)
+  D34 cost=12 FAIL (threshold=8)
+10/04/26 18:52:32.134988 [1] PDU process_blocks rc=0 nblk=10 fr_len=2302
+10/04/26 18:52:32.135010 [1] PDU LONG/FAIL hex:  [21a5a8000000000000000000]  [7b0a00000000000000000000]  [400000000000000000000000]  [400000000000000000000000]  [ebf000000000000000000000]  [000000000000000000000000]  [752000000000000000000000]  [f40000000000000000000000]  [d00000000000000000000000]  [000000000000000000000000]
+10/04/26 18:52:32.136380 [1] PDU header CRC fail nblk=10 maybe_rid=0 (unverified, CRC failed) : 21 a5 a8 00 00 00 00 00 00 00 00 00
+10/04/26 18:57:21.026181 [1] process_blocks trellis1/2 fail blk=0 (kept)
+10/04/26 18:57:21.026301 [1] process_blocks trellis1/2 fail blk=1 (kept)
+10/04/26 18:57:21.026357 [1] process_blocks trellis1/2 fail blk=2 (kept)
+10/04/26 18:57:21.026374 [1] process_blocks trellis1/2 fail blk=3 (kept)
+10/04/26 18:57:21.026382 [1] PDU header CRC fail nblk=4
+10/04/26 18:57:21.026392 [1] PDU process_blocks rc=0 nblk=4 fr_len=1098
+10/04/26 18:57:21.026402 [1] PDU LONG/FAIL hex:  [200000000000000000000000]  [000000000000000000000000]  [a02db8000000000000000000]  [e9d000000000000000000000]
+10/04/26 18:57:21.026747 [1] PDU header CRC fail nblk=4 maybe_rid=0 (unverified, CRC failed) : 20 00 00 00 00 00 00 00 00 00 00 00
+10/04/26 18:57:57.027076 [3] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 18:57:57.027173 [3] ACK/RX rid=590130 sap=9 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 18:57:57.027198 [3] NAC 0x368 PDU hex: fmt=0x03 sap=9 blks=0 nblk=1 :  [230900090132800000004ed8]
+10/04/26 18:58:24.376454 [0] process_blocks trellis1/2 fail blk=0 (kept)
+10/04/26 18:58:24.377017 [0] PDU header CRC fail nblk=1
+10/04/26 18:58:24.377073 [0] PDU process_blocks rc=0 nblk=1 fr_len=304
+10/04/26 18:58:24.377094 [0] PDU header CRC fail nblk=1 maybe_rid=0 (unverified, CRC failed) : 2e 00 00 00 00 00 00 00 00 00 00 00
+10/04/26 18:58:49.215202 [1] process_blocks trellis1/2 fail blk=0 (kept)
+10/04/26 18:58:49.215334 [1] process_blocks trellis1/2 fail blk=1 (kept)
+10/04/26 18:58:49.215367 [1] process_blocks trellis1/2 fail blk=2 (kept)
+10/04/26 18:58:49.215383 [1] process_blocks trellis1/2 fail blk=3 (kept)
+10/04/26 18:58:49.215398 [1] process_blocks trellis1/2 fail blk=4 (kept)
+10/04/26 18:58:49.215418 [1] process_blocks trellis1/2 fail blk=5 (kept)
+10/04/26 18:58:49.215432 [1] process_blocks trellis1/2 fail blk=6 (kept)
+10/04/26 18:58:49.215445 [1] process_blocks trellis1/2 fail blk=7 (kept)
+10/04/26 18:58:49.215458 [1] PDU header CRC fail nblk=8
+  D34 cost=12 FAIL (threshold=8)
+  D34 cost=11 FAIL (threshold=8)
+  D34 cost=14 FAIL (threshold=8)
+  D34 cost=8 ok
+  D34 cost=13 FAIL (threshold=8)
+  D34 cost=11 FAIL (threshold=8)
+  D34 cost=12 FAIL (threshold=8)
+10/04/26 18:58:49.216420 [1] PDU process_blocks rc=0 nblk=8 fr_len=1922
+10/04/26 18:58:49.216441 [1] PDU LONG/FAIL hex:  [28acaae80000000000000000]  [b00000000000000000000000]  [000000000000000000000000]  [000000000000000000000000]  [000000000000000000000000]  [ed5d77fd6800000000000000]  [fc0000000000000000000000]  [000000000000000000000000]
+10/04/26 18:58:49.217507 [1] PDU header CRC fail nblk=8 maybe_rid=15204352 (unverified, CRC failed) : 28 ac aa e8 00 00 00 00 00 00 00 00
+10/04/26 18:59:08.209057 [0] process_blocks trellis1/2 fail blk=0 (kept)
+10/04/26 18:59:08.209165 [0] process_blocks trellis1/2 fail blk=1 (kept)
+10/04/26 18:59:08.209189 [0] process_blocks trellis1/2 fail blk=2 (kept)
+10/04/26 18:59:08.209204 [0] process_blocks trellis1/2 fail blk=3 (kept)
+10/04/26 18:59:08.209219 [0] process_blocks trellis1/2 fail blk=4 (kept)
+10/04/26 18:59:08.209232 [0] process_blocks trellis1/2 fail blk=5 (kept)
+10/04/26 18:59:08.209245 [0] process_blocks trellis1/2 fail blk=6 (kept)
+10/04/26 18:59:08.209258 [0] process_blocks trellis1/2 fail blk=7 (kept)
+10/04/26 18:59:08.209272 [0] process_blocks trellis1/2 fail blk=8 (kept)
+10/04/26 18:59:08.209286 [0] process_blocks trellis1/2 fail blk=9 (kept)
+10/04/26 18:59:08.209298 [0] process_blocks trellis1/2 fail blk=10 (kept)
+10/04/26 18:59:08.209312 [0] process_blocks trellis1/2 fail blk=11 (kept)
+10/04/26 18:59:08.209326 [0] process_blocks trellis1/2 fail blk=12 (kept)
+10/04/26 18:59:08.209340 [0] process_blocks trellis1/2 fail blk=13 (kept)
+10/04/26 18:59:08.209354 [0] PDU header CRC fail nblk=14
+10/04/26 18:59:08.209369 [0] PDU process_blocks rc=0 nblk=14 fr_len=2946
+10/04/26 18:59:08.209384 [0] PDU LONG/FAIL hex:  [0f0000000000000000000000]  [74f50c000000000000000000]  [100000000000000000000000]  [000000000000000000000000]  [800000000000000000000000]  [000000000000000000000000]  [000000000000000000000000]  [000000000000000000000000]  [000000000000000000000000]  [3f0000000000000000000000]  [000000000000000000000000]  [fb4000000000000000000000]  [000000000000000000000000]  [400000000000000000000000]
+10/04/26 18:59:08.211078 [0] PDU header CRC fail nblk=14 maybe_rid=0 (unverified, CRC failed) : 0f 00 00 00 00 00 00 00 00 00 00 00
+10/04/26 19:02:51.833692 [1] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 19:02:51.833782 [1] ACK/RX rid=4443197 sap=11 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 19:02:51.833808 [1] NAC 0x368 PDU hex: fmt=0x03 sap=11 blks=0 nblk=1 :  [230b0043cc3d800000003397]
+10/04/26 19:07:24.521651 [0] process_blocks trellis1/2 fail blk=0 (kept)
+10/04/26 19:07:24.521760 [0] process_blocks trellis1/2 fail blk=1 (kept)
+10/04/26 19:07:24.521787 [0] process_blocks trellis1/2 fail blk=2 (kept)
+10/04/26 19:07:24.521805 [0] process_blocks trellis1/2 fail blk=3 (kept)
+10/04/26 19:07:24.521820 [0] process_blocks trellis1/2 fail blk=4 (kept)
+10/04/26 19:07:24.521836 [0] process_blocks trellis1/2 fail blk=5 (kept)
+10/04/26 19:07:24.521849 [0] PDU header CRC fail nblk=6
+10/04/26 19:07:24.521864 [0] PDU process_blocks rc=0 nblk=6 fr_len=1506
+10/04/26 19:07:24.521878 [0] PDU LONG/FAIL hex:  [2a0000000000000000000000]  [000000000000000000000000]  [c00000000000000000000000]  [a7d400000000000000000000]  [000000000000000000000000]  [7ae400000000000000000000]
+10/04/26 19:07:24.522672 [0] PDU header CRC fail nblk=6 maybe_rid=0 (unverified, CRC failed) : 2a 00 00 00 00 00 00 00 00 00 00 00
+10/04/26 19:09:15.110723 [1] process_blocks trellis1/2 fail blk=1 (kept)
+10/04/26 19:09:15.110828 [1] process_blocks trellis1/2 fail blk=2 (kept)
+10/04/26 19:09:15.110851 [1] process_blocks trellis1/2 fail blk=3 (kept)
+10/04/26 19:09:15.110867 [1] process_blocks trellis1/2 fail blk=4 (kept)
+10/04/26 19:09:15.110885 [1] PDU process_blocks rc=0 nblk=5 fr_len=1130
+10/04/26 19:09:15.110900 [1] PDU LONG/FAIL hex:  [230d0043cc46800000009866]  [000000000000000000000000]  [a00000000000000000000000]  [000000000000000000000000]  [000000000000000000000000]
+10/04/26 19:09:15.111603 [1] ACK/RX rid=4443206 sap=13 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 19:09:15.111629 [1] NAC 0x368 PDU hex: fmt=0x03 sap=13 blks=0 nblk=5 :  [230d0043cc46800000009866]  [000000000000000000000000]  [a00000000000000000000000]  [000000000000000000000000]  [000000000000000000000000]
+10/04/26 19:10:34.559461 [0] process_blocks trellis1/2 fail blk=0 (kept)
+10/04/26 19:10:34.559568 [0] process_blocks trellis1/2 fail blk=1 (kept)
+10/04/26 19:10:34.559593 [0] process_blocks trellis1/2 fail blk=2 (kept)
+10/04/26 19:10:34.559607 [0] process_blocks trellis1/2 fail blk=3 (kept)
+10/04/26 19:10:34.559628 [0] PDU header CRC fail nblk=4
+  D34 cost=12 FAIL (threshold=8)
+  D34 cost=12 FAIL (threshold=8)
+  D34 cost=13 FAIL (threshold=8)
+10/04/26 19:10:34.560122 [0] PDU process_blocks rc=0 nblk=4 fr_len=1096
+10/04/26 19:10:34.560134 [0] PDU LONG/FAIL hex:  [2303aaa2a800000000000000]  [000000000000000000000000]  [4c0200000000000000000000]  [540000000000000000000000]
+10/04/26 19:10:34.560530 [0] PDU header CRC fail nblk=4 maybe_rid=10659840 (unverified, CRC failed) : 23 03 aa a2 a8 00 00 00 00 00 00 00
+10/04/26 19:10:34.726076 [0] process_blocks trellis1/2 fail blk=0 (kept)
+10/04/26 19:10:34.726170 [0] process_blocks trellis1/2 fail blk=1 (kept)
+10/04/26 19:10:34.726195 [0] process_blocks trellis1/2 fail blk=2 (kept)
+10/04/26 19:10:34.726208 [0] PDU header CRC fail nblk=3
+  D34 cost=12 FAIL (threshold=8)
+  D34 cost=10 FAIL (threshold=8)
+10/04/26 19:10:34.726531 [0] PDU process_blocks rc=0 nblk=3 fr_len=880
+10/04/26 19:10:34.726548 [0] PDU LONG/FAIL hex:  [76c600090000000000000000]  [180000000000000000000000]  [000000000000000000000000]
+10/04/26 19:10:34.726953 [0] PDU header CRC fail nblk=3 maybe_rid=589824 (unverified, CRC failed) : 76 c6 00 09 00 00 00 00 00 00 00 00
+10/04/26 19:10:56.986593 [3] process_blocks trellis1/2 fail blk=0 (kept)
+10/04/26 19:10:56.986696 [3] PDU header CRC fail nblk=1
+10/04/26 19:10:56.986721 [3] PDU process_blocks rc=0 nblk=1 fr_len=514
+10/04/26 19:10:56.986739 [3] PDU LONG/FAIL hex:  [000000000000000000000000]
+10/04/26 19:10:56.986890 [3] PDU header CRC fail nblk=1 maybe_rid=0 (unverified, CRC failed) : 00 00 00 00 00 00 00 00 00 00 00 00
+10/04/26 19:11:08.276203 [0] process_blocks trellis1/2 fail blk=0 (kept)
+10/04/26 19:11:08.276312 [0] process_blocks trellis1/2 fail blk=1 (kept)
+10/04/26 19:11:08.276338 [0] process_blocks trellis1/2 fail blk=2 (kept)
+10/04/26 19:11:08.276354 [0] process_blocks trellis1/2 fail blk=3 (kept)
+10/04/26 19:11:08.276369 [0] PDU header CRC fail nblk=4
+10/04/26 19:11:08.276385 [0] PDU process_blocks rc=0 nblk=4 fr_len=1080
+10/04/26 19:11:08.276400 [0] PDU LONG/FAIL hex:  [000000000000000000000000]  [c00000000000000000000000]  [d20000000000000000000000]  [f40000000000000000000000]
+10/04/26 19:11:08.276878 [0] PDU header CRC fail nblk=4 maybe_rid=0 (unverified, CRC failed) : 00 00 00 00 00 00 00 00 00 00 00 00
+10/04/26 19:11:10.437723 [1] process_blocks trellis1/2 fail blk=0 (kept)
+10/04/26 19:11:10.437796 [1] PDU header CRC fail nblk=1
+10/04/26 19:11:10.437822 [1] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 19:11:10.437838 [1] PDU header CRC fail nblk=1 maybe_rid=4443179 (unverified, CRC failed) : 23 0e 00 43 cc 2b 80 00 00 00 00 00
+10/04/26 19:11:38.364619 [2] process_blocks trellis1/2 fail blk=1 (kept)
+10/04/26 19:11:38.364727 [2] process_blocks trellis1/2 fail blk=2 (kept)
+10/04/26 19:11:38.364753 [2] process_blocks trellis1/2 fail blk=3 (kept)
+10/04/26 19:11:38.364771 [2] process_blocks trellis1/2 fail blk=4 (kept)
+10/04/26 19:11:38.364789 [2] PDU process_blocks rc=0 nblk=5 fr_len=1132
+10/04/26 19:11:38.364804 [2] PDU LONG/FAIL hex:  [230a0043cc6380000000022e]  [000000000000000000000000]  [e00000000000000000000000]  [940000000000000000000000]  [fc8800000000000000000000]
+10/04/26 19:11:38.365463 [2] ACK/RX rid=4443235 sap=10 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 19:11:38.365484 [2] NAC 0x368 PDU hex: fmt=0x03 sap=10 blks=0 nblk=5 :  [230a0043cc6380000000022e]  [000000000000000000000000]  [e00000000000000000000000]  [940000000000000000000000]  [fc8800000000000000000000]
+10/04/26 19:13:30.406244 [0] process_blocks trellis1/2 fail blk=1 (kept)
+10/04/26 19:13:30.406351 [0] process_blocks trellis1/2 fail blk=2 (kept)
+10/04/26 19:13:30.406375 [0] process_blocks trellis1/2 fail blk=3 (kept)
+10/04/26 19:13:30.406394 [0] PDU process_blocks rc=0 nblk=4 fr_len=1108
+10/04/26 19:13:30.406409 [0] PDU LONG/FAIL hex:  [230d0043cc558000000072ee]  [000000000000000000000000]  [cd0000000000000000000000]  [000000000000000000000000]
+10/04/26 19:13:30.406961 [0] ACK/RX rid=4443221 sap=13 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 19:13:30.407040 [0] NAC 0x368 PDU hex: fmt=0x03 sap=13 blks=0 nblk=4 :  [230d0043cc558000000072ee]  [000000000000000000000000]  [cd0000000000000000000000]  [000000000000000000000000]
+10/04/26 19:13:36.782586 [2] process_blocks trellis1/2 fail blk=0 (kept)
+10/04/26 19:13:36.782688 [2] process_blocks trellis1/2 fail blk=1 (kept)
+10/04/26 19:13:36.782716 [2] process_blocks trellis1/2 fail blk=2 (kept)
+10/04/26 19:13:36.782735 [2] process_blocks trellis1/2 fail blk=3 (kept)
+10/04/26 19:13:36.782753 [2] PDU header CRC fail nblk=4
+  D34 cost=12 FAIL (threshold=8)
+  D34 cost=11 FAIL (threshold=8)
+  D34 cost=11 FAIL (threshold=8)
+10/04/26 19:13:36.783227 [2] PDU process_blocks rc=0 nblk=4 fr_len=1064
+10/04/26 19:13:36.783244 [2] PDU LONG/FAIL hex:  [2f0580000000000000000000]  [500000000000000000000000]  [000000000000000000000000]  [340000000000000000000000]
+10/04/26 19:13:36.783825 [2] PDU header CRC fail nblk=4 maybe_rid=0 (unverified, CRC failed) : 2f 05 80 00 00 00 00 00 00 00 00 00
+10/04/26 19:13:37.895393 [3] process_blocks trellis1/2 fail blk=0 (kept)
+10/04/26 19:13:37.895486 [3] process_blocks trellis1/2 fail blk=1 (kept)
+10/04/26 19:13:37.895507 [3] PDU header CRC fail nblk=2
+10/04/26 19:13:37.895523 [3] PDU process_blocks rc=0 nblk=2 fr_len=714
+10/04/26 19:13:37.895540 [3] PDU LONG/FAIL hex:  [200000000000000000000000]  [000000000000000000000000]
+10/04/26 19:13:37.895826 [3] PDU header CRC fail nblk=2 maybe_rid=0 (unverified, CRC failed) : 20 00 00 00 00 00 00 00 00 00 00 00
+10/04/26 19:14:07.388381 [1] process_blocks trellis1/2 fail blk=0 (kept)
+10/04/26 19:14:07.388489 [1] PDU header CRC fail nblk=1
+10/04/26 19:14:07.388515 [1] PDU process_blocks rc=0 nblk=1 fr_len=330
+10/04/26 19:14:07.388533 [1] PDU header CRC fail nblk=1 maybe_rid=0 (unverified, CRC failed) : 22 00 00 00 00 00 00 00 00 00 00 00
+Ctrl-C detected
+10/04/26 19:16:27.641532 rx_block::stop() flowgraph stop called

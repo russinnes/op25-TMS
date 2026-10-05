@@ -1,0 +1,1300 @@
+Using Python /usr/bin/python3
+Starting OP25 (pid = 79411)
+Enabled trunking module: tk_p25.py
+device: {'name': 'rtl_a', 'args': 'rtl=0', 'rate': 2568000, 'frequency': 772593750, 'offset': 0, 'ppm': 59, 'gain_mode': False, 'gains': 'LNA:32', 'tunable': False, 'usable_bw_pct': 0.85}
+WARNING: requested sample rate 2568000 for device rtl_a may not
+be optimal.  You may want to use one of the following rates
+[250000, 1000000, 1024000, 1800000, 1920000, 2000000, 2048000, 2400000, 2560000]
+Device name: "rtl_a", osmosdr args: "rtl=0"
+gr-osmosdr 0.2.0.0 (0.2.0) gnuradio 3.10.5.1
+built-in source types: file fcd rtl rtl_tcp uhd hackrf bladerf rfspace airspy airspyhf soapy redpitaya freesrp xtrx 
+Using device #0 Realtek RTL2838UHIDIR SN: 30
+Found Rafael Micro R820T tuner
+[R82XX] PLL not locked!
+gr-osmosdr driver gain_mode: False
+Exact sample rate is: 2568000.183678 Hz
+[R82XX] PLL not locked!
+channel (dev rtl_a): {'name': 'COCH2_ch237', 'device': 'rtl_a', 'frequency': 772043750, 'demod_type': 'cqpsk', 'filter_type': 'rrc', 'excess_bw': 0.2, 'if_rate': 24000, 'symbol_rate': 4800, 'enable_analog': 'off', 'destination': '0.0.0.0:0', 'gain_mu': 0.04, 'costas_alpha': 0.02}
+demodulator: xlator if_rate=24000, input_rate=2568000, decim=107, if taps=[515,49], resampled_rate=24000, sps=5
+10/04/26 12:48:38.711480 [0] op25_audio::op25_audio: destination: 0.0.0.0:0 [schema: , host: , port: ]
+Receiver 'COCH2_ch237' configured with unknown trunking_sysname 'undefined'
+channel (dev rtl_a): {'name': 'COCH2_ch262', 'device': 'rtl_a', 'frequency': 772356250, 'demod_type': 'cqpsk', 'filter_type': 'rrc', 'excess_bw': 0.2, 'if_rate': 24000, 'symbol_rate': 4800, 'enable_analog': 'off', 'destination': '0.0.0.0:0', 'gain_mu': 0.04, 'costas_alpha': 0.02}
+demodulator: xlator if_rate=24000, input_rate=2568000, decim=107, if taps=[515,49], resampled_rate=24000, sps=5
+10/04/26 12:48:38.741845 [1] op25_audio::op25_audio: destination: 0.0.0.0:0 [schema: , host: , port: ]
+Receiver 'COCH2_ch262' configured with unknown trunking_sysname 'undefined'
+channel (dev rtl_a): {'name': 'COCH2_ch300', 'device': 'rtl_a', 'frequency': 772831250, 'demod_type': 'cqpsk', 'filter_type': 'rrc', 'excess_bw': 0.2, 'if_rate': 24000, 'symbol_rate': 4800, 'enable_analog': 'off', 'destination': '0.0.0.0:0', 'gain_mu': 0.04, 'costas_alpha': 0.02}
+demodulator: xlator if_rate=24000, input_rate=2568000, decim=107, if taps=[515,49], resampled_rate=24000, sps=5
+10/04/26 12:48:38.773024 [2] op25_audio::op25_audio: destination: 0.0.0.0:0 [schema: , host: , port: ]
+Receiver 'COCH2_ch300' configured with unknown trunking_sysname 'undefined'
+channel (dev rtl_a): {'name': 'COCH2_ch355', 'device': 'rtl_a', 'frequency': 773518750, 'demod_type': 'cqpsk', 'filter_type': 'rrc', 'excess_bw': 0.2, 'if_rate': 24000, 'symbol_rate': 4800, 'enable_analog': 'off', 'destination': '0.0.0.0:0', 'gain_mu': 0.04, 'costas_alpha': 0.02}
+demodulator: xlator if_rate=24000, input_rate=2568000, decim=107, if taps=[515,49], resampled_rate=24000, sps=5
+10/04/26 12:48:38.804180 [3] op25_audio::op25_audio: destination: 0.0.0.0:0 [schema: , host: , port: ]
+Receiver 'COCH2_ch355' configured with unknown trunking_sysname 'undefined'
+channel (dev rtl_a): {'name': 'RADNOR_773593', 'device': 'rtl_a', 'frequency': 773593750, 'demod_type': 'cqpsk', 'filter_type': 'rrc', 'excess_bw': 0.2, 'if_rate': 24000, 'symbol_rate': 4800, 'enable_analog': 'off', 'destination': '0.0.0.0:0', 'gain_mu': 0.04, 'costas_alpha': 0.02}
+demodulator: xlator if_rate=24000, input_rate=2568000, decim=107, if taps=[515,49], resampled_rate=24000, sps=5
+10/04/26 12:48:38.835922 [4] op25_audio::op25_audio: destination: 0.0.0.0:0 [schema: , host: , port: ]
+Receiver 'RADNOR_773593' configured with unknown trunking_sysname 'undefined'
+python version detected: 3.11.2 (main, May 12 2026, 05:17:27) [GCC 12.2.0]
+Allocating 15 zero-copy buffers
+10/04/26 12:48:48.114034 [0] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 12:48:48.114192 [0] ACK/RX rid=4116269 sap=9 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 12:48:48.114215 [0] NAC 0x368 PDU hex: fmt=0x03 sap=9 blks=0 nblk=1 :  [2309003ecf2d800000005121]
+10/04/26 12:48:48.319217 [0] process_blocks trellis1/2 fail blk=1 (kept)
+10/04/26 12:48:48.319335 [0] process_blocks trellis1/2 fail blk=2 (kept)
+10/04/26 12:48:48.319353 [0] CONFIRMED blk1 rid=4116269: 00 a5 01 03 f1 0a ae b9 f5 00 00 20 00 10 00 f5 f5 f5
+10/04/26 12:48:48.319353 [0] CONFIRMED blk2 rid=4116269: 03 c6 f5 f5 f5 f5 f5 f5 f5 f5 f5 f5 f5 f5 ca 80 73 54
+10/04/26 12:48:48.319353 [0] PDU hdr fmt=0x16 sap=6 rid=4116269 blks_hdr=2 n34=2 fr_len=720
+10/04/26 12:48:48.319353 [0] SNDCP ctrl rid=4116269 n34=2
+10/04/26 12:48:48.319974 [0] PDU process_blocks rc=0 nblk=3 fr_len=720
+10/04/26 12:48:48.320000 [0] PDU LONG/FAIL hex:  [76c6003ecf2d820f480048de]  [000000000000000000000000]  [045000000000000000000000]
+10/04/26 12:48:48.320434 [0] NAC 0x368 PDU hex: fmt=0x16 sap=6 blks=2 nblk=3 :  [76c6003ecf2d820f480048de]  [000000000000000000000000]  [045000000000000000000000]
+10/04/26 12:48:53.164709 [2] process_blocks trellis1/2 fail blk=1 (kept)
+10/04/26 12:48:53.164880 [2] PDU process_blocks rc=0 nblk=2 fr_len=576
+10/04/26 12:48:53.164915 [2] PDU LONG/FAIL hex:  [2382003ecf2d810000009c9c]  [f00000000000000000000000]
+10/04/26 12:48:53.165215 [2] PDU rid=4116269 fmt=0x03 sap=2 blks=1 (other/unhandled fmt)
+10/04/26 12:48:53.165235 [2] NAC 0x368 PDU hex: fmt=0x03 sap=2 blks=1 nblk=2 :  [2382003ecf2d810000009c9c]  [f00000000000000000000000]
+10/04/26 12:48:53.495562 [2] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 12:48:53.495669 [2] ACK/RX rid=4116269 sap=10 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 12:48:53.495697 [2] NAC 0x368 PDU hex: fmt=0x03 sap=10 blks=0 nblk=1 :  [230a003ecf2d800000007c65]
+10/04/26 12:48:53.738109 [2] process_blocks trellis1/2 fail blk=1 (kept)
+10/04/26 12:48:53.738223 [2] process_blocks trellis1/2 fail blk=2 (kept)
+10/04/26 12:48:53.738240 [2] process_blocks trellis1/2 fail blk=3 (kept)
+  D34 cost=1 ok
+10/04/26 12:48:53.738253 [2] CONFIRMED blk1 rid=4116269: 00 4c 51 00 45 00 00 1f cc 3f 00 00 77 11 c7 b8 0a ac
+  D34 cost=2 ok
+10/04/26 12:48:53.738253 [2] CONFIRMED blk2 rid=4116269: 02 5d e0 86 0a ae b9 f5 f9 3e 0f a5 00 0b 08 1d 00 01
+  D34 cost=1 ok
+10/04/26 12:48:53.738253 [2] CONFIRMED blk3 rid=4116269: 04 e7 3f f5 f5 f5 f5 f5 f5 f5 f5 f5 f5 f5 01 18 f1 db
+10/04/26 12:48:53.738253 [2] PDU hdr fmt=0x16 sap=0 rid=4116269 blks_hdr=3 n34=3 fr_len=936
+10/04/26 12:48:53.738253 [2] [2] REASM rid=4116269 len=31
+10/04/26 12:48:53.738253 [2] [2] IP rid=4116269 ver=4 ihl=20 tot=31 have=31 proto=0x11 10.172.224.134 -> 10.174.185.245
+10/04/26 12:48:53.738253 [2] [2] UDP rid=4116269 10.172.224.134:63806 -> 10.174.185.245:4005 udp_len=11 payload=3
+10/04/26 12:48:53.738253 [2] [2] HEXDUMP rid=4116269 len=3:
+10/04/26 12:48:53.738253 [2] [2] HEX rid=4116269 0000: 00 01 3f                                          |..?|
+10/04/26 12:48:53.738253 [2] [2] TMS_TEXT rid=4116269 text=
+10/04/26 12:48:53.738253 [2] [2] REASM raw rid=4116269 leftover=15
+10/04/26 12:48:53.739700 [2] PDU process_blocks rc=0 nblk=4 fr_len=936
+10/04/26 12:48:53.739738 [2] PDU LONG/FAIL hex:  [76c0003ecf2d830b78029df5]  [038000000000000000000000]  [0cc000000000000000000000]  [000000000000000000000000]
+10/04/26 12:48:53.740318 [2] NAC 0x368 PDU hex: fmt=0x16 sap=0 blks=3 nblk=4 :  [76c0003ecf2d830b78029df5]  [038000000000000000000000]  [0cc000000000000000000000]  [000000000000000000000000]
+10/04/26 12:48:54.341466 [2] process_blocks trellis1/2 fail blk=0 (kept)
+10/04/26 12:48:54.341584 [2] process_blocks trellis1/2 fail blk=1 (kept)
+10/04/26 12:48:54.341601 [2] PDU header CRC fail nblk=2
+  D34 cost=8 ok
+10/04/26 12:48:54.341704 [2] PDU process_blocks rc=0 nblk=2 fr_len=576
+10/04/26 12:48:54.341719 [2] PDU LONG/FAIL hex:  [2383003e0000000000000000]  [f00000000000000000000000]
+10/04/26 12:48:54.342028 [2] PDU header CRC fail nblk=2 maybe_rid=4063232 (unverified, CRC failed) : 23 83 00 3e 00 00 00 00 00 00 00 00
+10/04/26 12:48:54.697421 [2] process_blocks trellis1/2 fail blk=0 (kept)
+10/04/26 12:48:54.697530 [2] PDU header CRC fail nblk=1
+10/04/26 12:48:54.697550 [2] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 12:48:54.697628 [2] PDU header CRC fail nblk=1 maybe_rid=4116269 (unverified, CRC failed) : 23 0b 00 3e cf 2d 80 00 00 00 00 00
+10/04/26 12:48:54.917562 [2] process_blocks trellis1/2 fail blk=0 (kept)
+10/04/26 12:48:54.917671 [2] process_blocks trellis1/2 fail blk=1 (kept)
+10/04/26 12:48:54.917690 [2] process_blocks trellis1/2 fail blk=2 (kept)
+10/04/26 12:48:54.917704 [2] process_blocks trellis1/2 fail blk=3 (kept)
+10/04/26 12:48:54.917718 [2] PDU header CRC fail nblk=4
+  D34 cost=4 ok
+  D34 cost=1 ok
+10/04/26 12:48:54.917718 [2] [2] SALVAGE_TMS rid=4063232 (unverified -- no live session, header CRC failed, 3/3 blocks accepted)
+10/04/26 12:48:54.917718 [2] [2] SALVAGE_IP rid=4063232 ver=4 ihl=20 tot=32 have=46 proto=0x11 10.146.224.134 -> 10.174.185.245
+10/04/26 12:48:54.917718 [2] [2] SALVAGE_UDP rid=4063232 10.146.224.134:63806 -> 10.174.185.245:4007 udp_len=12 payload=18
+10/04/26 12:48:54.917718 [2] [2] *** SALVAGE_TMS PAYLOAD rid=4063232 len=18 (port 4007, normally 4) ***
+10/04/26 12:48:54.917718 [2] [2] SALVAGE_HEXDUMP rid=4063232 len=18:
+10/04/26 12:48:54.917718 [2] [2] HEX rid=4063232 0000: 00 02 70 00 f5 f5 f5 f5  f5 f5 f5 f5 f5 f5 be bc  |..p.............|
+10/04/26 12:48:54.917718 [2] [2] HEX rid=4063232 0010: 47 e4                                             |G.|
+10/04/26 12:48:54.917718 [2] [2] SALVAGE_TMS_TEXT rid=4063232 text=p
+10/04/26 12:48:54.918571 [2] PDU process_blocks rc=0 nblk=4 fr_len=936
+10/04/26 12:48:54.918595 [2] PDU LONG/FAIL hex:  [76c0003e0000000000000000]  [000000000000000000000000]  [0c0000000000000000000000]  [000000000000000000000000]
+10/04/26 12:48:54.919173 [2] PDU header CRC fail nblk=4 maybe_rid=4063232 (unverified, CRC failed) : 76 c0 00 3e 00 00 00 00 00 00 00 00
+10/04/26 12:48:55.460070 [2] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 12:48:55.460163 [2] ACK/RX rid=4116269 sap=12 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 12:48:55.460182 [2] NAC 0x368 PDU hex: fmt=0x03 sap=12 blks=0 nblk=1 :  [230c003ecf2d8000000026ed]
+10/04/26 12:49:01.597844 [0] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 12:49:01.597956 [0] ACK/RX rid=4443197 sap=10 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 12:49:01.597985 [0] NAC 0x368 PDU hex: fmt=0x03 sap=10 blks=0 nblk=1 :  [230a0043cc3d80000000d8b4]
+10/04/26 12:49:06.740986 [2] process_blocks trellis1/2 fail blk=0 (kept)
+10/04/26 12:49:06.741155 [2] process_blocks trellis1/2 fail blk=1 (kept)
+10/04/26 12:49:06.741180 [2] process_blocks trellis1/2 fail blk=2 (kept)
+10/04/26 12:49:06.741195 [2] process_blocks trellis1/2 fail blk=3 (kept)
+10/04/26 12:49:06.741209 [2] process_blocks trellis1/2 fail blk=4 (kept)
+10/04/26 12:49:06.741223 [2] process_blocks trellis1/2 fail blk=5 (kept)
+10/04/26 12:49:06.741236 [2] process_blocks trellis1/2 fail blk=6 (kept)
+10/04/26 12:49:06.741249 [2] PDU header CRC fail nblk=7
+10/04/26 12:49:06.741264 [2] PDU process_blocks rc=0 nblk=7 fr_len=1584
+10/04/26 12:49:06.741279 [2] PDU LONG/FAIL hex:  [000000000000000000000000]  [080000000000000000000000]  [060000000000000000000000]  [000000000000000000000000]  [000000000000000000000000]  [000000000000000000000000]  [c00000000000000000000000]
+10/04/26 12:49:06.742301 [2] PDU header CRC fail nblk=7 maybe_rid=0 (unverified, CRC failed) : 00 00 00 00 00 00 00 00 00 00 00 00
+10/04/26 12:49:06.782394 [1] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 12:49:06.782505 [1] ACK/RX rid=4443223 sap=13 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 12:49:06.782523 [1] NAC 0x368 PDU hex: fmt=0x03 sap=13 blks=0 nblk=1 :  [230d0043cc5780000000366d]
+10/04/26 12:49:08.932954 [2] process_blocks trellis1/2 fail blk=0 (kept)
+10/04/26 12:49:08.933097 [2] process_blocks trellis1/2 fail blk=1 (kept)
+10/04/26 12:49:08.933118 [2] process_blocks trellis1/2 fail blk=2 (kept)
+10/04/26 12:49:08.933132 [2] process_blocks trellis1/2 fail blk=3 (kept)
+10/04/26 12:49:08.933146 [2] process_blocks trellis1/2 fail blk=4 (kept)
+10/04/26 12:49:08.933263 [2] PDU header CRC fail nblk=5
+  D34 cost=2 ok
+  D34 cost=1 ok
+  D34 cost=1 ok
+10/04/26 12:49:08.933263 [2] [2] SALVAGE_TMS rid=4116269 (unverified -- no live session, header CRC failed, 4/4 blocks accepted)
+10/04/26 12:49:08.933263 [2] [2] SALVAGE_IP rid=4116269 ver=4 ihl=20 tot=53 have=62 proto=0x11 10.173.254.50 -> 10.174.185.245
+10/04/26 12:49:08.933263 [2] [2] SALVAGE_UDP rid=4116269 10.173.254.50:64414 -> 10.174.185.245:64414 udp_len=33 payload=34
+10/04/26 12:49:08.933623 [2] PDU process_blocks rc=0 nblk=5 fr_len=1152
+10/04/26 12:49:08.933642 [2] PDU LONG/FAIL hex:  [76c0003ecf2d840000000000]  [0bc2a9d40250000000000000]  [060000000000000000000000]  [000000000000000000000000]  [000000000000000000000000]
+10/04/26 12:49:08.934340 [2] PDU header CRC fail nblk=5 maybe_rid=4116269 (unverified, CRC failed) : 76 c0 00 3e cf 2d 84 00 00 00 00 00
+10/04/26 12:49:31.589535 [1] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 12:49:31.589680 [1] ACK/RX rid=4443197 sap=11 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 12:49:31.589705 [1] NAC 0x368 PDU hex: fmt=0x03 sap=11 blks=0 nblk=1 :  [230b0043cc3d800000003397]
+10/04/26 12:49:36.752393 [2] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 12:49:36.752502 [2] ACK/RX rid=4443223 sap=14 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 12:49:36.752555 [2] NAC 0x368 PDU hex: fmt=0x03 sap=14 blks=0 nblk=1 :  [230e0043cc57800000001b29]
+10/04/26 12:49:47.597297 [3] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 12:49:47.597457 [3] ACK/RX rid=4443225 sap=13 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 12:49:47.597481 [3] NAC 0x368 PDU hex: fmt=0x03 sap=13 blks=0 nblk=1 :  [230d0043cc5980000000f9c5]
+10/04/26 12:50:17.647943 [1] PDU process_blocks rc=0 nblk=2 fr_len=576
+10/04/26 12:50:17.648063 [1] PDU LONG/FAIL hex:  [23860043cc59810000003478]  [f0ffffffffffffff03d74f22]
+10/04/26 12:50:17.648397 [1] PDU rid=4443225 fmt=0x03 sap=6 blks=1 (other/unhandled fmt)
+10/04/26 12:50:17.648416 [1] NAC 0x368 PDU hex: fmt=0x03 sap=6 blks=1 nblk=2 :  [23860043cc59810000003478]  [f0ffffffffffffff03d74f22]
+10/04/26 12:50:22.497280 [1] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 12:50:22.497385 [1] ACK/RX rid=4443225 sap=14 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 12:50:22.497406 [1] NAC 0x368 PDU hex: fmt=0x03 sap=14 blks=0 nblk=1 :  [230e0043cc5980000000d481]
+10/04/26 12:50:31.371847 [1] process_blocks trellis1/2 fail blk=1 (kept)
+10/04/26 12:50:31.372004 [1] process_blocks trellis1/2 fail blk=2 (kept)
+10/04/26 12:50:31.372030 [1] process_blocks trellis1/2 fail blk=3 (kept)
+10/04/26 12:50:31.372051 [1] process_blocks trellis1/2 fail blk=4 (kept)
+  D34 cost=1 ok
+10/04/26 12:50:31.372065 [1] CONFIRMED blk1 rid=4116120: 01 2e 51 00 45 88 00 35 5a b1 00 00 3c 11 56 96 0a ad
+  D34 cost=1 ok
+10/04/26 12:50:31.372065 [1] CONFIRMED blk2 rid=4116120: 03 32 fe 32 0a ae b9 5b fb 9e fb 9e 00 21 1f 9f 00 00
+  D34 cost=1 ok
+10/04/26 12:50:31.372065 [1] CONFIRMED blk3 rid=4116120: 05 25 80 00 00 00 00 00 00 00 00 00 00 00 26 00 08 00
+  D34 cost=1 ok
+10/04/26 12:50:31.372065 [1] CONFIRMED blk4 rid=4116120: 06 75 3e ce 98 98 96 7e 00 f5 f5 f5 f5 f5 b3 3d ec a4
+10/04/26 12:50:31.372065 [1] PDU hdr fmt=0x16 sap=0 rid=4116120 blks_hdr=4 n34=4 fr_len=1152
+10/04/26 12:50:31.372065 [1] [1] REASM rid=4116120 len=53
+10/04/26 12:50:31.372065 [1] [1] IP rid=4116120 ver=4 ihl=20 tot=53 have=53 proto=0x11 10.173.254.50 -> 10.174.185.91
+10/04/26 12:50:31.372065 [1] [1] UDP rid=4116120 10.173.254.50:64414 -> 10.174.185.91:64414 udp_len=33 payload=25
+10/04/26 12:50:31.372065 [1] [1] BEACON rid=4116120 self_id=4116120 ok
+10/04/26 12:50:31.372065 [1] [1] REASM raw rid=4116120 leftover=9
+10/04/26 12:50:31.373570 [1] PDU process_blocks rc=0 nblk=5 fr_len=1152
+10/04/26 12:50:31.373608 [1] PDU LONG/FAIL hex:  [76c0003ece9884051802943a]  [000000000000000000000000]  [0c0000000000000000000000]  [000000000000000000000000]  [000000000000000000000000]
+10/04/26 12:50:31.374305 [1] NAC 0x368 PDU hex: fmt=0x16 sap=0 blks=4 nblk=5 :  [76c0003ece9884051802943a]  [000000000000000000000000]  [0c0000000000000000000000]  [000000000000000000000000]  [000000000000000000000000]
+10/04/26 12:50:32.454115 [4] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 12:50:32.454255 [4] ACK/RX rid=4447106 sap=14 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 12:50:32.454284 [4] NAC 0x36b PDU hex: fmt=0x03 sap=14 blks=0 nblk=1 :  [230e0043db8280000000dd59]
+10/04/26 12:50:32.659490 [4] process_blocks trellis1/2 fail blk=1 (kept)
+10/04/26 12:50:32.659592 [4] process_blocks trellis1/2 fail blk=2 (kept)
+10/04/26 12:50:32.659637 [4] CONFIRMED blk1 rid=4447106: 01 bb 01 03 f1 0a ae 8e 53 00 00 20 00 40 00 f5 f5 f5
+  D34 cost=1 ok
+10/04/26 12:50:32.659637 [4] CONFIRMED blk2 rid=4447106: 02 3b f5 f5 f5 f5 f5 f5 f5 f5 f5 f5 f5 f5 cd ba 27 b8
+10/04/26 12:50:32.659637 [4] PDU hdr fmt=0x16 sap=6 rid=4447106 blks_hdr=2 n34=2 fr_len=720
+10/04/26 12:50:32.659637 [4] SNDCP ctrl rid=4447106 n34=2
+10/04/26 12:50:32.660271 [4] PDU process_blocks rc=0 nblk=3 fr_len=720
+10/04/26 12:50:32.660293 [4] PDU LONG/FAIL hex:  [76c60043db82820f38007d54]  [0be6af7c0000000000000000]  [0ff000000000000000000000]
+10/04/26 12:50:32.660714 [4] NAC 0x36b PDU hex: fmt=0x16 sap=6 blks=2 nblk=3 :  [76c60043db82820f38007d54]  [0be6af7c0000000000000000]  [0ff000000000000000000000]
+10/04/26 12:50:38.780773 [4] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 12:50:38.780877 [4] ACK/RX rid=4447106 sap=15 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 12:50:38.780897 [4] NAC 0x36b PDU hex: fmt=0x03 sap=15 blks=0 nblk=1 :  [230f0043db8280000000367a]
+10/04/26 12:51:28.716444 [1] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 12:51:28.716575 [1] ACK/RX rid=4443233 sap=9 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 12:51:28.716596 [1] NAC 0x368 PDU hex: fmt=0x03 sap=9 blks=0 nblk=1 :  [23090043cc61800000006be9]
+10/04/26 12:51:58.355758 [3] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 12:51:58.355884 [3] ACK/RX rid=590131 sap=13 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 12:51:58.355906 [3] NAC 0x368 PDU hex: fmt=0x03 sap=13 blks=0 nblk=1 :  [230d00090133800000007866]
+10/04/26 12:51:58.556884 [3] process_blocks trellis1/2 fail blk=0 (kept)
+10/04/26 12:51:58.556995 [3] process_blocks trellis1/2 fail blk=1 (kept)
+10/04/26 12:51:58.557022 [3] PDU header CRC fail nblk=2
+  D34 cost=3 ok
+10/04/26 12:51:58.557181 [3] PDU process_blocks rc=0 nblk=2 fr_len=576
+10/04/26 12:51:58.557200 [3] PDU LONG/FAIL hex:  [76c000000000000000000000]  [010000000000000000000000]
+10/04/26 12:51:58.557515 [3] PDU header CRC fail nblk=2 maybe_rid=0 (unverified, CRC failed) : 76 c0 00 00 00 00 00 00 00 00 00 00
+10/04/26 12:52:32.320872 [0] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 12:52:32.321010 [0] ACK/RX rid=590131 sap=15 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 12:52:32.321038 [0] NAC 0x368 PDU hex: fmt=0x03 sap=15 blks=0 nblk=1 :  [230f0009013380000000be01]
+10/04/26 12:52:32.499547 [0] process_blocks trellis1/2 fail blk=1 (kept)
+  D34 cost=1 ok
+10/04/26 12:52:32.499704 [0] CONFIRMED blk1 rid=590131: 00 75 31 17 00 06 f5 f5 f5 f5 f5 f5 f5 f5 4a 77 73 d4
+10/04/26 12:52:32.499704 [0] PDU hdr fmt=0x16 sap=6 rid=590131 blks_hdr=1 n34=1 fr_len=576
+10/04/26 12:52:32.499704 [0] SNDCP ctrl rid=590131 n34=1
+10/04/26 12:52:32.500099 [0] PDU process_blocks rc=0 nblk=2 fr_len=576
+10/04/26 12:52:32.500121 [0] PDU LONG/FAIL hex:  [76c60009013381087800e6af]  [010000000000000000000000]
+10/04/26 12:52:32.500417 [0] NAC 0x368 PDU hex: fmt=0x16 sap=6 blks=1 nblk=2 :  [76c60009013381087800e6af]  [010000000000000000000000]
+10/04/26 12:52:49.325982 [2] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 12:52:49.326117 [2] ACK/RX rid=590131 sap=8 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 12:52:49.326138 [2] NAC 0x368 PDU hex: fmt=0x03 sap=8 blks=0 nblk=1 :  [230800090133800000000faa]
+10/04/26 12:52:49.525420 [2] process_blocks trellis1/2 fail blk=1 (kept)
+  D34 cost=1 ok
+10/04/26 12:52:49.525528 [2] CONFIRMED blk1 rid=590131: 00 75 31 17 00 06 f5 f5 f5 f5 f5 f5 f5 f5 4a 77 73 d4
+10/04/26 12:52:49.525528 [2] PDU hdr fmt=0x16 sap=6 rid=590131 blks_hdr=1 n34=1 fr_len=576
+10/04/26 12:52:49.525528 [2] SNDCP ctrl rid=590131 n34=1
+10/04/26 12:52:49.525850 [2] PDU process_blocks rc=0 nblk=2 fr_len=576
+10/04/26 12:52:49.525872 [2] PDU LONG/FAIL hex:  [76c60009013381084800e33a]  [010000000000000000000000]
+10/04/26 12:52:49.526166 [2] NAC 0x368 PDU hex: fmt=0x16 sap=6 blks=1 nblk=2 :  [76c60009013381084800e33a]  [010000000000000000000000]
+10/04/26 12:53:05.126611 [0] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 12:53:05.126741 [0] ACK/RX rid=4116729 sap=10 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 12:53:05.126763 [0] NAC 0x368 PDU hex: fmt=0x03 sap=10 blks=0 nblk=1 :  [230a003ed0f9800000001d06]
+10/04/26 12:53:05.349934 [0] process_blocks trellis1/2 fail blk=1 (kept)
+10/04/26 12:53:05.350041 [0] process_blocks trellis1/2 fail blk=2 (kept)
+10/04/26 12:53:05.350060 [0] process_blocks trellis1/2 fail blk=3 (kept)
+10/04/26 12:53:05.350074 [0] CONFIRMED blk1 rid=4116729: 00 50 51 00 45 00 00 1f d1 b3 00 00 77 11 c0 78 0a ac
+  D34 cost=1 ok
+10/04/26 12:53:05.350074 [0] CONFIRMED blk2 rid=4116729: 02 33 e0 86 0a ae bb c1 cb 98 0f a5 00 0b 33 f7 00 01
+  D34 cost=1 ok
+10/04/26 12:53:05.350074 [0] CONFIRMED blk3 rid=4116729: 04 aa 3f f5 f5 f5 f5 f5 f5 f5 f5 f5 f5 f5 9f cb 36 e9
+10/04/26 12:53:05.350074 [0] PDU hdr fmt=0x16 sap=0 rid=4116729 blks_hdr=3 n34=3 fr_len=936
+10/04/26 12:53:05.350074 [0] [0] REASM rid=4116729 len=31
+10/04/26 12:53:05.350074 [0] [0] IP rid=4116729 ver=4 ihl=20 tot=31 have=31 proto=0x11 10.172.224.134 -> 10.174.187.193
+10/04/26 12:53:05.350074 [0] [0] UDP rid=4116729 10.172.224.134:52120 -> 10.174.187.193:4005 udp_len=11 payload=3
+10/04/26 12:53:05.350074 [0] [0] HEXDUMP rid=4116729 len=3:
+10/04/26 12:53:05.350074 [0] [0] HEX rid=4116729 0000: 00 01 3f                                          |..?|
+10/04/26 12:53:05.350074 [0] [0] TMS_TEXT rid=4116729 text=
+10/04/26 12:53:05.350074 [0] [0] REASM raw rid=4116729 leftover=15
+10/04/26 12:53:05.351479 [0] PDU process_blocks rc=0 nblk=4 fr_len=936
+10/04/26 12:53:05.351523 [0] PDU LONG/FAIL hex:  [76c0003ed0f9830b3802f15a]  [01cc00000000000000000000]  [0f0000000000000000000000]  [000000000000000000000000]
+10/04/26 12:53:05.353298 [0] NAC 0x368 PDU hex: fmt=0x16 sap=0 blks=3 nblk=4 :  [76c0003ed0f9830b3802f15a]  [01cc00000000000000000000]  [0f0000000000000000000000]  [000000000000000000000000]
+10/04/26 12:53:05.757860 [0] process_blocks trellis1/2 fail blk=1 (kept)
+10/04/26 12:53:05.757972 [0] process_blocks trellis1/2 fail blk=2 (kept)
+10/04/26 12:53:05.757990 [0] process_blocks trellis1/2 fail blk=3 (kept)
+  D34 cost=1 ok
+10/04/26 12:53:05.758004 [0] CONFIRMED blk1 rid=4116729: 01 8b 51 00 45 00 00 20 d1 b4 00 00 77 11 c0 76 0a ac
+10/04/26 12:53:05.758004 [0] CONFIRMED blk2 rid=4116729: 03 84 e0 86 0a ae bb c1 cb 98 0f a7 00 0c 02 f2 00 02
+  D34 cost=1 ok
+10/04/26 12:53:05.758004 [0] CONFIRMED blk3 rid=4116729: 04 06 70 00 f5 f5 f5 f5 f5 f5 f5 f5 f5 f5 3e 18 b8 d0
+10/04/26 12:53:05.758004 [0] PDU hdr fmt=0x16 sap=0 rid=4116729 blks_hdr=3 n34=3 fr_len=936
+10/04/26 12:53:05.758004 [0] [0] REASM rid=4116729 len=32
+10/04/26 12:53:05.758004 [0] [0] IP rid=4116729 ver=4 ihl=20 tot=32 have=32 proto=0x11 10.172.224.134 -> 10.174.187.193
+10/04/26 12:53:05.758004 [0] [0] UDP rid=4116729 10.172.224.134:52120 -> 10.174.187.193:4007 udp_len=12 payload=4
+10/04/26 12:53:05.758004 [0] [0] HEXDUMP rid=4116729 len=4:
+10/04/26 12:53:05.758004 [0] [0] HEX rid=4116729 0000: 00 02 70 00                                       |..p.|
+10/04/26 12:53:05.758004 [0] [0] TMS_TEXT rid=4116729 text=p
+10/04/26 12:53:05.758004 [0] [0] REASM raw rid=4116729 leftover=14
+10/04/26 12:53:05.759343 [0] PDU process_blocks rc=0 nblk=4 fr_len=936
+10/04/26 12:53:05.759374 [0] PDU LONG/FAIL hex:  [76c0003ed0f9830a4802ce33]  [080000000000000000000000]  [078000000000000000000000]  [000000000000000000000000]
+10/04/26 12:53:05.760208 [0] NAC 0x368 PDU hex: fmt=0x16 sap=0 blks=3 nblk=4 :  [76c0003ed0f9830a4802ce33]  [080000000000000000000000]  [078000000000000000000000]  [000000000000000000000000]
+10/04/26 12:53:06.063885 [0] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 12:53:06.063962 [0] ACK/RX rid=4116729 sap=11 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 12:53:06.063978 [0] NAC 0x368 PDU hex: fmt=0x03 sap=11 blks=0 nblk=1 :  [230b003ed0f980000000f625]
+10/04/26 12:53:06.305724 [0] process_blocks trellis1/2 fail blk=1 (kept)
+10/04/26 12:53:06.305837 [0] process_blocks trellis1/2 fail blk=2 (kept)
+10/04/26 12:53:06.305861 [0] process_blocks trellis1/2 fail blk=3 (kept)
+  D34 cost=1 ok
+10/04/26 12:53:06.305876 [0] CONFIRMED blk1 rid=4116729: 01 8b 51 00 45 00 00 20 d1 b4 00 00 77 11 c0 76 0a ac
+10/04/26 12:53:06.305876 [0] CONFIRMED blk2 rid=4116729: 03 84 e0 86 0a ae bb c1 cb 98 0f a7 00 0c 02 f2 00 02
+  D34 cost=1 ok
+10/04/26 12:53:06.305876 [0] CONFIRMED blk3 rid=4116729: 04 06 70 00 f5 f5 f5 f5 f5 f5 f5 f5 f5 f5 3e 18 b8 d0
+10/04/26 12:53:06.305876 [0] PDU hdr fmt=0x16 sap=0 rid=4116729 blks_hdr=3 n34=3 fr_len=936
+10/04/26 12:53:06.305876 [0] [0] REASM rid=4116729 len=32
+10/04/26 12:53:06.305876 [0] [0] IP rid=4116729 ver=4 ihl=20 tot=32 have=32 proto=0x11 10.172.224.134 -> 10.174.187.193
+10/04/26 12:53:06.305876 [0] [0] UDP rid=4116729 10.172.224.134:52120 -> 10.174.187.193:4007 udp_len=12 payload=4
+10/04/26 12:53:06.305876 [0] [0] HEXDUMP rid=4116729 len=4:
+10/04/26 12:53:06.305876 [0] [0] HEX rid=4116729 0000: 00 02 70 00                                       |..p.|
+10/04/26 12:53:06.305876 [0] [0] TMS_TEXT rid=4116729 text=p
+10/04/26 12:53:06.305876 [0] [0] REASM raw rid=4116729 leftover=14
+10/04/26 12:53:06.307267 [0] PDU process_blocks rc=0 nblk=4 fr_len=936
+10/04/26 12:53:06.307307 [0] PDU LONG/FAIL hex:  [76c0003ed0f9830a5802cd40]  [080000000000000000000000]  [078000000000000000000000]  [000000000000000000000000]
+10/04/26 12:53:06.307913 [0] NAC 0x368 PDU hex: fmt=0x16 sap=0 blks=3 nblk=4 :  [76c0003ed0f9830a5802cd40]  [080000000000000000000000]  [078000000000000000000000]  [000000000000000000000000]
+10/04/26 12:53:06.357538 [1] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 12:53:06.357617 [1] ACK/RX rid=590131 sap=9 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 12:53:06.357636 [1] NAC 0x368 PDU hex: fmt=0x03 sap=9 blks=0 nblk=1 :  [23090009013380000000e489]
+10/04/26 12:53:06.556665 [1] process_blocks trellis1/2 fail blk=1 (kept)
+10/04/26 12:53:06.556788 [1] CONFIRMED blk1 rid=590131: 00 75 31 17 00 06 f5 f5 f5 f5 f5 f5 f5 f5 4a 77 73 d4
+10/04/26 12:53:06.556788 [1] PDU hdr fmt=0x16 sap=6 rid=590131 blks_hdr=1 n34=1 fr_len=576
+10/04/26 12:53:06.556788 [1] SNDCP ctrl rid=590131 n34=1
+10/04/26 12:53:06.557103 [1] PDU process_blocks rc=0 nblk=2 fr_len=576
+10/04/26 12:53:06.557121 [1] PDU LONG/FAIL hex:  [76c60009013381086800e5dc]  [010000000000000000000000]
+10/04/26 12:53:06.557412 [1] NAC 0x368 PDU hex: fmt=0x16 sap=6 blks=1 nblk=2 :  [76c60009013381086800e5dc]  [010000000000000000000000]
+10/04/26 12:53:06.832193 [0] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 12:53:06.832305 [0] ACK/RX rid=4116729 sap=12 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 12:53:06.832332 [0] NAC 0x368 PDU hex: fmt=0x03 sap=12 blks=0 nblk=1 :  [230c003ed0f980000000478e]
+10/04/26 12:53:09.120773 [2] process_blocks trellis1/2 fail blk=1 (kept)
+10/04/26 12:53:09.120892 [2] process_blocks trellis1/2 fail blk=2 (kept)
+10/04/26 12:53:09.120914 [2] process_blocks trellis1/2 fail blk=3 (kept)
+10/04/26 12:53:09.120928 [2] process_blocks trellis1/2 fail blk=4 (kept)
+  D34 cost=1 ok
+10/04/26 12:53:09.120950 [2] CONFIRMED blk1 rid=4116729: 00 65 51 00 45 88 00 35 10 0e 00 00 3c 11 9e d3 0a ad
+10/04/26 12:53:09.120950 [2] CONFIRMED blk2 rid=4116729: 03 80 fe 32 0a ae bb c1 fb 9e fb 9e 00 21 bc 36 00 00
+  D34 cost=1 ok
+10/04/26 12:53:09.120950 [2] CONFIRMED blk3 rid=4116729: 05 25 80 00 00 00 00 00 00 00 00 00 00 00 26 00 08 00
+10/04/26 12:53:09.120950 [2] CONFIRMED blk4 rid=4116729: 07 b2 3e d0 f9 98 96 7e 00 f5 f5 f5 f5 f5 c5 7a 12 6e
+10/04/26 12:53:09.120950 [2] PDU hdr fmt=0x16 sap=0 rid=4116729 blks_hdr=4 n34=4 fr_len=1152
+10/04/26 12:53:09.120950 [2] [2] REASM rid=4116729 len=53
+10/04/26 12:53:09.120950 [2] [2] IP rid=4116729 ver=4 ihl=20 tot=53 have=53 proto=0x11 10.173.254.50 -> 10.174.187.193
+10/04/26 12:53:09.120950 [2] [2] UDP rid=4116729 10.173.254.50:64414 -> 10.174.187.193:64414 udp_len=33 payload=25
+10/04/26 12:53:09.120950 [2] [2] BEACON rid=4116729 self_id=4116729 ok
+10/04/26 12:53:09.120950 [2] [2] REASM raw rid=4116729 leftover=9
+10/04/26 12:53:09.122423 [2] PDU process_blocks rc=0 nblk=5 fr_len=1152
+10/04/26 12:53:09.122453 [2] PDU LONG/FAIL hex:  [76c0003ed0f984052802b805]  [0352a9d40240000000000000]  [078970000000000000000000]  [000000000000000000000000]  [000000000000000000000000]
+10/04/26 12:53:09.123135 [2] NAC 0x368 PDU hex: fmt=0x16 sap=0 blks=4 nblk=5 :  [76c0003ed0f984052802b805]  [0352a9d40240000000000000]  [078970000000000000000000]  [000000000000000000000000]  [000000000000000000000000]
+10/04/26 12:53:24.636864 [0] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 12:53:24.636996 [0] ACK/RX rid=4443206 sap=14 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 12:53:24.637017 [0] NAC 0x368 PDU hex: fmt=0x03 sap=14 blks=0 nblk=1 :  [230e0043cc4680000000b522]
+10/04/26 12:53:25.026653 [1] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 12:53:25.026759 [1] ACK/RX rid=590133 sap=10 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 12:53:25.026779 [1] NAC 0x368 PDU hex: fmt=0x03 sap=10 blks=0 nblk=1 :  [230a00090135800000000448]
+10/04/26 12:53:25.223952 [1] process_blocks trellis1/2 fail blk=1 (kept)
+10/04/26 12:53:25.224063 [1] CONFIRMED blk1 rid=590133: 00 75 31 17 00 06 f5 f5 f5 f5 f5 f5 f5 f5 4a 77 73 d4
+10/04/26 12:53:25.224063 [1] PDU hdr fmt=0x16 sap=6 rid=590133 blks_hdr=1 n34=1 fr_len=576
+10/04/26 12:53:25.224063 [1] SNDCP ctrl rid=590133 n34=1
+10/04/26 12:53:25.224377 [1] PDU process_blocks rc=0 nblk=2 fr_len=576
+10/04/26 12:53:25.224396 [1] PDU LONG/FAIL hex:  [76c600090135810868002859]  [010000000000000000000000]
+10/04/26 12:53:25.224719 [1] NAC 0x368 PDU hex: fmt=0x16 sap=6 blks=1 nblk=2 :  [76c600090135810868002859]  [010000000000000000000000]
+10/04/26 12:53:29.283026 [3] process_blocks trellis1/2 fail blk=0 (kept)
+10/04/26 12:53:29.283118 [3] PDU header CRC fail nblk=1
+10/04/26 12:53:29.283135 [3] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 12:53:29.283158 [3] PDU header CRC fail nblk=1 maybe_rid=0 (unverified, CRC failed) : 22 40 00 00 00 00 00 00 00 00 00 00
+10/04/26 12:53:42.009084 [0] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 12:53:42.009224 [0] ACK/RX rid=590133 sap=11 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 12:53:42.009252 [0] NAC 0x368 PDU hex: fmt=0x03 sap=11 blks=0 nblk=1 :  [230b0009013580000000ef6b]
+10/04/26 12:53:42.187899 [0] process_blocks trellis1/2 fail blk=1 (kept)
+10/04/26 12:53:42.187997 [0] CONFIRMED blk1 rid=590133: 00 75 31 17 00 06 f5 f5 f5 f5 f5 f5 f5 f5 4a 77 73 d4
+10/04/26 12:53:42.187997 [0] PDU hdr fmt=0x16 sap=6 rid=590133 blks_hdr=1 n34=1 fr_len=576
+10/04/26 12:53:42.187997 [0] SNDCP ctrl rid=590133 n34=1
+10/04/26 12:53:42.188318 [0] PDU process_blocks rc=0 nblk=2 fr_len=576
+10/04/26 12:53:42.188337 [0] PDU LONG/FAIL hex:  [76c600090135810858002dcc]  [010000000000000000000000]
+10/04/26 12:53:42.188653 [0] NAC 0x368 PDU hex: fmt=0x16 sap=6 blks=1 nblk=2 :  [76c600090135810858002dcc]  [010000000000000000000000]
+10/04/26 12:53:43.977878 [1] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 12:53:43.977977 [1] ACK/RX rid=4116269 sap=15 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 12:53:43.977997 [1] NAC 0x368 PDU hex: fmt=0x03 sap=15 blks=0 nblk=1 :  [230f003ecf2d800000000ba9]
+10/04/26 12:53:44.217288 [1] process_blocks trellis1/2 fail blk=1 (kept)
+10/04/26 12:53:44.217408 [1] process_blocks trellis1/2 fail blk=2 (kept)
+10/04/26 12:53:44.217506 [1] process_blocks trellis1/2 fail blk=3 (kept)
+10/04/26 12:53:44.217523 [1] CONFIRMED blk1 rid=4116269: 00 5a 51 00 45 00 00 1f cc 45 00 00 77 11 c7 b2 0a ac
+  D34 cost=1 ok
+10/04/26 12:53:44.217523 [1] CONFIRMED blk2 rid=4116269: 03 77 e0 86 0a ae b9 f5 cb a4 0f a5 00 0b 35 b7 00 01
+  D34 cost=1 ok
+10/04/26 12:53:44.217523 [1] CONFIRMED blk3 rid=4116269: 04 6f 3f f5 f5 f5 f5 f5 f5 f5 f5 f5 f5 f5 0d 2c 96 7f
+10/04/26 12:53:44.217523 [1] PDU hdr fmt=0x16 sap=0 rid=4116269 blks_hdr=3 n34=3 fr_len=936
+10/04/26 12:53:44.217523 [1] [1] REASM rid=4116269 len=31
+10/04/26 12:53:44.217523 [1] [1] IP rid=4116269 ver=4 ihl=20 tot=31 have=31 proto=0x11 10.172.224.134 -> 10.174.185.245
+10/04/26 12:53:44.217523 [1] [1] UDP rid=4116269 10.172.224.134:52132 -> 10.174.185.245:4005 udp_len=11 payload=3
+10/04/26 12:53:44.217523 [1] [1] HEXDUMP rid=4116269 len=3:
+10/04/26 12:53:44.217523 [1] [1] HEX rid=4116269 0000: 00 01 3f                                          |..?|
+10/04/26 12:53:44.217523 [1] [1] TMS_TEXT rid=4116269 text=
+10/04/26 12:53:44.217523 [1] [1] REASM raw rid=4116269 leftover=15
+10/04/26 12:53:44.218898 [1] PDU process_blocks rc=0 nblk=4 fr_len=936
+10/04/26 12:53:44.218937 [1] PDU LONG/FAIL hex:  [76c0003ecf2d830b38029039]  [01b000000000000000000000]  [0c0000000000000000000000]  [000000000000000000000000]
+10/04/26 12:53:44.219515 [1] NAC 0x368 PDU hex: fmt=0x16 sap=0 blks=3 nblk=4 :  [76c0003ecf2d830b38029039]  [01b000000000000000000000]  [0c0000000000000000000000]  [000000000000000000000000]
+10/04/26 12:53:44.626182 [1] process_blocks trellis1/2 fail blk=1 (kept)
+10/04/26 12:53:44.626286 [1] process_blocks trellis1/2 fail blk=2 (kept)
+10/04/26 12:53:44.626304 [1] process_blocks trellis1/2 fail blk=3 (kept)
+10/04/26 12:53:44.626317 [1] CONFIRMED blk1 rid=4116269: 00 60 51 00 45 00 00 20 cc 46 00 00 77 11 c7 b0 0a ac
+  D34 cost=1 ok
+10/04/26 12:53:44.626317 [1] CONFIRMED blk2 rid=4116269: 02 c0 e0 86 0a ae b9 f5 cb a4 0f a7 00 0c 04 b2 00 02
+  D34 cost=1 ok
+10/04/26 12:53:44.626317 [1] CONFIRMED blk3 rid=4116269: 05 82 70 00 f5 f5 f5 f5 f5 f5 f5 f5 f5 f5 7c eb 49 f2
+10/04/26 12:53:44.626317 [1] PDU hdr fmt=0x16 sap=0 rid=4116269 blks_hdr=3 n34=3 fr_len=936
+10/04/26 12:53:44.626317 [1] [1] REASM rid=4116269 len=32
+10/04/26 12:53:44.626317 [1] [1] IP rid=4116269 ver=4 ihl=20 tot=32 have=32 proto=0x11 10.172.224.134 -> 10.174.185.245
+10/04/26 12:53:44.626317 [1] [1] UDP rid=4116269 10.172.224.134:52132 -> 10.174.185.245:4007 udp_len=12 payload=4
+10/04/26 12:53:44.626317 [1] [1] HEXDUMP rid=4116269 len=4:
+10/04/26 12:53:44.626317 [1] [1] HEX rid=4116269 0000: 00 02 70 00                                       |..p.|
+10/04/26 12:53:44.626317 [1] [1] TMS_TEXT rid=4116269 text=p
+10/04/26 12:53:44.626317 [1] [1] REASM raw rid=4116269 leftover=14
+10/04/26 12:53:44.627723 [1] PDU process_blocks rc=0 nblk=4 fr_len=936
+10/04/26 12:53:44.627766 [1] PDU LONG/FAIL hex:  [76c0003ecf2d830a4802af50]  [030000000000000000000000]  [04c000000000000000000000]  [000000000000000000000000]
+10/04/26 12:53:44.629068 [1] NAC 0x368 PDU hex: fmt=0x16 sap=0 blks=3 nblk=4 :  [76c0003ecf2d830a4802af50]  [030000000000000000000000]  [04c000000000000000000000]  [000000000000000000000000]
+10/04/26 12:53:45.204552 [1] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 12:53:45.204643 [1] ACK/RX rid=4116269 sap=8 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 12:53:45.204662 [1] NAC 0x368 PDU hex: fmt=0x03 sap=8 blks=0 nblk=1 :  [2308003ecf2d80000000ba02]
+10/04/26 12:53:48.845426 [4] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 12:53:48.845525 [4] ACK/RX rid=4443230 sap=8 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 12:53:48.845546 [4] NAC 0x36b PDU hex: fmt=0x03 sap=8 blks=0 nblk=1 :  [23080043cc5e80000000e9dd]
+10/04/26 12:53:54.630057 [2] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 12:53:54.630169 [2] ACK/RX rid=4443206 sap=15 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 12:53:54.630203 [2] NAC 0x368 PDU hex: fmt=0x03 sap=15 blks=0 nblk=1 :  [230f0043cc46800000005e01]
+10/04/26 12:53:58.924634 [3] process_blocks trellis1/2 fail blk=0 (kept)
+10/04/26 12:53:58.924759 [3] PDU header CRC fail nblk=1
+10/04/26 12:53:58.924779 [3] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 12:53:58.924795 [3] PDU header CRC fail nblk=1 maybe_rid=590133 (unverified, CRC failed) : 23 0c 00 09 01 35 80 00 00 00 00 00
+10/04/26 12:53:59.121846 [3] process_blocks trellis1/2 fail blk=0 (kept)
+10/04/26 12:53:59.121951 [3] process_blocks trellis1/2 fail blk=1 (kept)
+10/04/26 12:53:59.121979 [3] PDU header CRC fail nblk=2
+  D34 cost=2 ok
+10/04/26 12:53:59.122096 [3] PDU process_blocks rc=0 nblk=2 fr_len=576
+10/04/26 12:53:59.122113 [3] PDU LONG/FAIL hex:  [76c600000000000000000000]  [010000000000000000000000]
+10/04/26 12:53:59.122430 [3] PDU header CRC fail nblk=2 maybe_rid=0 (unverified, CRC failed) : 76 c6 00 00 00 00 00 00 00 00 00 00
+10/04/26 12:54:04.304474 [0] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 12:54:04.304608 [0] ACK/RX rid=4443235 sap=8 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 12:54:04.304633 [0] NAC 0x368 PDU hex: fmt=0x03 sap=8 blks=0 nblk=1 :  [23080043cc6380000000c449]
+10/04/26 12:54:05.759102 [1] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 12:54:05.759193 [1] ACK/RX rid=4116722 sap=9 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 12:54:05.759213 [1] NAC 0x368 PDU hex: fmt=0x03 sap=9 blks=0 nblk=1 :  [2309003ed0f280000000dcbd]
+10/04/26 12:54:05.966589 [1] process_blocks trellis1/2 fail blk=1 (kept)
+10/04/26 12:54:05.966684 [1] process_blocks trellis1/2 fail blk=2 (kept)
+10/04/26 12:54:05.966700 [1] CONFIRMED blk1 rid=4116722: 00 17 01 03 f1 0a ae bb ba 00 00 20 00 00 01 f5 f5 f5
+  D34 cost=1 ok
+10/04/26 12:54:05.966700 [1] CONFIRMED blk2 rid=4116722: 02 76 f5 f5 f5 f5 f5 f5 f5 f5 f5 f5 f5 f5 c0 93 4e f8
+10/04/26 12:54:05.966700 [1] PDU hdr fmt=0x16 sap=6 rid=4116722 blks_hdr=2 n34=2 fr_len=720
+10/04/26 12:54:05.966700 [1] SNDCP ctrl rid=4116722 n34=2
+10/04/26 12:54:05.967285 [1] PDU process_blocks rc=0 nblk=3 fr_len=720
+10/04/26 12:54:05.967304 [1] PDU LONG/FAIL hex:  [76c6003ed0f2820f7800c0d7]  [000000000000000000000000]  [0c0000000000000000000000]
+10/04/26 12:54:05.967777 [1] NAC 0x368 PDU hex: fmt=0x16 sap=6 blks=2 nblk=3 :  [76c6003ed0f2820f7800c0d7]  [000000000000000000000000]  [0c0000000000000000000000]
+10/04/26 12:54:08.157476 [1] process_blocks trellis1/2 fail blk=1 (kept)
+10/04/26 12:54:08.157587 [1] process_blocks trellis1/2 fail blk=2 (kept)
+10/04/26 12:54:08.157611 [1] CONFIRMED blk1 rid=4116722: 00 17 01 03 f1 0a ae bb ba 00 00 20 00 00 01 f5 f5 f5
+  D34 cost=1 ok
+10/04/26 12:54:08.157611 [1] CONFIRMED blk2 rid=4116722: 02 76 f5 f5 f5 f5 f5 f5 f5 f5 f5 f5 f5 f5 c0 93 4e f8
+10/04/26 12:54:08.157611 [1] PDU hdr fmt=0x16 sap=6 rid=4116722 blks_hdr=2 n34=2 fr_len=720
+10/04/26 12:54:08.157611 [1] SNDCP ctrl rid=4116722 n34=2
+10/04/26 12:54:08.158171 [1] PDU process_blocks rc=0 nblk=3 fr_len=720
+10/04/26 12:54:08.158190 [1] PDU LONG/FAIL hex:  [76c6003ed0f2820f7800c0d7]  [000000000000000000000000]  [0c0000000000000000000000]
+10/04/26 12:54:08.158635 [1] NAC 0x368 PDU hex: fmt=0x16 sap=6 blks=2 nblk=3 :  [76c6003ed0f2820f7800c0d7]  [000000000000000000000000]  [0c0000000000000000000000]
+10/04/26 12:54:11.956486 [4] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 12:54:11.956632 [4] ACK/RX rid=4116729 sap=13 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 12:54:11.956655 [4] NAC 0x36b PDU hex: fmt=0x03 sap=13 blks=0 nblk=1 :  [230d003ed0f980000000acad]
+10/04/26 12:54:12.166285 [4] process_blocks trellis1/2 fail blk=1 (kept)
+10/04/26 12:54:12.166391 [4] process_blocks trellis1/2 fail blk=2 (kept)
+  D34 cost=1 ok
+10/04/26 12:54:12.166408 [4] CONFIRMED blk1 rid=4116729: 00 3b 01 03 f1 0a ae bb c1 00 00 20 00 80 00 f5 f5 f5
+10/04/26 12:54:12.166408 [4] CONFIRMED blk2 rid=4116729: 02 67 f5 f5 f5 f5 f5 f5 f5 f5 f5 f5 f5 f5 be dd f3 c4
+10/04/26 12:54:12.166408 [4] PDU hdr fmt=0x16 sap=6 rid=4116729 blks_hdr=2 n34=2 fr_len=720
+10/04/26 12:54:12.166408 [4] SNDCP ctrl rid=4116729 n34=2
+10/04/26 12:54:12.167088 [4] PDU process_blocks rc=0 nblk=3 fr_len=720
+10/04/26 12:54:12.167118 [4] PDU LONG/FAIL hex:  [76c6003ed0f9820f58002ace]  [02e6af7c0000000000000000]  [0ecc00000000000000000000]
+10/04/26 12:54:12.167536 [4] NAC 0x36b PDU hex: fmt=0x16 sap=6 blks=2 nblk=3 :  [76c6003ed0f9820f58002ace]  [02e6af7c0000000000000000]  [0ecc00000000000000000000]
+10/04/26 12:54:16.000068 [3] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 12:54:16.000172 [3] ACK/RX rid=590133 sap=13 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 12:54:16.000192 [3] NAC 0x368 PDU hex: fmt=0x03 sap=13 blks=0 nblk=1 :  [230d0009013580000000b5e3]
+10/04/26 12:54:16.198138 [3] process_blocks trellis1/2 fail blk=1 (kept)
+  D34 cost=1 ok
+10/04/26 12:54:16.198287 [3] CONFIRMED blk1 rid=590133: 00 75 31 17 00 06 f5 f5 f5 f5 f5 f5 f5 f5 4a 77 73 d4
+10/04/26 12:54:16.198287 [3] PDU hdr fmt=0x16 sap=6 rid=590133 blks_hdr=1 n34=1 fr_len=576
+10/04/26 12:54:16.198287 [3] SNDCP ctrl rid=590133 n34=1
+10/04/26 12:54:16.198610 [3] PDU process_blocks rc=0 nblk=2 fr_len=576
+10/04/26 12:54:16.198627 [3] PDU LONG/FAIL hex:  [76c600090135810848002ebf]  [010000000000000000000000]
+10/04/26 12:54:16.200823 [3] NAC 0x368 PDU hex: fmt=0x16 sap=6 blks=1 nblk=2 :  [76c600090135810848002ebf]  [010000000000000000000000]
+10/04/26 12:54:18.713958 [4] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 12:54:18.714062 [4] ACK/RX rid=4443230 sap=9 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 12:54:18.714082 [4] NAC 0x36b PDU hex: fmt=0x03 sap=9 blks=0 nblk=1 :  [23090043cc5e8000000002fe]
+10/04/26 12:54:31.036801 [0] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 12:54:31.036952 [0] ACK/RX rid=4443236 sap=11 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 12:54:31.036974 [0] NAC 0x368 PDU hex: fmt=0x03 sap=11 blks=0 nblk=1 :  [230b0043cc64800000008ed9]
+10/04/26 12:54:31.979715 [4] PDU process_blocks rc=0 nblk=2 fr_len=576
+10/04/26 12:54:31.979813 [4] PDU LONG/FAIL hex:  [2386003ed0f9810000006110]  [fbffffffffffffff3bb9f742]
+10/04/26 12:54:31.980134 [4] PDU rid=4116729 fmt=0x03 sap=6 blks=1 (other/unhandled fmt)
+10/04/26 12:54:31.980159 [4] NAC 0x36b PDU hex: fmt=0x03 sap=6 blks=1 nblk=2 :  [2386003ed0f9810000006110]  [fbffffffffffffff3bb9f742]
+10/04/26 12:54:32.334876 [4] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 12:54:32.334979 [4] ACK/RX rid=4116729 sap=14 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 12:54:32.334999 [4] NAC 0x36b PDU hex: fmt=0x03 sap=14 blks=0 nblk=1 :  [230e003ed0f98000000081e9]
+10/04/26 12:54:32.623695 [4] process_blocks trellis1/2 fail blk=1 (kept)
+10/04/26 12:54:32.623804 [4] process_blocks trellis1/2 fail blk=2 (kept)
+10/04/26 12:54:32.623821 [4] process_blocks trellis1/2 fail blk=3 (kept)
+10/04/26 12:54:32.623835 [4] CONFIRMED blk1 rid=4116729: 01 e9 51 00 45 00 00 1f d1 b5 00 00 77 11 c0 76 0a ac
+10/04/26 12:54:32.623835 [4] CONFIRMED blk2 rid=4116729: 02 a5 e0 86 0a ae bb c1 cb b7 0f a5 00 0b 33 d8 00 01
+10/04/26 12:54:32.623835 [4] CONFIRMED blk3 rid=4116729: 04 c2 3f f5 f5 f5 f5 f5 f5 f5 f5 f5 f5 f5 34 d8 7a 34
+10/04/26 12:54:32.623835 [4] PDU hdr fmt=0x16 sap=0 rid=4116729 blks_hdr=3 n34=3 fr_len=936
+10/04/26 12:54:32.623835 [4] [4] REASM rid=4116729 len=31
+10/04/26 12:54:32.623835 [4] [4] IP rid=4116729 ver=4 ihl=20 tot=31 have=31 proto=0x11 10.172.224.134 -> 10.174.187.193
+10/04/26 12:54:32.623835 [4] [4] UDP rid=4116729 10.172.224.134:52151 -> 10.174.187.193:4005 udp_len=11 payload=3
+10/04/26 12:54:32.623835 [4] [4] HEXDUMP rid=4116729 len=3:
+10/04/26 12:54:32.623835 [4] [4] HEX rid=4116729 0000: 00 01 3f                                          |..?|
+10/04/26 12:54:32.623835 [4] [4] TMS_TEXT rid=4116729 text=
+10/04/26 12:54:32.623835 [4] [4] REASM raw rid=4116729 leftover=15
+10/04/26 12:54:32.625235 [4] PDU process_blocks rc=0 nblk=4 fr_len=936
+10/04/26 12:54:32.625276 [4] PDU LONG/FAIL hex:  [76c0003ed0f9830b3802f15a]  [0a8000000000000000000000]  [041300000000000000000000]  [000000000000000000000000]
+10/04/26 12:54:32.625888 [4] NAC 0x36b PDU hex: fmt=0x16 sap=0 blks=3 nblk=4 :  [76c0003ed0f9830b3802f15a]  [0a8000000000000000000000]  [041300000000000000000000]  [000000000000000000000000]
+10/04/26 12:54:32.978095 [1] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 12:54:32.978181 [1] ACK/RX rid=590133 sap=14 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 12:54:32.978203 [1] NAC 0x368 PDU hex: fmt=0x03 sap=14 blks=0 nblk=1 :  [230e000901358000000098a7]
+10/04/26 12:54:33.177588 [1] process_blocks trellis1/2 fail blk=1 (kept)
+10/04/26 12:54:33.177696 [1] CONFIRMED blk1 rid=590133: 00 75 31 17 00 06 f5 f5 f5 f5 f5 f5 f5 f5 4a 77 73 d4
+10/04/26 12:54:33.177696 [1] PDU hdr fmt=0x16 sap=6 rid=590133 blks_hdr=1 n34=1 fr_len=576
+10/04/26 12:54:33.177696 [1] SNDCP ctrl rid=590133 n34=1
+10/04/26 12:54:33.178026 [1] PDU process_blocks rc=0 nblk=2 fr_len=576
+10/04/26 12:54:33.178044 [1] PDU LONG/FAIL hex:  [76c600090135810858002dcc]  [010000000000000000000000]
+10/04/26 12:54:33.178340 [1] NAC 0x368 PDU hex: fmt=0x16 sap=6 blks=1 nblk=2 :  [76c600090135810858002dcc]  [010000000000000000000000]
+10/04/26 12:54:33.194259 [4] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 12:54:33.194357 [4] ACK/RX rid=4116729 sap=15 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 12:54:33.194379 [4] NAC 0x36b PDU hex: fmt=0x03 sap=15 blks=0 nblk=1 :  [230f003ed0f9800000006aca]
+10/04/26 12:54:33.434472 [4] process_blocks trellis1/2 fail blk=1 (kept)
+10/04/26 12:54:33.434600 [4] process_blocks trellis1/2 fail blk=2 (kept)
+10/04/26 12:54:33.434618 [4] process_blocks trellis1/2 fail blk=3 (kept)
+  D34 cost=1 ok
+10/04/26 12:54:33.434632 [4] CONFIRMED blk1 rid=4116729: 01 d3 51 00 45 00 00 20 d1 b6 00 00 77 11 c0 74 0a ac
+10/04/26 12:54:33.434632 [4] CONFIRMED blk2 rid=4116729: 03 05 e0 86 0a ae bb c1 cb b7 0f a7 00 0c 02 d3 00 02
+  D34 cost=1 ok
+10/04/26 12:54:33.434632 [4] CONFIRMED blk3 rid=4116729: 04 e6 70 00 f5 f5 f5 f5 f5 f5 f5 f5 f5 f5 70 44 9f d9
+10/04/26 12:54:33.434632 [4] PDU hdr fmt=0x16 sap=0 rid=4116729 blks_hdr=3 n34=3 fr_len=936
+10/04/26 12:54:33.434632 [4] [4] REASM rid=4116729 len=32
+10/04/26 12:54:33.434632 [4] [4] IP rid=4116729 ver=4 ihl=20 tot=32 have=32 proto=0x11 10.172.224.134 -> 10.174.187.193
+10/04/26 12:54:33.434632 [4] [4] UDP rid=4116729 10.172.224.134:52151 -> 10.174.187.193:4007 udp_len=12 payload=4
+10/04/26 12:54:33.434632 [4] [4] HEXDUMP rid=4116729 len=4:
+10/04/26 12:54:33.434632 [4] [4] HEX rid=4116729 0000: 00 02 70 00                                       |..p.|
+10/04/26 12:54:33.434632 [4] [4] TMS_TEXT rid=4116729 text=p
+10/04/26 12:54:33.434632 [4] [4] REASM raw rid=4116729 leftover=14
+10/04/26 12:54:33.435979 [4] PDU process_blocks rc=0 nblk=4 fr_len=936
+10/04/26 12:54:33.436014 [4] PDU LONG/FAIL hex:  [76c0003ed0f9830a4802ce33]  [0bc000000000000000000000]  [0c0000000000000000000000]  [000000000000000000000000]
+10/04/26 12:54:33.436574 [4] NAC 0x36b PDU hex: fmt=0x16 sap=0 blks=3 nblk=4 :  [76c0003ed0f9830a4802ce33]  [0bc000000000000000000000]  [0c0000000000000000000000]  [000000000000000000000000]
+10/04/26 12:54:33.960969 [4] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 12:54:33.961058 [4] ACK/RX rid=4116729 sap=8 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 12:54:33.961085 [4] NAC 0x36b PDU hex: fmt=0x03 sap=8 blks=0 nblk=1 :  [2308003ed0f980000000db61]
+10/04/26 12:54:34.279331 [2] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 12:54:34.279425 [2] ACK/RX rid=4443235 sap=9 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 12:54:34.279445 [2] NAC 0x368 PDU hex: fmt=0x03 sap=9 blks=0 nblk=1 :  [23090043cc63800000002f6a]
+10/04/26 12:54:36.215733 [4] process_blocks trellis1/2 fail blk=1 (kept)
+10/04/26 12:54:36.215885 [4] process_blocks trellis1/2 fail blk=2 (kept)
+10/04/26 12:54:36.215906 [4] process_blocks trellis1/2 fail blk=3 (kept)
+10/04/26 12:54:36.215921 [4] process_blocks trellis1/2 fail blk=4 (kept)
+10/04/26 12:54:36.215988 [4] CONFIRMED blk1 rid=4116729: 00 49 51 00 45 88 00 35 10 0f 00 00 3c 11 9e d2 0a ad
+  D34 cost=1 ok
+10/04/26 12:54:36.215988 [4] CONFIRMED blk2 rid=4116729: 03 80 fe 32 0a ae bb c1 fb 9e fb 9e 00 21 bc 36 00 00
+10/04/26 12:54:36.215988 [4] CONFIRMED blk3 rid=4116729: 05 25 80 00 00 00 00 00 00 00 00 00 00 00 26 00 08 00
+  D34 cost=1 ok
+10/04/26 12:54:36.215988 [4] CONFIRMED blk4 rid=4116729: 06 50 3e d0 f9 98 96 7e 00 f5 f5 f5 f5 f5 36 b7 52 be
+10/04/26 12:54:36.215988 [4] PDU hdr fmt=0x16 sap=0 rid=4116729 blks_hdr=4 n34=4 fr_len=1152
+10/04/26 12:54:36.215988 [4] [4] REASM rid=4116729 len=53
+10/04/26 12:54:36.215988 [4] [4] IP rid=4116729 ver=4 ihl=20 tot=53 have=53 proto=0x11 10.173.254.50 -> 10.174.187.193
+10/04/26 12:54:36.215988 [4] [4] UDP rid=4116729 10.173.254.50:64414 -> 10.174.187.193:64414 udp_len=33 payload=25
+10/04/26 12:54:36.215988 [4] [4] BEACON rid=4116729 self_id=4116729 ok
+10/04/26 12:54:36.215988 [4] [4] REASM raw rid=4116729 leftover=9
+10/04/26 12:54:36.217353 [4] PDU process_blocks rc=0 nblk=5 fr_len=1152
+10/04/26 12:54:36.217391 [4] PDU LONG/FAIL hex:  [76c0003ed0f984052802b805]  [030000000000000000000000]  [078970000000000000000000]  [000000000000000000000000]  [000000000000000000000000]
+10/04/26 12:54:36.218077 [4] NAC 0x36b PDU hex: fmt=0x16 sap=0 blks=4 nblk=5 :  [76c0003ed0f984052802b805]  [030000000000000000000000]  [078970000000000000000000]  [000000000000000000000000]  [000000000000000000000000]
+10/04/26 12:54:41.014153 [4] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 12:54:41.014253 [4] ACK/RX rid=4447106 sap=8 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 12:54:41.014278 [4] NAC 0x36b PDU hex: fmt=0x03 sap=8 blks=0 nblk=1 :  [23080043db828000000087d1]
+10/04/26 12:54:41.236797 [4] process_blocks trellis1/2 fail blk=1 (kept)
+10/04/26 12:54:41.236927 [4] process_blocks trellis1/2 fail blk=2 (kept)
+  D34 cost=1 ok
+10/04/26 12:54:41.236944 [4] CONFIRMED blk1 rid=4447106: 01 16 01 03 f1 0a ae 8e 53 00 00 20 00 00 01 f5 f5 f5
+  D34 cost=1 ok
+10/04/26 12:54:41.236944 [4] CONFIRMED blk2 rid=4447106: 02 98 f5 f5 f5 f5 f5 f5 f5 f5 f5 f5 f5 f5 01 04 a4 a9
+10/04/26 12:54:41.236944 [4] PDU hdr fmt=0x16 sap=6 rid=4447106 blks_hdr=2 n34=2 fr_len=720
+10/04/26 12:54:41.236944 [4] SNDCP ctrl rid=4447106 n34=2
+10/04/26 12:54:41.237523 [4] PDU process_blocks rc=0 nblk=3 fr_len=720
+10/04/26 12:54:41.237544 [4] PDU LONG/FAIL hex:  [76c60043db82820f080078c1]  [000000000000000000000000]  [040000000000000000000000]
+10/04/26 12:54:41.237968 [4] NAC 0x36b PDU hex: fmt=0x16 sap=6 blks=2 nblk=3 :  [76c60043db82820f080078c1]  [000000000000000000000000]  [040000000000000000000000]
+10/04/26 12:54:47.482716 [4] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 12:54:47.482839 [4] ACK/RX rid=4447106 sap=9 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 12:54:47.482860 [4] NAC 0x36b PDU hex: fmt=0x03 sap=9 blks=0 nblk=1 :  [23090043db82800000006cf2]
+10/04/26 12:54:49.251883 [4] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 12:54:49.251971 [4] ACK/RX rid=4443230 sap=10 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 12:54:49.251991 [4] NAC 0x36b PDU hex: fmt=0x03 sap=10 blks=0 nblk=1 :  [230a0043cc5e800000002fba]
+10/04/26 12:54:54.609596 [3] process_blocks trellis1/2 fail blk=0 (kept)
+10/04/26 12:54:54.609728 [3] PDU header CRC fail nblk=1
+10/04/26 12:54:54.609754 [3] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 12:54:54.609776 [3] PDU header CRC fail nblk=1 maybe_rid=0 (unverified, CRC failed) : 23 09 00 00 00 00 00 00 00 00 00 00
+10/04/26 12:55:04.265426 [2] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 12:55:04.265566 [2] ACK/RX rid=4443235 sap=10 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 12:55:04.265590 [2] NAC 0x368 PDU hex: fmt=0x03 sap=10 blks=0 nblk=1 :  [230a0043cc6380000000022e]
+10/04/26 12:55:06.602265 [3] process_blocks trellis1/2 fail blk=0 (kept)
+10/04/26 12:55:06.602401 [3] PDU header CRC fail nblk=1
+10/04/26 12:55:06.602423 [3] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 12:55:06.602527 [3] PDU header CRC fail nblk=1 maybe_rid=4194304 (unverified, CRC failed) : 23 0f 00 40 00 00 00 00 00 00 00 00
+10/04/26 12:55:18.699249 [4] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 12:55:18.699390 [4] ACK/RX rid=4443230 sap=11 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 12:55:18.699417 [4] NAC 0x36b PDU hex: fmt=0x03 sap=11 blks=0 nblk=1 :  [230b0043cc5e80000000c499]
+10/04/26 12:55:34.255354 [0] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 12:55:34.255484 [0] ACK/RX rid=4443235 sap=11 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 12:55:34.255508 [0] NAC 0x368 PDU hex: fmt=0x03 sap=11 blks=0 nblk=1 :  [230b0043cc6380000000e90d]
+10/04/26 12:55:36.851506 [1] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 12:55:36.851602 [1] ACK/RX rid=4443223 sap=8 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 12:55:36.851647 [1] NAC 0x368 PDU hex: fmt=0x03 sap=8 blks=0 nblk=1 :  [23080043cc578000000041a1]
+10/04/26 12:56:31.380715 [2] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 12:56:31.380866 [2] ACK/RX rid=4443197 sap=14 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 12:56:31.380897 [2] NAC 0x368 PDU hex: fmt=0x03 sap=14 blks=0 nblk=1 :  [230e0043cc3d80000000445b]
+10/04/26 12:56:43.067381 [4] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 12:56:43.067491 [4] ACK/RX rid=4445926 sap=12 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 12:56:43.067511 [4] NAC 0x36b PDU hex: fmt=0x03 sap=12 blks=0 nblk=1 :  [230c0043d6e680000000c5a7]
+10/04/26 12:56:43.275199 [4] process_blocks trellis1/2 fail blk=1 (kept)
+10/04/26 12:56:43.275310 [4] process_blocks trellis1/2 fail blk=2 (kept)
+  D34 cost=1 ok
+10/04/26 12:56:43.275328 [4] CONFIRMED blk1 rid=4445926: 01 d6 01 03 f1 0a ae 89 b7 00 00 20 00 00 02 f5 f5 f5
+  D34 cost=1 ok
+10/04/26 12:56:43.275328 [4] CONFIRMED blk2 rid=4445926: 02 81 f5 f5 f5 f5 f5 f5 f5 f5 f5 f5 f5 f5 a3 0d da 60
+10/04/26 12:56:43.275328 [4] PDU hdr fmt=0x16 sap=6 rid=4445926 blks_hdr=2 n34=2 fr_len=720
+10/04/26 12:56:43.275328 [4] SNDCP ctrl rid=4445926 n34=2
+10/04/26 12:56:43.275986 [4] PDU process_blocks rc=0 nblk=3 fr_len=720
+10/04/26 12:56:43.276011 [4] PDU LONG/FAIL hex:  [76c60043d6e6820f2800a0be]  [0b0000000000000000000000]  [07b000000000000000000000]
+10/04/26 12:56:43.276427 [4] NAC 0x36b PDU hex: fmt=0x16 sap=6 blks=2 nblk=3 :  [76c60043d6e6820f2800a0be]  [0b0000000000000000000000]  [07b000000000000000000000]
+10/04/26 12:56:45.227726 [4] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 12:56:45.227819 [4] ACK/RX rid=4116700 sap=15 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 12:56:45.227838 [4] NAC 0x36b PDU hex: fmt=0x03 sap=15 blks=0 nblk=1 :  [230f003ed0dc800000004129]
+10/04/26 12:56:45.441391 [4] process_blocks trellis1/2 fail blk=1 (kept)
+10/04/26 12:56:45.441478 [4] process_blocks trellis1/2 fail blk=2 (kept)
+  D34 cost=1 ok
+10/04/26 12:56:45.441493 [4] CONFIRMED blk1 rid=4116700: 01 e2 01 03 f1 0a ae bb a4 00 00 20 00 00 04 f5 f5 f5
+  D34 cost=1 ok
+10/04/26 12:56:45.441493 [4] CONFIRMED blk2 rid=4116700: 03 29 f5 f5 f5 f5 f5 f5 f5 f5 f5 f5 f5 f5 f3 41 ab 60
+10/04/26 12:56:45.441493 [4] PDU hdr fmt=0x16 sap=6 rid=4116700 blks_hdr=2 n34=2 fr_len=720
+10/04/26 12:56:45.441493 [4] SNDCP ctrl rid=4116700 n34=2
+10/04/26 12:56:45.442032 [4] PDU process_blocks rc=0 nblk=3 fr_len=720
+10/04/26 12:56:45.442047 [4] PDU LONG/FAIL hex:  [76c6003ed0dc820f38000a07]  [0a0000000000000000000000]  [0d0000000000000000000000]
+10/04/26 12:56:45.442456 [4] NAC 0x36b PDU hex: fmt=0x16 sap=6 blks=2 nblk=3 :  [76c6003ed0dc820f38000a07]  [0a0000000000000000000000]  [0d0000000000000000000000]
+10/04/26 12:56:47.374931 [1] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 12:56:47.375027 [1] ACK/RX rid=4443225 sap=9 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 12:56:47.375046 [1] NAC 0x368 PDU hex: fmt=0x03 sap=9 blks=0 nblk=1 :  [23090043cc5980000000652a]
+10/04/26 12:56:49.448468 [4] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 12:56:49.448580 [4] ACK/RX rid=4445926 sap=13 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 12:56:49.448601 [4] NAC 0x36b PDU hex: fmt=0x03 sap=13 blks=0 nblk=1 :  [230d0043d6e6800000002e84]
+10/04/26 12:56:51.204008 [4] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 12:56:51.204095 [4] ACK/RX rid=4116700 sap=8 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 12:56:51.204114 [4] NAC 0x36b PDU hex: fmt=0x03 sap=8 blks=0 nblk=1 :  [2308003ed0dc80000000f082]
+10/04/26 12:56:51.651996 [4] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 12:56:51.652103 [4] ACK/RX rid=4116700 sap=9 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 12:56:51.652126 [4] NAC 0x36b PDU hex: fmt=0x03 sap=9 blks=0 nblk=1 :  [2309003ed0dc800000001ba1]
+10/04/26 12:56:51.891320 [4] process_blocks trellis1/2 fail blk=1 (kept)
+10/04/26 12:56:51.891438 [4] process_blocks trellis1/2 fail blk=2 (kept)
+10/04/26 12:56:51.891464 [4] process_blocks trellis1/2 fail blk=3 (kept)
+  D34 cost=1 ok
+10/04/26 12:56:51.891478 [4] CONFIRMED blk1 rid=4116700: 00 e4 51 00 45 00 00 1f d6 eb 00 00 77 11 bb 5d 0a ac
+  D34 cost=1 ok
+10/04/26 12:56:51.891478 [4] CONFIRMED blk2 rid=4116700: 03 d7 e0 86 0a ae bb a4 fa 7a 0f a5 00 0b 05 32 00 01
+10/04/26 12:56:51.891478 [4] CONFIRMED blk3 rid=4116700: 05 94 3f f5 f5 f5 f5 f5 f5 f5 f5 f5 f5 f5 7c c6 51 a3
+10/04/26 12:56:51.891478 [4] PDU hdr fmt=0x16 sap=0 rid=4116700 blks_hdr=3 n34=3 fr_len=936
+10/04/26 12:56:51.891478 [4] [4] REASM rid=4116700 len=31
+10/04/26 12:56:51.891478 [4] [4] IP rid=4116700 ver=4 ihl=20 tot=31 have=31 proto=0x11 10.172.224.134 -> 10.174.187.164
+10/04/26 12:56:51.891478 [4] [4] UDP rid=4116700 10.172.224.134:64122 -> 10.174.187.164:4005 udp_len=11 payload=3
+10/04/26 12:56:51.891478 [4] [4] HEXDUMP rid=4116700 len=3:
+10/04/26 12:56:51.891478 [4] [4] HEX rid=4116700 0000: 00 01 3f                                          |..?|
+10/04/26 12:56:51.891478 [4] [4] TMS_TEXT rid=4116700 text=
+10/04/26 12:56:51.891478 [4] [4] REASM raw rid=4116700 leftover=15
+10/04/26 12:56:51.892854 [4] PDU process_blocks rc=0 nblk=4 fr_len=936
+10/04/26 12:56:51.892895 [4] PDU LONG/FAIL hex:  [76c0003ed0dc830b1802dc5f]  [000000000000000000000000]  [040000000000000000000000]  [000000000000000000000000]
+10/04/26 12:56:51.893447 [4] NAC 0x36b PDU hex: fmt=0x16 sap=0 blks=3 nblk=4 :  [76c0003ed0dc830b1802dc5f]  [000000000000000000000000]  [040000000000000000000000]  [000000000000000000000000]
+10/04/26 12:56:52.303051 [4] process_blocks trellis1/2 fail blk=1 (kept)
+10/04/26 12:56:52.303171 [4] process_blocks trellis1/2 fail blk=2 (kept)
+10/04/26 12:56:52.303190 [4] process_blocks trellis1/2 fail blk=3 (kept)
+  D34 cost=1 ok
+10/04/26 12:56:52.303203 [4] CONFIRMED blk1 rid=4116700: 00 6e 51 00 45 00 00 20 d6 ec 00 00 77 11 bb 5b 0a ac
+10/04/26 12:56:52.303203 [4] CONFIRMED blk2 rid=4116700: 02 b3 e0 86 0a ae bb a4 fa 7a 0f a7 00 0c d4 2c 00 02
+10/04/26 12:56:52.303203 [4] CONFIRMED blk3 rid=4116700: 05 1c 70 00 f5 f5 f5 f5 f5 f5 f5 f5 f5 f5 0b a0 d7 a2
+10/04/26 12:56:52.303203 [4] PDU hdr fmt=0x16 sap=0 rid=4116700 blks_hdr=3 n34=3 fr_len=936
+10/04/26 12:56:52.303203 [4] [4] REASM rid=4116700 len=32
+10/04/26 12:56:52.303203 [4] [4] IP rid=4116700 ver=4 ihl=20 tot=32 have=32 proto=0x11 10.172.224.134 -> 10.174.187.164
+10/04/26 12:56:52.303203 [4] [4] UDP rid=4116700 10.172.224.134:64122 -> 10.174.187.164:4007 udp_len=12 payload=4
+10/04/26 12:56:52.303203 [4] [4] HEXDUMP rid=4116700 len=4:
+10/04/26 12:56:52.303203 [4] [4] HEX rid=4116700 0000: 00 02 70 00                                       |..p.|
+10/04/26 12:56:52.303203 [4] [4] TMS_TEXT rid=4116700 text=p
+10/04/26 12:56:52.303203 [4] [4] REASM raw rid=4116700 leftover=14
+10/04/26 12:56:52.304604 [4] PDU process_blocks rc=0 nblk=4 fr_len=936
+10/04/26 12:56:52.304644 [4] PDU LONG/FAIL hex:  [76c0003ed0dc830a2802eefa]  [031c00000000000000000000]  [060000000000000000000000]  [000000000000000000000000]
+10/04/26 12:56:52.305252 [4] NAC 0x36b PDU hex: fmt=0x16 sap=0 blks=3 nblk=4 :  [76c0003ed0dc830a2802eefa]  [031c00000000000000000000]  [060000000000000000000000]  [000000000000000000000000]
+10/04/26 12:56:52.825906 [4] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 12:56:52.826007 [4] ACK/RX rid=4116700 sap=10 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 12:56:52.826026 [4] NAC 0x36b PDU hex: fmt=0x03 sap=10 blks=0 nblk=1 :  [230a003ed0dc8000000036e5]
+10/04/26 12:56:53.080264 [4] process_blocks trellis1/2 fail blk=1 (kept)
+10/04/26 12:56:53.080381 [4] process_blocks trellis1/2 fail blk=2 (kept)
+10/04/26 12:56:53.080406 [4] process_blocks trellis1/2 fail blk=3 (kept)
+10/04/26 12:56:53.080421 [4] process_blocks trellis1/2 fail blk=4 (kept)
+10/04/26 12:56:53.080441 [4] CONFIRMED blk1 rid=4116700: 01 0d 51 00 45 88 00 35 4c 0f 00 00 3c 11 62 ef 0a ad
+  D34 cost=1 ok
+10/04/26 12:56:53.080441 [4] CONFIRMED blk2 rid=4116700: 02 a1 fe 32 0a ae bb a4 fb 9e fb 9e 00 21 d9 53 00 00
+10/04/26 12:56:53.080441 [4] CONFIRMED blk3 rid=4116700: 05 25 80 00 00 00 00 00 00 00 00 00 00 00 26 00 08 00
+  D34 cost=1 ok
+10/04/26 12:56:53.080441 [4] CONFIRMED blk4 rid=4116700: 06 7c 3e d0 dc 98 96 7e 00 f5 f5 f5 f5 f5 b5 a4 e4 20
+10/04/26 12:56:53.080441 [4] PDU hdr fmt=0x16 sap=0 rid=4116700 blks_hdr=4 n34=4 fr_len=1152
+10/04/26 12:56:53.080441 [4] [4] REASM rid=4116700 len=53
+10/04/26 12:56:53.080441 [4] [4] IP rid=4116700 ver=4 ihl=20 tot=53 have=53 proto=0x11 10.173.254.50 -> 10.174.187.164
+10/04/26 12:56:53.080441 [4] [4] UDP rid=4116700 10.173.254.50:64414 -> 10.174.187.164:64414 udp_len=33 payload=25
+10/04/26 12:56:53.080441 [4] [4] BEACON rid=4116700 self_id=4116700 ok
+10/04/26 12:56:53.080441 [4] [4] REASM raw rid=4116700 leftover=9
+10/04/26 12:56:53.081828 [4] PDU process_blocks rc=0 nblk=5 fr_len=1152
+10/04/26 12:56:53.081875 [4] PDU LONG/FAIL hex:  [76c0003ed0dc840538029095]  [000000000000000000000000]  [0417d3c00000000000000000]  [000000000000000000000000]  [000000000000000000000000]
+10/04/26 12:56:53.082561 [4] NAC 0x36b PDU hex: fmt=0x16 sap=0 blks=4 nblk=5 :  [76c0003ed0dc840538029095]  [000000000000000000000000]  [0417d3c00000000000000000]  [000000000000000000000000]  [000000000000000000000000]
+10/04/26 12:56:56.031084 [4] process_blocks trellis1/2 fail blk=1 (kept)
+10/04/26 12:56:56.031219 [4] process_blocks trellis1/2 fail blk=2 (kept)
+10/04/26 12:56:56.031240 [4] process_blocks trellis1/2 fail blk=3 (kept)
+10/04/26 12:56:56.031255 [4] process_blocks trellis1/2 fail blk=4 (kept)
+10/04/26 12:56:56.031273 [4] CONFIRMED blk1 rid=4445926: 01 fc 51 00 45 00 00 35 75 1a 00 00 7b 11 77 78 0a ac
+  D34 cost=1 ok
+10/04/26 12:56:56.031273 [4] CONFIRMED blk2 rid=4445926: 02 1a b4 14 0a ae 89 b7 fb 9e fb 9e 00 21 48 84 00 00
+10/04/26 12:56:56.031273 [4] CONFIRMED blk3 rid=4445926: 05 25 80 00 00 00 00 00 00 00 00 00 00 00 26 00 08 00
+10/04/26 12:56:56.031273 [4] CONFIRMED blk4 rid=4445926: 06 f8 43 d6 e6 98 94 54 00 f5 f5 f5 f5 f5 4f 06 d6 14
+10/04/26 12:56:56.031273 [4] PDU hdr fmt=0x16 sap=0 rid=4445926 blks_hdr=4 n34=4 fr_len=1152
+10/04/26 12:56:56.031273 [4] [4] REASM rid=4445926 len=53
+10/04/26 12:56:56.031273 [4] [4] IP rid=4445926 ver=4 ihl=20 tot=53 have=53 proto=0x11 10.172.180.20 -> 10.174.137.183
+10/04/26 12:56:56.031273 [4] [4] UDP rid=4445926 10.172.180.20:64414 -> 10.174.137.183:64414 udp_len=33 payload=25
+10/04/26 12:56:56.031273 [4] [4] BEACON rid=4445926 self_id=4445926 ok
+10/04/26 12:56:56.031273 [4] [4] REASM raw rid=4445926 leftover=9
+10/04/26 12:56:56.032691 [4] PDU process_blocks rc=0 nblk=5 fr_len=1152
+10/04/26 12:56:56.032732 [4] PDU LONG/FAIL hex:  [76c00043d6e6840578023493]  [080000000000000000000000]  [0f0000000000000000000000]  [000000000000000000000000]  [000000000000000000000000]
+10/04/26 12:56:56.033445 [4] NAC 0x36b PDU hex: fmt=0x16 sap=0 blks=4 nblk=5 :  [76c00043d6e6840578023493]  [080000000000000000000000]  [0f0000000000000000000000]  [000000000000000000000000]  [000000000000000000000000]
+10/04/26 12:57:02.753654 [4] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 12:57:02.754180 [4] ACK/RX rid=4445926 sap=14 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 12:57:02.754220 [4] NAC 0x36b PDU hex: fmt=0x03 sap=14 blks=0 nblk=1 :  [230e0043d6e68000000003c0]
+10/04/26 12:57:37.755738 [4] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 12:57:37.755863 [4] ACK/RX rid=4443207 sap=8 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 12:57:37.755887 [4] NAC 0x36b PDU hex: fmt=0x03 sap=8 blks=0 nblk=1 :  [23080043cc478000000045fb]
+10/04/26 12:57:37.960687 [4] process_blocks trellis1/2 fail blk=1 (kept)
+10/04/26 12:57:37.960833 [4] process_blocks trellis1/2 fail blk=2 (kept)
+  D34 cost=1 ok
+10/04/26 12:57:37.960859 [4] CONFIRMED blk1 rid=4443207: 00 0b 01 03 f1 0a ae 7f 18 00 00 20 00 00 08 f5 f5 f5
+10/04/26 12:57:37.960859 [4] CONFIRMED blk2 rid=4443207: 02 c2 f5 f5 f5 f5 f5 f5 f5 f5 f5 f5 f5 f5 d3 df f6 0a
+10/04/26 12:57:37.960859 [4] PDU hdr fmt=0x16 sap=6 rid=4443207 blks_hdr=2 n34=2 fr_len=720
+10/04/26 12:57:37.960859 [4] SNDCP ctrl rid=4443207 n34=2
+10/04/26 12:57:37.961444 [4] PDU process_blocks rc=0 nblk=3 fr_len=720
+10/04/26 12:57:37.961465 [4] PDU LONG/FAIL hex:  [76c60043cc47820f0800baeb]  [004c00000000000000000000]  [040000000000000000000000]
+10/04/26 12:57:37.961907 [4] NAC 0x36b PDU hex: fmt=0x16 sap=6 blks=2 nblk=3 :  [76c60043cc47820f0800baeb]  [004c00000000000000000000]  [040000000000000000000000]
+10/04/26 12:57:38.897014 [0] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 12:57:38.897087 [0] ACK/RX rid=4116781 sap=13 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 12:57:38.897104 [0] NAC 0x368 PDU hex: fmt=0x03 sap=13 blks=0 nblk=1 :  [230d003ed12d8000000057e9]
+10/04/26 12:57:39.127776 [0] process_blocks trellis1/2 fail blk=1 (kept)
+10/04/26 12:57:39.127883 [0] process_blocks trellis1/2 fail blk=2 (kept)
+  D34 cost=1 ok
+10/04/26 12:57:39.127902 [0] CONFIRMED blk1 rid=4116781: 01 65 01 03 f1 0a ae bb f5 00 00 20 00 00 04 f5 f5 f5
+  D34 cost=1 ok
+10/04/26 12:57:39.127902 [0] CONFIRMED blk2 rid=4116781: 03 8d f5 f5 f5 f5 f5 f5 f5 f5 f5 f5 f5 f5 01 34 d4 7b
+10/04/26 12:57:39.127902 [0] PDU hdr fmt=0x16 sap=6 rid=4116781 blks_hdr=2 n34=2 fr_len=720
+10/04/26 12:57:39.127902 [0] SNDCP ctrl rid=4116781 n34=2
+10/04/26 12:57:39.128481 [0] PDU process_blocks rc=0 nblk=3 fr_len=720
+10/04/26 12:57:39.128499 [0] PDU LONG/FAIL hex:  [76c6003ed12d820f4800d2f9]  [000000000000000000000000]  [074000000000000000000000]
+10/04/26 12:57:39.128922 [0] NAC 0x368 PDU hex: fmt=0x16 sap=6 blks=2 nblk=3 :  [76c6003ed12d820f4800d2f9]  [000000000000000000000000]  [074000000000000000000000]
+10/04/26 12:57:39.854490 [1] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 12:57:39.854598 [1] ACK/RX rid=4116729 sap=14 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 12:57:39.854619 [1] NAC 0x368 PDU hex: fmt=0x03 sap=14 blks=0 nblk=1 :  [230e003ed0f98000000081e9]
+10/04/26 12:57:40.095578 [1] process_blocks trellis1/2 fail blk=1 (kept)
+10/04/26 12:57:40.095743 [1] process_blocks trellis1/2 fail blk=2 (kept)
+10/04/26 12:57:40.095764 [1] process_blocks trellis1/2 fail blk=3 (kept)
+  D34 cost=1 ok
+10/04/26 12:57:40.095778 [1] CONFIRMED blk1 rid=4116729: 01 68 51 00 45 00 00 1f d1 b9 00 00 77 11 c0 72 0a ac
+  D34 cost=1 ok
+10/04/26 12:57:40.095778 [1] CONFIRMED blk2 rid=4116729: 02 e9 e0 86 0a ae bb c1 ef 32 0f a5 00 0b 10 5d 00 01
+  D34 cost=1 ok
+10/04/26 12:57:40.095778 [1] CONFIRMED blk3 rid=4116729: 05 06 3f f5 f5 f5 f5 f5 f5 f5 f5 f5 f5 f5 17 59 40 5d
+10/04/26 12:57:40.095778 [1] PDU hdr fmt=0x16 sap=0 rid=4116729 blks_hdr=3 n34=3 fr_len=936
+10/04/26 12:57:40.095778 [1] [1] REASM rid=4116729 len=31
+10/04/26 12:57:40.095778 [1] [1] IP rid=4116729 ver=4 ihl=20 tot=31 have=31 proto=0x11 10.172.224.134 -> 10.174.187.193
+10/04/26 12:57:40.095778 [1] [1] UDP rid=4116729 10.172.224.134:61234 -> 10.174.187.193:4005 udp_len=11 payload=3
+10/04/26 12:57:40.095778 [1] [1] HEXDUMP rid=4116729 len=3:
+10/04/26 12:57:40.095778 [1] [1] HEX rid=4116729 0000: 00 01 3f                                          |..?|
+10/04/26 12:57:40.095778 [1] [1] TMS_TEXT rid=4116729 text=
+10/04/26 12:57:40.095778 [1] [1] REASM raw rid=4116729 leftover=15
+10/04/26 12:57:40.097276 [1] PDU process_blocks rc=0 nblk=4 fr_len=936
+10/04/26 12:57:40.097320 [1] PDU LONG/FAIL hex:  [76c0003ed0f9830b2802f229]  [000000000000000000000000]  [040000000000000000000000]  [000000000000000000000000]
+10/04/26 12:57:40.097875 [1] NAC 0x368 PDU hex: fmt=0x16 sap=0 blks=3 nblk=4 :  [76c0003ed0f9830b2802f229]  [000000000000000000000000]  [040000000000000000000000]  [000000000000000000000000]
+10/04/26 12:57:40.505150 [1] process_blocks trellis1/2 fail blk=1 (kept)
+10/04/26 12:57:40.505277 [1] process_blocks trellis1/2 fail blk=2 (kept)
+10/04/26 12:57:40.505296 [1] process_blocks trellis1/2 fail blk=3 (kept)
+  D34 cost=1 ok
+10/04/26 12:57:40.505316 [1] CONFIRMED blk1 rid=4116729: 01 52 51 00 45 00 00 20 d1 ba 00 00 77 11 c0 70 0a ac
+10/04/26 12:57:40.505316 [1] CONFIRMED blk2 rid=4116729: 02 21 e0 86 0a ae bb c1 ef 32 0f a7 00 0c df 57 00 02
+10/04/26 12:57:40.505316 [1] CONFIRMED blk3 rid=4116729: 04 43 70 00 f5 f5 f5 f5 f5 f5 f5 f5 f5 f5 4a e1 75 48
+10/04/26 12:57:40.505316 [1] PDU hdr fmt=0x16 sap=0 rid=4116729 blks_hdr=3 n34=3 fr_len=936
+10/04/26 12:57:40.505316 [1] [1] REASM rid=4116729 len=32
+10/04/26 12:57:40.505316 [1] [1] IP rid=4116729 ver=4 ihl=20 tot=32 have=32 proto=0x11 10.172.224.134 -> 10.174.187.193
+10/04/26 12:57:40.505316 [1] [1] UDP rid=4116729 10.172.224.134:61234 -> 10.174.187.193:4007 udp_len=12 payload=4
+10/04/26 12:57:40.505316 [1] [1] HEXDUMP rid=4116729 len=4:
+10/04/26 12:57:40.505316 [1] [1] HEX rid=4116729 0000: 00 02 70 00                                       |..p.|
+10/04/26 12:57:40.505316 [1] [1] TMS_TEXT rid=4116729 text=p
+10/04/26 12:57:40.505316 [1] [1] REASM raw rid=4116729 leftover=14
+10/04/26 12:57:40.506672 [1] PDU process_blocks rc=0 nblk=4 fr_len=936
+10/04/26 12:57:40.506708 [1] PDU LONG/FAIL hex:  [76c0003ed0f9830a3802c66a]  [000000000000000000000000]  [0d1300000000000000000000]  [000000000000000000000000]
+10/04/26 12:57:40.507275 [1] NAC 0x368 PDU hex: fmt=0x16 sap=0 blks=3 nblk=4 :  [76c0003ed0f9830a3802c66a]  [000000000000000000000000]  [0d1300000000000000000000]  [000000000000000000000000]
+10/04/26 12:57:41.079305 [1] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 12:57:41.079425 [1] ACK/RX rid=4116729 sap=15 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 12:57:41.079444 [1] NAC 0x368 PDU hex: fmt=0x03 sap=15 blks=0 nblk=1 :  [230f003ed0f9800000006aca]
+10/04/26 12:57:41.525820 [1] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 12:57:41.525910 [1] ACK/RX rid=4116729 sap=8 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 12:57:41.525928 [1] NAC 0x368 PDU hex: fmt=0x03 sap=8 blks=0 nblk=1 :  [2308003ed0f980000000db61]
+10/04/26 12:57:44.313859 [3] process_blocks trellis1/2 fail blk=1 (kept)
+10/04/26 12:57:44.313973 [3] process_blocks trellis1/2 fail blk=2 (kept)
+10/04/26 12:57:44.313994 [3] process_blocks trellis1/2 fail blk=3 (kept)
+10/04/26 12:57:44.314020 [3] process_blocks trellis1/2 fail blk=4 (kept)
+10/04/26 12:57:44.314035 [3] CONFIRMED blk1 rid=4116729: 01 76 51 00 45 88 00 35 10 11 00 00 3c 11 9e d0 0a ad
+  D34 cost=1 ok
+10/04/26 12:57:44.314035 [3] CONFIRMED blk2 rid=4116729: 03 80 fe 32 0a ae bb c1 fb 9e fb 9e 00 21 bc 36 00 00
+10/04/26 12:57:44.314035 [3] CONFIRMED blk3 rid=4116729: 05 25 80 00 00 00 00 00 00 00 00 00 00 00 26 00 08 00
+  D34 cost=1 ok
+10/04/26 12:57:44.314035 [3] CONFIRMED blk4 rid=4116729: 07 aa 3e d0 f9 98 96 7e 00 f5 f5 f5 f5 f5 3a 19 2f 71
+10/04/26 12:57:44.314035 [3] PDU hdr fmt=0x16 sap=0 rid=4116729 blks_hdr=4 n34=4 fr_len=1152
+10/04/26 12:57:44.314035 [3] [3] REASM rid=4116729 len=53
+10/04/26 12:57:44.314035 [3] [3] IP rid=4116729 ver=4 ihl=20 tot=53 have=53 proto=0x11 10.173.254.50 -> 10.174.187.193
+10/04/26 12:57:44.314035 [3] [3] UDP rid=4116729 10.173.254.50:64414 -> 10.174.187.193:64414 udp_len=33 payload=25
+10/04/26 12:57:44.314035 [3] [3] BEACON rid=4116729 self_id=4116729 ok
+10/04/26 12:57:44.314035 [3] [3] REASM raw rid=4116729 leftover=9
+10/04/26 12:57:44.315385 [3] PDU process_blocks rc=0 nblk=5 fr_len=1152
+10/04/26 12:57:44.315408 [3] PDU LONG/FAIL hex:  [76c0003ed0f984051802bd90]  [000000000000000000000000]  [078970000000000000000000]  [000000000000000000000000]  [000000000000000000000000]
+10/04/26 12:57:44.316122 [3] NAC 0x368 PDU hex: fmt=0x16 sap=0 blks=4 nblk=5 :  [76c0003ed0f984051802bd90]  [000000000000000000000000]  [078970000000000000000000]  [000000000000000000000000]  [000000000000000000000000]
+10/04/26 12:57:44.390812 [4] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 12:57:44.390904 [4] ACK/RX rid=4443207 sap=9 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 12:57:44.390921 [4] NAC 0x36b PDU hex: fmt=0x03 sap=9 blks=0 nblk=1 :  [23090043cc4780000000aed8]
+10/04/26 12:57:48.842094 [4] process_blocks trellis1/2 fail blk=1 (kept)
+10/04/26 12:57:48.842207 [4] process_blocks trellis1/2 fail blk=2 (kept)
+10/04/26 12:57:48.842225 [4] process_blocks trellis1/2 fail blk=3 (kept)
+10/04/26 12:57:48.842246 [4] process_blocks trellis1/2 fail blk=4 (kept)
+10/04/26 12:57:48.842262 [4] CONFIRMED blk1 rid=4443207: 01 eb 51 00 45 00 00 35 2f 40 00 00 7b 11 c7 f1 0a ac
+  D34 cost=1 ok
+10/04/26 12:57:48.842262 [4] CONFIRMED blk2 rid=4443207: 02 e4 b4 14 0a ae 7f 18 fb 9e fb 9e 00 21 f2 2d 00 00
+10/04/26 12:57:48.842262 [4] CONFIRMED blk3 rid=4443207: 05 25 80 00 00 00 00 00 00 00 00 00 00 00 26 00 08 00
+10/04/26 12:57:48.842262 [4] CONFIRMED blk4 rid=4443207: 06 39 43 cc 47 98 94 54 00 f5 f5 f5 f5 f5 9b 80 52 d3
+10/04/26 12:57:48.842262 [4] PDU hdr fmt=0x16 sap=0 rid=4443207 blks_hdr=4 n34=4 fr_len=1152
+10/04/26 12:57:48.842262 [4] [4] REASM rid=4443207 len=53
+10/04/26 12:57:48.842262 [4] [4] IP rid=4443207 ver=4 ihl=20 tot=53 have=53 proto=0x11 10.172.180.20 -> 10.174.127.24
+10/04/26 12:57:48.842262 [4] [4] UDP rid=4443207 10.172.180.20:64414 -> 10.174.127.24:64414 udp_len=33 payload=25
+10/04/26 12:57:48.842262 [4] [4] BEACON rid=4443207 self_id=4443207 ok
+10/04/26 12:57:48.842262 [4] [4] REASM raw rid=4443207 leftover=9
+10/04/26 12:57:48.843689 [4] PDU process_blocks rc=0 nblk=5 fr_len=1152
+10/04/26 12:57:48.843733 [4] PDU LONG/FAIL hex:  [76c00043cc47840558022ec6]  [0a2800000000000000000000]  [040000000000000000000000]  [000000000000000000000000]  [000000000000000000000000]
+10/04/26 12:57:48.844421 [4] NAC 0x36b PDU hex: fmt=0x16 sap=0 blks=4 nblk=5 :  [76c00043cc47840558022ec6]  [0a2800000000000000000000]  [040000000000000000000000]  [000000000000000000000000]  [000000000000000000000000]
+10/04/26 12:57:49.554102 [4] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 12:57:49.554202 [4] ACK/RX rid=4443207 sap=10 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 12:57:49.554275 [4] NAC 0x36b PDU hex: fmt=0x03 sap=10 blks=0 nblk=1 :  [230a0043cc4780000000839c]
+10/04/26 12:58:20.064657 [4] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 12:58:20.064778 [4] ACK/RX rid=4443207 sap=11 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 12:58:20.064799 [4] NAC 0x36b PDU hex: fmt=0x03 sap=11 blks=0 nblk=1 :  [230b0043cc478000000068bf]
+10/04/26 12:58:28.514075 [1] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 12:58:28.514189 [1] ACK/RX rid=4443233 sap=13 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 12:58:28.514216 [1] NAC 0x368 PDU hex: fmt=0x03 sap=13 blks=0 nblk=1 :  [230d0043cc6180000000f706]
+10/04/26 12:58:47.403945 [3] process_blocks trellis1/2 fail blk=0 (kept)
+10/04/26 12:58:47.404085 [3] process_blocks trellis1/2 fail blk=1 (kept)
+10/04/26 12:58:47.404105 [3] process_blocks trellis1/2 fail blk=2 (kept)
+10/04/26 12:58:47.404120 [3] PDU header CRC fail nblk=3
+  D34 cost=13 FAIL (threshold=8)
+  D34 cost=11 FAIL (threshold=8)
+10/04/26 12:58:47.404298 [3] PDU process_blocks rc=0 nblk=3 fr_len=792
+10/04/26 12:58:47.404315 [3] PDU LONG/FAIL hex:  [230800000000000000000000]  [000000000000000000000000]  [000000000000000000000000]
+10/04/26 12:58:47.404747 [3] PDU header CRC fail nblk=3 maybe_rid=0 (unverified, CRC failed) : 23 08 00 00 00 00 00 00 00 00 00 00
+10/04/26 12:58:49.946143 [4] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 12:58:49.946238 [4] ACK/RX rid=4443207 sap=12 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 12:58:49.946257 [4] NAC 0x36b PDU hex: fmt=0x03 sap=12 blks=0 nblk=1 :  [230c0043cc4780000000d914]
+10/04/26 12:59:14.843445 [4] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 12:59:14.843570 [4] ACK/RX rid=4116729 sap=9 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 12:59:14.843591 [4] NAC 0x36b PDU hex: fmt=0x03 sap=9 blks=0 nblk=1 :  [2309003ed0f9800000003042]
+10/04/26 12:59:15.046581 [4] process_blocks trellis1/2 fail blk=1 (kept)
+10/04/26 12:59:15.046708 [4] process_blocks trellis1/2 fail blk=2 (kept)
+  D34 cost=1 ok
+10/04/26 12:59:15.046725 [4] CONFIRMED blk1 rid=4116729: 00 b6 01 03 f1 0a ae bb c1 00 00 20 00 00 10 f5 f5 f5
+10/04/26 12:59:15.046725 [4] CONFIRMED blk2 rid=4116729: 02 42 f5 f5 f5 f5 f5 f5 f5 f5 f5 f5 f5 f5 8e f7 5e eb
+10/04/26 12:59:15.046725 [4] PDU hdr fmt=0x16 sap=6 rid=4116729 blks_hdr=2 n34=2 fr_len=720
+10/04/26 12:59:15.046725 [4] SNDCP ctrl rid=4116729 n34=2
+10/04/26 12:59:15.047312 [4] PDU process_blocks rc=0 nblk=3 fr_len=720
+10/04/26 12:59:15.047334 [4] PDU LONG/FAIL hex:  [76c6003ed0f9820f58002ace]  [000000000000000000000000]  [0c0000000000000000000000]
+10/04/26 12:59:15.047803 [4] NAC 0x36b PDU hex: fmt=0x16 sap=6 blks=2 nblk=3 :  [76c6003ed0f9820f58002ace]  [000000000000000000000000]  [0c0000000000000000000000]
+10/04/26 12:59:19.742570 [4] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 12:59:19.742672 [4] ACK/RX rid=4443207 sap=13 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 12:59:19.742701 [4] NAC 0x36b PDU hex: fmt=0x03 sap=13 blks=0 nblk=1 :  [230d0043cc47800000003237]
+10/04/26 12:59:21.470575 [4] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 12:59:21.470691 [4] ACK/RX rid=4116729 sap=10 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 12:59:21.470712 [4] NAC 0x36b PDU hex: fmt=0x03 sap=10 blks=0 nblk=1 :  [230a003ed0f9800000001d06]
+10/04/26 12:59:21.899189 [4] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 12:59:21.899282 [4] ACK/RX rid=4116729 sap=11 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 12:59:21.899302 [4] NAC 0x36b PDU hex: fmt=0x03 sap=11 blks=0 nblk=1 :  [230b003ed0f980000000f625]
+10/04/26 12:59:22.140639 [4] process_blocks trellis1/2 fail blk=1 (kept)
+10/04/26 12:59:22.140757 [4] process_blocks trellis1/2 fail blk=2 (kept)
+10/04/26 12:59:22.140774 [4] process_blocks trellis1/2 fail blk=3 (kept)
+  D34 cost=1 ok
+10/04/26 12:59:22.140788 [4] CONFIRMED blk1 rid=4116729: 01 30 51 00 45 00 00 1f d1 bb 00 00 77 11 c0 70 0a ac
+  D34 cost=1 ok
+10/04/26 12:59:22.140788 [4] CONFIRMED blk2 rid=4116729: 02 e5 e0 86 0a ae bb c1 e4 eb 0f a5 00 0b 1a a4 00 01
+  D34 cost=1 ok
+10/04/26 12:59:22.140788 [4] CONFIRMED blk3 rid=4116729: 05 a7 3f f5 f5 f5 f5 f5 f5 f5 f5 f5 f5 f5 80 79 82 de
+10/04/26 12:59:22.140788 [4] PDU hdr fmt=0x16 sap=0 rid=4116729 blks_hdr=3 n34=3 fr_len=936
+10/04/26 12:59:22.140788 [4] [4] REASM rid=4116729 len=31
+10/04/26 12:59:22.140788 [4] [4] IP rid=4116729 ver=4 ihl=20 tot=31 have=31 proto=0x11 10.172.224.134 -> 10.174.187.193
+10/04/26 12:59:22.140788 [4] [4] UDP rid=4116729 10.172.224.134:58603 -> 10.174.187.193:4005 udp_len=11 payload=3
+10/04/26 12:59:22.140788 [4] [4] HEXDUMP rid=4116729 len=3:
+10/04/26 12:59:22.140788 [4] [4] HEX rid=4116729 0000: 00 01 3f                                          |..?|
+10/04/26 12:59:22.140788 [4] [4] TMS_TEXT rid=4116729 text=
+10/04/26 12:59:22.140788 [4] [4] REASM raw rid=4116729 leftover=15
+10/04/26 12:59:22.142239 [4] PDU process_blocks rc=0 nblk=4 fr_len=936
+10/04/26 12:59:22.142281 [4] PDU LONG/FAIL hex:  [76c0003ed0f9830b0802f4cf]  [000000000000000000000000]  [040000000000000000000000]  [000000000000000000000000]
+10/04/26 12:59:22.142839 [4] NAC 0x36b PDU hex: fmt=0x16 sap=0 blks=3 nblk=4 :  [76c0003ed0f9830b0802f4cf]  [000000000000000000000000]  [040000000000000000000000]  [000000000000000000000000]
+10/04/26 12:59:22.554276 [4] process_blocks trellis1/2 fail blk=1 (kept)
+10/04/26 12:59:22.554386 [4] process_blocks trellis1/2 fail blk=2 (kept)
+10/04/26 12:59:22.554403 [4] process_blocks trellis1/2 fail blk=3 (kept)
+  D34 cost=1 ok
+10/04/26 12:59:22.554417 [4] CONFIRMED blk1 rid=4116729: 00 10 51 00 45 00 00 20 d1 bc 00 00 77 11 c0 6e 0a ac
+10/04/26 12:59:22.554417 [4] CONFIRMED blk2 rid=4116729: 02 86 e0 86 0a ae bb c1 e4 eb 0f a7 00 0c e9 9e 00 02
+  D34 cost=1 ok
+10/04/26 12:59:22.554417 [4] CONFIRMED blk3 rid=4116729: 05 79 70 00 f5 f5 f5 f5 f5 f5 f5 f5 f5 f5 ef 4b e9 59
+10/04/26 12:59:22.554417 [4] PDU hdr fmt=0x16 sap=0 rid=4116729 blks_hdr=3 n34=3 fr_len=936
+10/04/26 12:59:22.554417 [4] [4] REASM rid=4116729 len=32
+10/04/26 12:59:22.554417 [4] [4] IP rid=4116729 ver=4 ihl=20 tot=32 have=32 proto=0x11 10.172.224.134 -> 10.174.187.193
+10/04/26 12:59:22.554417 [4] [4] UDP rid=4116729 10.172.224.134:58603 -> 10.174.187.193:4007 udp_len=12 payload=4
+10/04/26 12:59:22.554417 [4] [4] HEXDUMP rid=4116729 len=4:
+10/04/26 12:59:22.554417 [4] [4] HEX rid=4116729 0000: 00 02 70 00                                       |..p.|
+10/04/26 12:59:22.554417 [4] [4] TMS_TEXT rid=4116729 text=p
+10/04/26 12:59:22.554417 [4] [4] REASM raw rid=4116729 leftover=14
+10/04/26 12:59:22.555803 [4] PDU process_blocks rc=0 nblk=4 fr_len=936
+10/04/26 12:59:22.555844 [4] PDU LONG/FAIL hex:  [76c0003ed0f9830a1802c08c]  [000000000000000000000000]  [070000000000000000000000]  [000000000000000000000000]
+10/04/26 12:59:22.556411 [4] NAC 0x36b PDU hex: fmt=0x16 sap=0 blks=3 nblk=4 :  [76c0003ed0f9830a1802c08c]  [000000000000000000000000]  [070000000000000000000000]  [000000000000000000000000]
+10/04/26 12:59:23.121612 [4] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 12:59:23.121722 [4] ACK/RX rid=4116729 sap=12 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 12:59:23.121742 [4] NAC 0x36b PDU hex: fmt=0x03 sap=12 blks=0 nblk=1 :  [230c003ed0f980000000478e]
+10/04/26 12:59:25.464756 [4] process_blocks trellis1/2 fail blk=1 (kept)
+10/04/26 12:59:25.464867 [4] process_blocks trellis1/2 fail blk=2 (kept)
+10/04/26 12:59:25.464885 [4] process_blocks trellis1/2 fail blk=3 (kept)
+10/04/26 12:59:25.464899 [4] process_blocks trellis1/2 fail blk=4 (kept)
+10/04/26 12:59:25.464913 [4] CONFIRMED blk1 rid=4116729: 01 2c 51 00 45 88 00 35 10 12 00 00 3c 11 9e cf 0a ad
+  D34 cost=1 ok
+10/04/26 12:59:25.464913 [4] CONFIRMED blk2 rid=4116729: 03 80 fe 32 0a ae bb c1 fb 9e fb 9e 00 21 bc 36 00 00
+10/04/26 12:59:25.464913 [4] CONFIRMED blk3 rid=4116729: 05 25 80 00 00 00 00 00 00 00 00 00 00 00 26 00 08 00
+  D34 cost=1 ok
+10/04/26 12:59:25.464913 [4] CONFIRMED blk4 rid=4116729: 07 63 3e d0 f9 98 96 7e 00 f5 f5 f5 f5 f5 83 ba d1 cf
+10/04/26 12:59:25.464913 [4] PDU hdr fmt=0x16 sap=0 rid=4116729 blks_hdr=4 n34=4 fr_len=1152
+10/04/26 12:59:25.464913 [4] [4] REASM rid=4116729 len=53
+10/04/26 12:59:25.464913 [4] [4] IP rid=4116729 ver=4 ihl=20 tot=53 have=53 proto=0x11 10.173.254.50 -> 10.174.187.193
+10/04/26 12:59:25.464913 [4] [4] UDP rid=4116729 10.173.254.50:64414 -> 10.174.187.193:64414 udp_len=33 payload=25
+10/04/26 12:59:25.464913 [4] [4] BEACON rid=4116729 self_id=4116729 ok
+10/04/26 12:59:25.464913 [4] [4] REASM raw rid=4116729 leftover=9
+10/04/26 12:59:25.466296 [4] PDU process_blocks rc=0 nblk=5 fr_len=1152
+10/04/26 12:59:25.466335 [4] PDU LONG/FAIL hex:  [76c0003ed0f984056802b5c9]  [000000000000000000000000]  [078970000000000000000000]  [000000000000000000000000]  [000000000000000000000000]
+10/04/26 12:59:25.467039 [4] NAC 0x36b PDU hex: fmt=0x16 sap=0 blks=4 nblk=5 :  [76c0003ed0f984056802b5c9]  [000000000000000000000000]  [078970000000000000000000]  [000000000000000000000000]  [000000000000000000000000]
+10/04/26 13:00:09.067738 [4] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 13:00:09.067857 [4] ACK/RX rid=4017232 sap=8 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 13:00:09.067876 [4] NAC 0x36b PDU hex: fmt=0x03 sap=8 blks=0 nblk=1 :  [2308003d4c508000000044bc]
+10/04/26 13:00:09.272094 [4] process_blocks trellis1/2 fail blk=1 (kept)
+10/04/26 13:00:09.272194 [4] process_blocks trellis1/2 fail blk=2 (kept)
+  D34 cost=1 ok
+10/04/26 13:00:09.272219 [4] CONFIRMED blk1 rid=4017232: 01 21 01 03 f1 0a ae 15 e7 00 00 20 00 00 20 f5 f5 f5
+  D34 cost=1 ok
+10/04/26 13:00:09.272219 [4] CONFIRMED blk2 rid=4017232: 02 7f f5 f5 f5 f5 f5 f5 f5 f5 f5 f5 f5 f5 78 63 5a cf
+10/04/26 13:00:09.272219 [4] PDU hdr fmt=0x16 sap=6 rid=4017232 blks_hdr=2 n34=2 fr_len=720
+10/04/26 13:00:09.272219 [4] SNDCP ctrl rid=4017232 n34=2
+10/04/26 13:00:09.272788 [4] PDU process_blocks rc=0 nblk=3 fr_len=720
+10/04/26 13:00:09.272815 [4] PDU LONG/FAIL hex:  [76c6003d4c50820f0800bbac]  [000000000000000000000000]  [0c0000000000000000000000]
+10/04/26 13:00:09.273259 [4] NAC 0x36b PDU hex: fmt=0x16 sap=6 blks=2 nblk=3 :  [76c6003d4c50820f0800bbac]  [000000000000000000000000]  [0c0000000000000000000000]
+10/04/26 13:00:15.594994 [4] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 13:00:15.595116 [4] ACK/RX rid=4017232 sap=9 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 13:00:15.595148 [4] NAC 0x36b PDU hex: fmt=0x03 sap=9 blks=0 nblk=1 :  [2309003d4c5080000000af9f]
+10/04/26 13:00:18.143867 [4] process_blocks trellis1/2 fail blk=1 (kept)
+10/04/26 13:00:18.143983 [4] process_blocks trellis1/2 fail blk=2 (kept)
+10/04/26 13:00:18.144000 [4] process_blocks trellis1/2 fail blk=3 (kept)
+10/04/26 13:00:18.144015 [4] process_blocks trellis1/2 fail blk=4 (kept)
+10/04/26 13:00:18.144028 [4] CONFIRMED blk1 rid=4017232: 00 23 51 00 45 88 00 35 79 f8 00 00 3c 11 da c3 0a ad
+  D34 cost=1 ok
+10/04/26 13:00:18.144028 [4] CONFIRMED blk2 rid=4017232: 03 0c fe 32 0a ae 15 e7 fb 9e fb 9e 00 21 0c 96 00 00
+10/04/26 13:00:18.144028 [4] CONFIRMED blk3 rid=4017232: 05 25 80 00 00 00 00 00 00 00 00 00 00 00 26 00 08 00
+10/04/26 13:00:18.144028 [4] CONFIRMED blk4 rid=4017232: 06 91 3d 4c 50 98 96 7e 00 f5 f5 f5 f5 f5 42 15 51 2a
+10/04/26 13:00:18.144028 [4] PDU hdr fmt=0x16 sap=0 rid=4017232 blks_hdr=4 n34=4 fr_len=1152
+10/04/26 13:00:18.144028 [4] [4] REASM rid=4017232 len=53
+10/04/26 13:00:18.144028 [4] [4] IP rid=4017232 ver=4 ihl=20 tot=53 have=53 proto=0x11 10.173.254.50 -> 10.174.21.231
+10/04/26 13:00:18.144028 [4] [4] UDP rid=4017232 10.173.254.50:64414 -> 10.174.21.231:64414 udp_len=33 payload=25
+10/04/26 13:00:18.144028 [4] [4] BEACON rid=4017232 self_id=4017232 ok
+10/04/26 13:00:18.144028 [4] [4] REASM raw rid=4017232 leftover=9
+10/04/26 13:00:18.145480 [4] PDU process_blocks rc=0 nblk=5 fr_len=1152
+10/04/26 13:00:18.145518 [4] PDU LONG/FAIL hex:  [76c0003d4c50840558022f81]  [000000000000000000000000]  [0c0000000000000000000000]  [000000000000000000000000]  [000000000000000000000000]
+10/04/26 13:00:18.146200 [4] NAC 0x36b PDU hex: fmt=0x16 sap=0 blks=4 nblk=5 :  [76c0003d4c50840558022f81]  [000000000000000000000000]  [0c0000000000000000000000]  [000000000000000000000000]  [000000000000000000000000]
+10/04/26 13:00:20.503930 [4] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 13:00:20.504026 [4] ACK/RX rid=4445263 sap=8 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 13:00:20.504045 [4] NAC 0x36b PDU hex: fmt=0x03 sap=8 blks=0 nblk=1 :  [23080043d44f800000005010]
+10/04/26 13:00:20.708239 [4] process_blocks trellis1/2 fail blk=1 (kept)
+10/04/26 13:00:20.708369 [4] process_blocks trellis1/2 fail blk=2 (kept)
+  D34 cost=1 ok
+10/04/26 13:00:20.708415 [4] CONFIRMED blk1 rid=4445263: 00 28 01 03 f1 0a ae 87 20 00 00 20 00 00 40 f5 f5 f5
+  D34 cost=1 ok
+10/04/26 13:00:20.708415 [4] CONFIRMED blk2 rid=4445263: 02 97 f5 f5 f5 f5 f5 f5 f5 f5 f5 f5 f5 f5 cd 42 f1 50
+10/04/26 13:00:20.708415 [4] PDU hdr fmt=0x16 sap=6 rid=4445263 blks_hdr=2 n34=2 fr_len=720
+10/04/26 13:00:20.708415 [4] SNDCP ctrl rid=4445263 n34=2
+10/04/26 13:00:20.708999 [4] PDU process_blocks rc=0 nblk=3 fr_len=720
+10/04/26 13:00:20.709021 [4] PDU LONG/FAIL hex:  [76c60043d44f820f0800af00]  [000000000000000000000000]  [040000000000000000000000]
+10/04/26 13:00:20.709539 [4] NAC 0x36b PDU hex: fmt=0x16 sap=6 blks=2 nblk=3 :  [76c60043d44f820f0800af00]  [000000000000000000000000]  [040000000000000000000000]
+10/04/26 13:00:54.426059 [1] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 13:00:54.426195 [1] ACK/RX rid=4443206 sap=11 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 13:00:54.426217 [1] NAC 0x368 PDU hex: fmt=0x03 sap=11 blks=0 nblk=1 :  [230b0043cc4680000000c2ee]
+10/04/26 13:00:56.879337 [4] PDU process_blocks rc=0 nblk=2 fr_len=576
+10/04/26 13:00:56.879429 [4] PDU LONG/FAIL hex:  [23810043d44f810000005bca]  [f3ffffffffffffffef352a7c]
+10/04/26 13:00:56.879781 [4] PDU rid=4445263 fmt=0x03 sap=1 blks=1 (other/unhandled fmt)
+10/04/26 13:00:56.879800 [4] NAC 0x36b PDU hex: fmt=0x03 sap=1 blks=1 nblk=2 :  [23810043d44f810000005bca]  [f3ffffffffffffffef352a7c]
+10/04/26 13:00:57.233555 [4] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 13:00:57.233655 [4] ACK/RX rid=4445263 sap=9 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 13:00:57.233675 [4] NAC 0x36b PDU hex: fmt=0x03 sap=9 blks=0 nblk=1 :  [23090043d44f80000000bb33]
+10/04/26 13:01:00.510209 [4] process_blocks trellis1/2 fail blk=1 (kept)
+10/04/26 13:01:00.510346 [4] process_blocks trellis1/2 fail blk=2 (kept)
+10/04/26 13:01:00.510370 [4] process_blocks trellis1/2 fail blk=3 (kept)
+10/04/26 13:01:00.510384 [4] process_blocks trellis1/2 fail blk=4 (kept)
+10/04/26 13:01:00.510398 [4] CONFIRMED blk1 rid=4445263: 01 72 51 00 45 00 00 35 1c c2 00 00 7b 11 d2 67 0a ac
+  D34 cost=1 ok
+10/04/26 13:01:00.510398 [4] CONFIRMED blk2 rid=4445263: 02 2d b4 14 0a ae 87 20 fb 9e fb 9e 00 21 e2 1d 00 00
+10/04/26 13:01:00.510398 [4] CONFIRMED blk3 rid=4445263: 05 25 80 00 00 00 00 00 00 00 00 00 00 00 26 00 08 00
+10/04/26 13:01:00.510398 [4] CONFIRMED blk4 rid=4445263: 06 28 43 d4 4f 98 94 54 00 f5 f5 f5 f5 f5 ac 10 d0 34
+10/04/26 13:01:00.510398 [4] PDU hdr fmt=0x16 sap=0 rid=4445263 blks_hdr=4 n34=4 fr_len=1152
+10/04/26 13:01:00.510398 [4] [4] REASM rid=4445263 len=53
+10/04/26 13:01:00.510398 [4] [4] IP rid=4445263 ver=4 ihl=20 tot=53 have=53 proto=0x11 10.172.180.20 -> 10.174.135.32
+10/04/26 13:01:00.510398 [4] [4] UDP rid=4445263 10.172.180.20:64414 -> 10.174.135.32:64414 udp_len=33 payload=25
+10/04/26 13:01:00.510398 [4] [4] BEACON rid=4445263 self_id=4445263 ok
+10/04/26 13:01:00.510398 [4] [4] REASM raw rid=4445263 leftover=9
+10/04/26 13:01:00.511787 [4] PDU process_blocks rc=0 nblk=5 fr_len=1152
+10/04/26 13:01:00.511823 [4] PDU LONG/FAIL hex:  [76c00043d44f840558023b2d]  [000000000000000000000000]  [0dea5e000000000000000000]  [000000000000000000000000]  [000000000000000000000000]
+10/04/26 13:01:00.512508 [4] NAC 0x36b PDU hex: fmt=0x16 sap=0 blks=4 nblk=5 :  [76c00043d44f840558023b2d]  [000000000000000000000000]  [0dea5e000000000000000000]  [000000000000000000000000]  [000000000000000000000000]
+10/04/26 13:01:18.517064 [4] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 13:01:18.517180 [4] ACK/RX rid=4443230 sap=12 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 13:01:18.517202 [4] NAC 0x36b PDU hex: fmt=0x03 sap=12 blks=0 nblk=1 :  [230c0043cc5e800000007532]
+10/04/26 13:01:24.522660 [1] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 13:01:24.522773 [1] ACK/RX rid=4443206 sap=12 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 13:01:24.522795 [1] NAC 0x368 PDU hex: fmt=0x03 sap=12 blks=0 nblk=1 :  [230c0043cc46800000007345]
+10/04/26 13:01:28.518963 [2] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 13:01:28.519083 [2] ACK/RX rid=590134 sap=13 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 13:01:28.519108 [2] NAC 0x368 PDU hex: fmt=0x03 sap=13 blks=0 nblk=1 :  [230d00090136800000005b31]
+10/04/26 13:01:28.719561 [2] process_blocks trellis1/2 fail blk=1 (kept)
+10/04/26 13:01:28.719697 [2] CONFIRMED blk1 rid=590134: 00 75 31 17 00 06 f5 f5 f5 f5 f5 f5 f5 f5 4a 77 73 d4
+10/04/26 13:01:28.719697 [2] PDU hdr fmt=0x16 sap=6 rid=590134 blks_hdr=1 n34=1 fr_len=576
+10/04/26 13:01:28.719697 [2] SNDCP ctrl rid=590134 n34=1
+10/04/26 13:01:28.720068 [2] PDU process_blocks rc=0 nblk=2 fr_len=576
+10/04/26 13:01:28.720086 [2] PDU LONG/FAIL hex:  [76c60009013681083800c834]  [010000000000000000000000]
+10/04/26 13:01:28.720383 [2] NAC 0x368 PDU hex: fmt=0x16 sap=6 blks=1 nblk=2 :  [76c60009013681083800c834]  [010000000000000000000000]
+10/04/26 13:01:29.058169 [3] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 13:01:29.058264 [3] ACK/RX rid=4443181 sap=11 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 13:01:29.058283 [3] NAC 0x368 PDU hex: fmt=0x03 sap=11 blks=0 nblk=1 :  [230b0043cc2d8000000037cd]
+10/04/26 13:01:48.502054 [4] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 13:01:48.502186 [4] ACK/RX rid=4443230 sap=13 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 13:01:48.502213 [4] NAC 0x36b PDU hex: fmt=0x03 sap=13 blks=0 nblk=1 :  [230d0043cc5e800000009e11]
+10/04/26 13:01:49.106373 [1] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 13:01:49.106465 [1] ACK/RX rid=4017232 sap=10 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 13:01:49.106483 [1] NAC 0x368 PDU hex: fmt=0x03 sap=10 blks=0 nblk=1 :  [230a003d4c508000000082db]
+10/04/26 13:01:49.312757 [1] process_blocks trellis1/2 fail blk=1 (kept)
+10/04/26 13:01:49.312870 [1] process_blocks trellis1/2 fail blk=2 (kept)
+10/04/26 13:01:49.312888 [1] CONFIRMED blk1 rid=4017232: 01 d2 01 03 f1 0a ae 15 e7 00 00 20 00 00 08 f5 f5 f5
+10/04/26 13:01:49.312888 [1] CONFIRMED blk2 rid=4017232: 03 bf f5 f5 f5 f5 f5 f5 f5 f5 f5 f5 f5 f5 e0 2d 32 83
+10/04/26 13:01:49.312888 [1] PDU hdr fmt=0x16 sap=6 rid=4017232 blks_hdr=2 n34=2 fr_len=720
+10/04/26 13:01:49.312888 [1] SNDCP ctrl rid=4017232 n34=2
+10/04/26 13:01:49.313472 [1] PDU process_blocks rc=0 nblk=3 fr_len=720
+10/04/26 13:01:49.313494 [1] PDU LONG/FAIL hex:  [76c6003d4c50820f5800b513]  [0be800000000000000000000]  [060000000000000000000000]
+10/04/26 13:01:49.313915 [1] NAC 0x368 PDU hex: fmt=0x16 sap=6 blks=2 nblk=3 :  [76c6003d4c50820f5800b513]  [0be800000000000000000000]  [060000000000000000000000]
+10/04/26 13:01:54.382450 [2] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 13:01:54.382559 [2] ACK/RX rid=4443206 sap=13 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 13:01:54.382581 [2] NAC 0x368 PDU hex: fmt=0x03 sap=13 blks=0 nblk=1 :  [230d0043cc46800000009866]
+10/04/26 13:01:55.596907 [3] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 13:01:55.596997 [3] ACK/RX rid=4017232 sap=11 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 13:01:55.597015 [3] NAC 0x368 PDU hex: fmt=0x03 sap=11 blks=0 nblk=1 :  [230b003d4c508000000069f8]
+10/04/26 13:02:00.761522 [0] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 13:02:00.761635 [0] ACK/RX rid=4443236 sap=15 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 13:02:00.761664 [0] NAC 0x368 PDU hex: fmt=0x03 sap=15 blks=0 nblk=1 :  [230f0043cc64800000001236]
+10/04/26 13:02:02.721858 [1] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 13:02:02.721989 [1] ACK/RX rid=4116729 sap=14 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 13:02:02.722014 [1] NAC 0x368 PDU hex: fmt=0x03 sap=14 blks=0 nblk=1 :  [230e003ed0f98000000081e9]
+10/04/26 13:02:02.941350 [1] process_blocks trellis1/2 fail blk=1 (kept)
+10/04/26 13:02:02.941470 [1] process_blocks trellis1/2 fail blk=2 (kept)
+10/04/26 13:02:02.941489 [1] process_blocks trellis1/2 fail blk=3 (kept)
+  D34 cost=1 ok
+10/04/26 13:02:02.941503 [1] CONFIRMED blk1 rid=4116729: 00 72 51 00 45 00 00 1f d1 bd 00 00 77 11 c0 6e 0a ac
+  D34 cost=1 ok
+10/04/26 13:02:02.941503 [1] CONFIRMED blk2 rid=4116729: 02 ff e0 86 0a ae bb c1 d5 a6 0f a5 00 0b 29 e9 00 01
+  D34 cost=1 ok
+10/04/26 13:02:02.941503 [1] CONFIRMED blk3 rid=4116729: 05 df 3f f5 f5 f5 f5 f5 f5 f5 f5 f5 f5 f5 b7 d3 fc 44
+10/04/26 13:02:02.941503 [1] PDU hdr fmt=0x16 sap=0 rid=4116729 blks_hdr=3 n34=3 fr_len=936
+10/04/26 13:02:02.941503 [1] [1] REASM rid=4116729 len=31
+10/04/26 13:02:02.941503 [1] [1] IP rid=4116729 ver=4 ihl=20 tot=31 have=31 proto=0x11 10.172.224.134 -> 10.174.187.193
+10/04/26 13:02:02.941503 [1] [1] UDP rid=4116729 10.172.224.134:54694 -> 10.174.187.193:4005 udp_len=11 payload=3
+10/04/26 13:02:02.941503 [1] [1] HEXDUMP rid=4116729 len=3:
+10/04/26 13:02:02.941503 [1] [1] HEX rid=4116729 0000: 00 01 3f                                          |..?|
+10/04/26 13:02:02.941503 [1] [1] TMS_TEXT rid=4116729 text=
+10/04/26 13:02:02.941503 [1] [1] REASM raw rid=4116729 leftover=15
+10/04/26 13:02:02.943046 [1] PDU process_blocks rc=0 nblk=4 fr_len=936
+10/04/26 13:02:02.943088 [1] PDU LONG/FAIL hex:  [76c0003ed0f9830b3802f15a]  [014000000000000000000000]  [055300000000000000000000]  [000000000000000000000000]
+10/04/26 13:02:02.944540 [1] NAC 0x368 PDU hex: fmt=0x16 sap=0 blks=3 nblk=4 :  [76c0003ed0f9830b3802f15a]  [014000000000000000000000]  [055300000000000000000000]  [000000000000000000000000]
+10/04/26 13:02:03.351749 [1] process_blocks trellis1/2 fail blk=1 (kept)
+10/04/26 13:02:03.351883 [1] process_blocks trellis1/2 fail blk=2 (kept)
+10/04/26 13:02:03.351901 [1] process_blocks trellis1/2 fail blk=3 (kept)
+  D34 cost=1 ok
+10/04/26 13:02:03.351916 [1] CONFIRMED blk1 rid=4116729: 00 48 51 00 45 00 00 20 d1 be 00 00 77 11 c0 6c 0a ac
+10/04/26 13:02:03.351916 [1] CONFIRMED blk2 rid=4116729: 02 e4 e0 86 0a ae bb c1 d5 a6 0f a7 00 0c f8 e3 00 02
+  D34 cost=1 ok
+10/04/26 13:02:03.351916 [1] CONFIRMED blk3 rid=4116729: 04 0a 70 00 f5 f5 f5 f5 f5 f5 f5 f5 f5 f5 80 5f 67 64
+10/04/26 13:02:03.351916 [1] PDU hdr fmt=0x16 sap=0 rid=4116729 blks_hdr=3 n34=3 fr_len=936
+10/04/26 13:02:03.351916 [1] [1] REASM rid=4116729 len=32
+10/04/26 13:02:03.351916 [1] [1] IP rid=4116729 ver=4 ihl=20 tot=32 have=32 proto=0x11 10.172.224.134 -> 10.174.187.193
+10/04/26 13:02:03.351916 [1] [1] UDP rid=4116729 10.172.224.134:54694 -> 10.174.187.193:4007 udp_len=12 payload=4
+10/04/26 13:02:03.351916 [1] [1] HEXDUMP rid=4116729 len=4:
+10/04/26 13:02:03.351916 [1] [1] HEX rid=4116729 0000: 00 02 70 00                                       |..p.|
+10/04/26 13:02:03.351916 [1] [1] TMS_TEXT rid=4116729 text=p
+10/04/26 13:02:03.351916 [1] [1] REASM raw rid=4116729 leftover=14
+10/04/26 13:02:03.353288 [1] PDU process_blocks rc=0 nblk=4 fr_len=936
+10/04/26 13:02:03.353323 [1] PDU LONG/FAIL hex:  [76c0003ed0f9830a4802ce33]  [030000000000000000000000]  [040000000000000000000000]  [000000000000000000000000]
+10/04/26 13:02:03.353895 [1] NAC 0x368 PDU hex: fmt=0x16 sap=0 blks=3 nblk=4 :  [76c0003ed0f9830a4802ce33]  [030000000000000000000000]  [040000000000000000000000]  [000000000000000000000000]
+10/04/26 13:02:03.945305 [1] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 13:02:03.945389 [1] ACK/RX rid=4116729 sap=15 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 13:02:03.945406 [1] NAC 0x368 PDU hex: fmt=0x03 sap=15 blks=0 nblk=1 :  [230f003ed0f9800000006aca]
+10/04/26 13:02:04.064098 [2] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 13:02:04.064197 [2] ACK/RX rid=4443235 sap=13 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 13:02:04.064216 [2] NAC 0x368 PDU hex: fmt=0x03 sap=13 blks=0 nblk=1 :  [230d0043cc6380000000b385]
+10/04/26 13:02:04.407645 [1] PDU process_blocks rc=0 nblk=2 fr_len=576
+10/04/26 13:02:04.407741 [1] PDU LONG/FAIL hex:  [2380003ed0f9810000003b98]  [fdffffffffffffffe6bc2049]
+10/04/26 13:02:04.408053 [1] PDU rid=4116729 fmt=0x03 sap=0 blks=1 (other/unhandled fmt)
+10/04/26 13:02:04.408072 [1] NAC 0x368 PDU hex: fmt=0x03 sap=0 blks=1 nblk=2 :  [2380003ed0f9810000003b98]  [fdffffffffffffffe6bc2049]
+10/04/26 13:02:09.021898 [1] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 13:02:09.022013 [1] ACK/RX rid=4116729 sap=8 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 13:02:09.022033 [1] NAC 0x368 PDU hex: fmt=0x03 sap=8 blks=0 nblk=1 :  [2308003ed0f980000000db61]
+10/04/26 13:02:13.146816 [3] process_blocks trellis1/2 fail blk=1 (kept)
+  D34 cost=1 ok
+10/04/26 13:02:13.146938 [3] CONFIRMED blk1 rid=4116729: 06 81 3e d0 f9 98 96 7e 00 f5 f5 f5 f5 f5 70 77 91 1f
+10/04/26 13:02:13.146938 [3] PDU hdr fmt=0x16 sap=0 rid=4116729 blks_hdr=1 n34=1 fr_len=576
+10/04/26 13:02:13.146938 [3] [3] REASM raw rid=4116729 leftover=16
+10/04/26 13:02:13.147383 [3] PDU process_blocks rc=0 nblk=2 fr_len=576
+10/04/26 13:02:13.147404 [3] PDU LONG/FAIL hex:  [76c0003ed0f901054802d252]  [000000000000000000000000]
+10/04/26 13:02:13.147735 [3] NAC 0x368 PDU hex: fmt=0x16 sap=0 blks=1 nblk=2 :  [76c0003ed0f901054802d252]  [000000000000000000000000]
+10/04/26 13:02:18.588445 [4] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 13:02:18.588570 [4] ACK/RX rid=4443230 sap=14 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 13:02:18.588592 [4] NAC 0x36b PDU hex: fmt=0x03 sap=14 blks=0 nblk=1 :  [230e0043cc5e80000000b355]
+10/04/26 13:02:30.747719 [0] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 13:02:30.747841 [0] ACK/RX rid=4443236 sap=8 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 13:02:30.747870 [0] NAC 0x368 PDU hex: fmt=0x03 sap=8 blks=0 nblk=1 :  [23080043cc6480000000a39d]
+10/04/26 13:02:31.198909 [1] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 13:02:31.199001 [1] ACK/RX rid=4443197 sap=15 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 13:02:31.199024 [1] NAC 0x368 PDU hex: fmt=0x03 sap=15 blks=0 nblk=1 :  [230f0043cc3d80000000af78]
+10/04/26 13:02:34.050525 [3] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 13:02:34.050669 [3] ACK/RX rid=4443235 sap=14 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 13:02:34.050692 [3] NAC 0x368 PDU hex: fmt=0x03 sap=14 blks=0 nblk=1 :  [230e0043cc63800000009ec1]
+10/04/26 13:02:48.485022 [4] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 13:02:48.485143 [4] ACK/RX rid=4443230 sap=15 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 13:02:48.485167 [4] NAC 0x36b PDU hex: fmt=0x03 sap=15 blks=0 nblk=1 :  [230f0043cc5e800000005876]
+10/04/26 13:03:01.189057 [0] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 13:03:01.189182 [0] ACK/RX rid=4443197 sap=8 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 13:03:01.189203 [0] NAC 0x368 PDU hex: fmt=0x03 sap=8 blks=0 nblk=1 :  [23080043cc3d800000001ed3]
+10/04/26 13:03:04.019939 [1] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 13:03:04.020026 [1] ACK/RX rid=4443235 sap=15 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 13:03:04.020050 [1] NAC 0x368 PDU hex: fmt=0x03 sap=15 blks=0 nblk=1 :  [230f0043cc638000000075e2]
+10/04/26 13:03:06.356471 [2] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 13:03:06.356577 [2] ACK/RX rid=4443223 sap=11 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 13:03:06.356630 [2] NAC 0x368 PDU hex: fmt=0x03 sap=11 blks=0 nblk=1 :  [230b0043cc57800000006ce5]
+10/04/26 13:03:17.674550 [4] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 13:03:17.674663 [4] ACK/RX rid=4116729 sap=10 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 13:03:17.674697 [4] NAC 0x36b PDU hex: fmt=0x03 sap=10 blks=0 nblk=1 :  [230a003ed0f9800000001d06]
+10/04/26 13:03:17.881023 [4] process_blocks trellis1/2 fail blk=1 (kept)
+10/04/26 13:03:17.881157 [4] process_blocks trellis1/2 fail blk=2 (kept)
+  D34 cost=1 ok
+10/04/26 13:03:17.881177 [4] CONFIRMED blk1 rid=4116729: 01 81 01 03 f1 0a ae bb c1 00 00 20 00 00 80 f5 f5 f5
+  D34 cost=1 ok
+10/04/26 13:03:17.881177 [4] CONFIRMED blk2 rid=4116729: 03 80 f5 f5 f5 f5 f5 f5 f5 f5 f5 f5 f5 f5 f5 87 80 50
+10/04/26 13:03:17.881177 [4] PDU hdr fmt=0x16 sap=6 rid=4116729 blks_hdr=2 n34=2 fr_len=720
+10/04/26 13:03:17.881177 [4] SNDCP ctrl rid=4116729 n34=2
+10/04/26 13:03:17.881769 [4] PDU process_blocks rc=0 nblk=3 fr_len=720
+10/04/26 13:03:17.881791 [4] PDU LONG/FAIL hex:  [76c6003ed0f9820f68002f5b]  [080000000000000000000000]  [078000000000000000000000]
+10/04/26 13:03:17.882224 [4] NAC 0x36b PDU hex: fmt=0x16 sap=6 blks=2 nblk=3 :  [76c6003ed0f9820f68002f5b]  [080000000000000000000000]  [078000000000000000000000]
+10/04/26 13:03:18.844614 [4] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 13:03:18.844699 [4] ACK/RX rid=4443230 sap=8 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 13:03:18.844726 [4] NAC 0x36b PDU hex: fmt=0x03 sap=8 blks=0 nblk=1 :  [23080043cc5e80000000e9dd]
+10/04/26 13:03:22.124731 [3] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 13:03:22.124858 [3] ACK/RX rid=590132 sap=11 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 13:03:22.124879 [3] NAC 0x368 PDU hex: fmt=0x03 sap=11 blks=0 nblk=1 :  [230b0009013480000000453a]
+10/04/26 13:03:22.322160 [3] process_blocks trellis1/2 fail blk=1 (kept)
+  D34 cost=1 ok
+10/04/26 13:03:22.322262 [3] CONFIRMED blk1 rid=590132: 00 75 31 17 00 06 f5 f5 f5 f5 f5 f5 f5 f5 4a 77 73 d4
+10/04/26 13:03:22.322262 [3] PDU hdr fmt=0x16 sap=6 rid=590132 blks_hdr=1 n34=1 fr_len=576
+10/04/26 13:03:22.322262 [3] SNDCP ctrl rid=590132 n34=1
+10/04/26 13:03:22.322602 [3] PDU process_blocks rc=0 nblk=2 fr_len=576
+10/04/26 13:03:22.322626 [3] PDU LONG/FAIL hex:  [76c60009013481085800879d]  [010000000000000000000000]
+10/04/26 13:03:22.322927 [3] NAC 0x368 PDU hex: fmt=0x16 sap=6 blks=1 nblk=2 :  [76c60009013481085800879d]  [010000000000000000000000]
+10/04/26 13:03:22.713132 [4] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 13:03:22.713228 [4] ACK/RX rid=4116729 sap=11 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 13:03:22.713274 [4] NAC 0x36b PDU hex: fmt=0x03 sap=11 blks=0 nblk=1 :  [230b003ed0f980000000f625]
+10/04/26 13:03:22.985654 [4] process_blocks trellis1/2 fail blk=1 (kept)
+10/04/26 13:03:22.985761 [4] process_blocks trellis1/2 fail blk=2 (kept)
+10/04/26 13:03:22.985779 [4] process_blocks trellis1/2 fail blk=3 (kept)
+  D34 cost=1 ok
+10/04/26 13:03:22.985793 [4] CONFIRMED blk1 rid=4116729: 00 2a 51 00 45 00 00 1f d1 bf 00 00 77 11 c0 6c 0a ac
+  D34 cost=1 ok
+10/04/26 13:03:22.985793 [4] CONFIRMED blk2 rid=4116729: 03 2d e0 86 0a ae bb c1 ef e2 0f a5 00 0b 0f ad 00 01
+10/04/26 13:03:22.985793 [4] CONFIRMED blk3 rid=4116729: 05 f0 3f f5 f5 f5 f5 f5 f5 f5 f5 f5 f5 f5 6d 8c c3 62
+10/04/26 13:03:22.985793 [4] PDU hdr fmt=0x16 sap=0 rid=4116729 blks_hdr=3 n34=3 fr_len=936
+10/04/26 13:03:22.985793 [4] [4] REASM rid=4116729 len=31
+10/04/26 13:03:22.985793 [4] [4] IP rid=4116729 ver=4 ihl=20 tot=31 have=31 proto=0x11 10.172.224.134 -> 10.174.187.193
+10/04/26 13:03:22.985793 [4] [4] UDP rid=4116729 10.172.224.134:61410 -> 10.174.187.193:4005 udp_len=11 payload=3
+10/04/26 13:03:22.985793 [4] [4] HEXDUMP rid=4116729 len=3:
+10/04/26 13:03:22.985793 [4] [4] HEX rid=4116729 0000: 00 01 3f                                          |..?|
+10/04/26 13:03:22.985793 [4] [4] TMS_TEXT rid=4116729 text=
+10/04/26 13:03:22.985793 [4] [4] REASM raw rid=4116729 leftover=15
+10/04/26 13:03:22.987182 [4] PDU process_blocks rc=0 nblk=4 fr_len=936
+10/04/26 13:03:22.987227 [4] PDU LONG/FAIL hex:  [76c0003ed0f9830b3802f15a]  [000000000000000000000000]  [0dc000000000000000000000]  [000000000000000000000000]
+10/04/26 13:03:22.988801 [4] NAC 0x36b PDU hex: fmt=0x16 sap=0 blks=3 nblk=4 :  [76c0003ed0f9830b3802f15a]  [000000000000000000000000]  [0dc000000000000000000000]  [000000000000000000000000]
+10/04/26 13:03:23.391202 [4] process_blocks trellis1/2 fail blk=1 (kept)
+10/04/26 13:03:23.391351 [4] process_blocks trellis1/2 fail blk=2 (kept)
+10/04/26 13:03:23.391369 [4] process_blocks trellis1/2 fail blk=3 (kept)
+  D34 cost=1 ok
+10/04/26 13:03:23.391383 [4] CONFIRMED blk1 rid=4116729: 01 bf 51 00 45 00 00 20 d1 c0 00 00 77 11 c0 6a 0a ac
+10/04/26 13:03:23.391383 [4] CONFIRMED blk2 rid=4116729: 03 36 e0 86 0a ae bb c1 ef e2 0f a7 00 0c de a7 00 02
+  D34 cost=1 ok
+10/04/26 13:03:23.391383 [4] CONFIRMED blk3 rid=4116729: 05 5a 70 00 f5 f5 f5 f5 f5 f5 f5 f5 f5 f5 42 54 6d d1
+10/04/26 13:03:23.391383 [4] PDU hdr fmt=0x16 sap=0 rid=4116729 blks_hdr=3 n34=3 fr_len=936
+10/04/26 13:03:23.391383 [4] [4] REASM rid=4116729 len=32
+10/04/26 13:03:23.391383 [4] [4] IP rid=4116729 ver=4 ihl=20 tot=32 have=32 proto=0x11 10.172.224.134 -> 10.174.187.193
+10/04/26 13:03:23.391383 [4] [4] UDP rid=4116729 10.172.224.134:61410 -> 10.174.187.193:4007 udp_len=12 payload=4
+10/04/26 13:03:23.391383 [4] [4] HEXDUMP rid=4116729 len=4:
+10/04/26 13:03:23.391383 [4] [4] HEX rid=4116729 0000: 00 02 70 00                                       |..p.|
+10/04/26 13:03:23.391383 [4] [4] TMS_TEXT rid=4116729 text=p
+10/04/26 13:03:23.391383 [4] [4] REASM raw rid=4116729 leftover=14
+10/04/26 13:03:23.392828 [4] PDU process_blocks rc=0 nblk=4 fr_len=936
+10/04/26 13:03:23.392873 [4] PDU LONG/FAIL hex:  [76c0003ed0f9830a4802ce33]  [0b2800000000000000000000]  [0c0000000000000000000000]  [000000000000000000000000]
+10/04/26 13:03:23.393453 [4] NAC 0x36b PDU hex: fmt=0x16 sap=0 blks=3 nblk=4 :  [76c0003ed0f9830a4802ce33]  [0b2800000000000000000000]  [0c0000000000000000000000]  [000000000000000000000000]
+10/04/26 13:03:23.996436 [4] PDU process_blocks rc=0 nblk=2 fr_len=576
+10/04/26 13:03:23.996528 [4] PDU LONG/FAIL hex:  [2384003ed0f981000000a777]  [fdffffffffffffffe6bc2049]
+10/04/26 13:03:23.996839 [4] PDU rid=4116729 fmt=0x03 sap=4 blks=1 (other/unhandled fmt)
+10/04/26 13:03:23.996858 [4] NAC 0x36b PDU hex: fmt=0x03 sap=4 blks=1 nblk=2 :  [2384003ed0f981000000a777]  [fdffffffffffffffe6bc2049]
+10/04/26 13:03:24.353451 [4] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 13:03:24.353556 [4] ACK/RX rid=4116729 sap=12 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 13:03:24.353574 [4] NAC 0x36b PDU hex: fmt=0x03 sap=12 blks=0 nblk=1 :  [230c003ed0f980000000478e]
+10/04/26 13:03:24.753640 [4] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 13:03:24.753727 [4] ACK/RX rid=4116729 sap=13 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 13:03:24.753752 [4] NAC 0x36b PDU hex: fmt=0x03 sap=13 blks=0 nblk=1 :  [230d003ed0f980000000acad]
+10/04/26 13:03:25.726820 [4] process_blocks trellis1/2 fail blk=1 (kept)
+10/04/26 13:03:25.726938 [4] process_blocks trellis1/2 fail blk=2 (kept)
+10/04/26 13:03:25.726957 [4] process_blocks trellis1/2 fail blk=3 (kept)
+10/04/26 13:03:25.726975 [4] process_blocks trellis1/2 fail blk=4 (kept)
+10/04/26 13:03:25.726988 [4] CONFIRMED blk1 rid=4116729: 00 40 51 00 45 88 00 35 10 14 00 00 3c 11 9e cd 0a ad
+  D34 cost=1 ok
+10/04/26 13:03:25.726988 [4] CONFIRMED blk2 rid=4116729: 03 80 fe 32 0a ae bb c1 fb 9e fb 9e 00 21 bc 36 00 00
+10/04/26 13:03:25.726988 [4] CONFIRMED blk3 rid=4116729: 05 25 80 00 00 00 00 00 00 00 00 00 00 00 26 00 08 00
+10/04/26 13:03:25.726988 [4] CONFIRMED blk4 rid=4116729: 07 c8 3e d0 f9 98 96 7e 00 f5 f5 f5 f5 f5 f6 dd ba 03
+10/04/26 13:03:25.726988 [4] PDU hdr fmt=0x16 sap=0 rid=4116729 blks_hdr=4 n34=4 fr_len=1152
+10/04/26 13:03:25.726988 [4] [4] REASM rid=4116729 len=53
+10/04/26 13:03:25.726988 [4] [4] IP rid=4116729 ver=4 ihl=20 tot=53 have=53 proto=0x11 10.173.254.50 -> 10.174.187.193
+10/04/26 13:03:25.726988 [4] [4] UDP rid=4116729 10.173.254.50:64414 -> 10.174.187.193:64414 udp_len=33 payload=25
+10/04/26 13:03:25.726988 [4] [4] BEACON rid=4116729 self_id=4116729 ok
+10/04/26 13:03:25.726988 [4] [4] REASM raw rid=4116729 leftover=9
+10/04/26 13:03:25.728389 [4] PDU process_blocks rc=0 nblk=5 fr_len=1152
+10/04/26 13:03:25.728422 [4] PDU LONG/FAIL hex:  [76c0003ed0f984055802b05c]  [0366a9d40240000000000000]  [078970000000000000000000]  [000000000000000000000000]  [000000000000000000000000]
+10/04/26 13:03:25.729120 [4] NAC 0x36b PDU hex: fmt=0x16 sap=0 blks=4 nblk=5 :  [76c0003ed0f984055802b05c]  [0366a9d40240000000000000]  [078970000000000000000000]  [000000000000000000000000]  [000000000000000000000000]
+10/04/26 13:03:27.589744 [4] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 13:03:27.589835 [4] ACK/RX rid=4116700 sap=11 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 13:03:27.589861 [4] NAC 0x36b PDU hex: fmt=0x03 sap=11 blks=0 nblk=1 :  [230b003ed0dc80000000ddc6]
+10/04/26 13:03:27.815750 [4] process_blocks trellis1/2 fail blk=1 (kept)
+10/04/26 13:03:27.817248 [4] process_blocks trellis1/2 fail blk=2 (kept)
+  D34 cost=1 ok
+10/04/26 13:03:27.817309 [4] CONFIRMED blk1 rid=4116700: 00 22 01 03 f1 0a ae bb a4 00 00 20 00 01 00 f5 f5 f5
+10/04/26 13:03:27.817309 [4] CONFIRMED blk2 rid=4116700: 02 91 f5 f5 f5 f5 f5 f5 f5 f5 f5 f5 f5 f5 5a 4c 66 d5
+10/04/26 13:03:27.817309 [4] PDU hdr fmt=0x16 sap=6 rid=4116700 blks_hdr=2 n34=2 fr_len=720
+10/04/26 13:03:27.817309 [4] SNDCP ctrl rid=4116700 n34=2
+10/04/26 13:03:27.817898 [4] PDU process_blocks rc=0 nblk=3 fr_len=720
+10/04/26 13:03:27.817920 [4] PDU LONG/FAIL hex:  [76c6003ed0dc820f5800012d]  [000000000000000000000000]  [040000000000000000000000]
+10/04/26 13:03:27.818358 [4] NAC 0x36b PDU hex: fmt=0x16 sap=6 blks=2 nblk=3 :  [76c6003ed0dc820f5800012d]  [000000000000000000000000]  [040000000000000000000000]
+10/04/26 13:03:33.078044 [4] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 13:03:33.078758 [4] ACK/RX rid=4116700 sap=12 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 13:03:33.079750 [4] NAC 0x36b PDU hex: fmt=0x03 sap=12 blks=0 nblk=1 :  [230c003ed0dc800000006c6d]
+10/04/26 13:03:33.346825 [4] process_blocks trellis1/2 fail blk=1 (kept)
+10/04/26 13:03:33.346945 [4] process_blocks trellis1/2 fail blk=2 (kept)
+10/04/26 13:03:33.346962 [4] process_blocks trellis1/2 fail blk=3 (kept)
+  D34 cost=1 ok
+10/04/26 13:03:33.346976 [4] CONFIRMED blk1 rid=4116700: 00 0c 51 00 45 00 00 1f d6 ed 00 00 77 11 bb 5b 0a ac
+  D34 cost=1 ok
+10/04/26 13:03:33.346976 [4] CONFIRMED blk2 rid=4116700: 02 25 e0 86 0a ae bb a4 ef e4 0f a5 00 0b 0f c8 00 01
+10/04/26 13:03:33.346976 [4] CONFIRMED blk3 rid=4116700: 04 a1 3f f5 f5 f5 f5 f5 f5 f5 f5 f5 f5 f5 1d 06 5e 25
+10/04/26 13:03:33.346976 [4] PDU hdr fmt=0x16 sap=0 rid=4116700 blks_hdr=3 n34=3 fr_len=936
+10/04/26 13:03:33.346976 [4] [4] REASM rid=4116700 len=31
+10/04/26 13:03:33.346976 [4] [4] IP rid=4116700 ver=4 ihl=20 tot=31 have=31 proto=0x11 10.172.224.134 -> 10.174.187.164
+10/04/26 13:03:33.346976 [4] [4] UDP rid=4116700 10.172.224.134:61412 -> 10.174.187.164:4005 udp_len=11 payload=3
+10/04/26 13:03:33.346976 [4] [4] HEXDUMP rid=4116700 len=3:
+10/04/26 13:03:33.346976 [4] [4] HEX rid=4116700 0000: 00 01 3f                                          |..?|
+10/04/26 13:03:33.346976 [4] [4] TMS_TEXT rid=4116700 text=
+10/04/26 13:03:33.346976 [4] [4] REASM raw rid=4116700 leftover=15
+10/04/26 13:03:33.348391 [4] PDU process_blocks rc=0 nblk=4 fr_len=936
+10/04/26 13:03:33.348431 [4] PDU LONG/FAIL hex:  [76c0003ed0dc830b6802d406]  [00f000000000000000000000]  [0d1300000000000000000000]  [000000000000000000000000]
+10/04/26 13:03:33.348994 [4] NAC 0x36b PDU hex: fmt=0x16 sap=0 blks=3 nblk=4 :  [76c0003ed0dc830b6802d406]  [00f000000000000000000000]  [0d1300000000000000000000]  [000000000000000000000000]
+10/04/26 13:03:33.759181 [4] process_blocks trellis1/2 fail blk=1 (kept)
+10/04/26 13:03:33.759295 [4] process_blocks trellis1/2 fail blk=2 (kept)
+10/04/26 13:03:33.759312 [4] process_blocks trellis1/2 fail blk=3 (kept)
+  D34 cost=1 ok
+10/04/26 13:03:33.759336 [4] CONFIRMED blk1 rid=4116700: 00 36 51 00 45 00 00 20 d6 ee 00 00 77 11 bb 59 0a ac
+10/04/26 13:03:33.759336 [4] CONFIRMED blk2 rid=4116700: 02 3e e0 86 0a ae bb a4 ef e4 0f a7 00 0c de c2 00 02
+10/04/26 13:03:33.759336 [4] CONFIRMED blk3 rid=4116700: 05 74 70 00 f5 f5 f5 f5 f5 f5 f5 f5 f5 f5 2a 8a c5 05
+10/04/26 13:03:33.759336 [4] PDU hdr fmt=0x16 sap=0 rid=4116700 blks_hdr=3 n34=3 fr_len=936
+10/04/26 13:03:33.759336 [4] [4] REASM rid=4116700 len=32
+10/04/26 13:03:33.759336 [4] [4] IP rid=4116700 ver=4 ihl=20 tot=32 have=32 proto=0x11 10.172.224.134 -> 10.174.187.164
+10/04/26 13:03:33.759336 [4] [4] UDP rid=4116700 10.172.224.134:61412 -> 10.174.187.164:4007 udp_len=12 payload=4
+10/04/26 13:03:33.759336 [4] [4] HEXDUMP rid=4116700 len=4:
+10/04/26 13:03:33.759336 [4] [4] HEX rid=4116700 0000: 00 02 70 00                                       |..p.|
+10/04/26 13:03:33.759336 [4] [4] TMS_TEXT rid=4116700 text=p
+10/04/26 13:03:33.759336 [4] [4] REASM raw rid=4116700 leftover=14
+10/04/26 13:03:33.760716 [4] PDU process_blocks rc=0 nblk=4 fr_len=936
+10/04/26 13:03:33.760798 [4] PDU LONG/FAIL hex:  [76c0003ed0dc830a7802e045]  [02c000000000000000000000]  [0f0000000000000000000000]  [000000000000000000000000]
+10/04/26 13:03:33.761343 [4] NAC 0x36b PDU hex: fmt=0x16 sap=0 blks=3 nblk=4 :  [76c0003ed0dc830a7802e045]  [02c000000000000000000000]  [0f0000000000000000000000]  [000000000000000000000000]
+10/04/26 13:03:39.107991 [0] PDU process_blocks rc=0 nblk=1 fr_len=360
+10/04/26 13:03:39.108094 [0] ACK/RX rid=590132 sap=12 fmt=0x03 (no data blocks -- delivery ack/response, no IP/UDP to show)
+10/04/26 13:03:39.108118 [0] NAC 0x368 PDU hex: fmt=0x03 sap=12 blks=0 nblk=1 :  [230c0009013480000000f491]
+10/04/26 13:03:39.305660 [0] process_blocks trellis1/2 fail blk=1 (kept)
+  D34 cost=1 ok
+10/04/26 13:03:39.305762 [0] CONFIRMED blk1 rid=590132: 00 75 31 17 00 06 f5 f5 f5 f5 f5 f5 f5 f5 4a 77 73 d4
+10/04/26 13:03:39.305762 [0] PDU hdr fmt=0x16 sap=6 rid=590132 blks_hdr=1 n34=1 fr_len=576
+10/04/26 13:03:39.305762 [0] SNDCP ctrl rid=590132 n34=1
+10/04/26 13:03:39.306065 [0] PDU process_blocks rc=0 nblk=2 fr_len=576
+10/04/26 13:03:39.306081 [0] PDU LONG/FAIL hex:  [76c600090134810808008922]  [010000000000000000000000]
+10/04/26 13:03:39.306382 [0] NAC 0x368 PDU hex: fmt=0x16 sap=6 blks=1 nblk=2 :  [76c600090134810808008922]  [010000000000000000000000]
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
